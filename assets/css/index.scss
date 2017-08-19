@@ -10,70 +10,110 @@ body {
   background-image: url(/assets/images/bg-pattern.png);
   background-repeat: repeat;
 
-  width:  1439.5px;
-  height: 900px;
+  width:  100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 .bg-pattern {
-  opacity: 0.01;
+  opacity: 0.3;
   mix-blend-mode: soft-light;
 }
 
 .logo {
-  width: 455.5px;
-  height: 61.5px;
+
+  width: 31.6vw;
+  height: 6.8vh;
+
+  position: absolute;
+  left: 34.1vw;
+  top: 14.6vh;
 }
 
 .speaker-shadow {
-  width: 180.5px;
-  height: 276.5px;
+  position: absolute;
+  top: 0%;
+  bottom: 70%;
+  left: 8%;
 }
 
 .i-phone-6-gold {
-  width: 79.5px;
-  height: 338.5px;
+  width: 5.5vw;
+  height: 37.6vh;
+  position: absolute;
+  left: -10.3vw;
+  top: 49.7vh;
 }
 
 .macbook {
   width: 1094.5px;
   height: 400.5px;
+  position: absolute;
+  top:49.3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .glass-shadow {
-  width: 308px;
-  height: 417px;
+  width: 21.4vw;
+  height: 46.3vh;
+  object-fit: contain;
+
+  position: absolute;
+  top: 10vw;
+  right: 0vh;
 }
 
 .headline {
-  width: 781px;
-  height: 50.5px;
+  width: 54.3vw;
+  height: 5.6vh;
 
   font-family: Nexa;
   font-size: 49.2px;
+  font-size: 3vw;
   font-weight: bold;
 
   text-align: center;
   color: $white-main;
+
+  // right: 22.9%;
+  // left: 22.8%;
+  margin-top: 27.4vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.description-color {
-  width: 563.5px;
-  height: 108.5px;
+.description-color{
+  width: 39.2vw;
+  height: 12vh;
 
   font-family: Nexa;
+  font-size: 30.7px;
+  font-size: 1.8vw;
   font-weight: 300;
 
   line-height: 1.24;
   text-align: center;
   color: $green-deep;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.6%;
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 81.5px;
+
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
 }
 
 footer {
@@ -88,7 +128,7 @@ footer {
   .copyright {
     height: 12px;
 
-    margin-left: 77.5px;
+    margin-left: 2%;
     margin-top: 54.5px;
     margin-bottom: 15px;
   }
@@ -97,7 +137,7 @@ footer {
     height: 19.5px;
     width: 20px;
 
-    margin-right: 127.5px;
+    margin-right: 2%;
     margin-bottom: 27px;
 
     font-size: 22.9px;
