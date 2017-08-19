@@ -10,7 +10,7 @@ body {
   background-image: url(/assets/images/bg-pattern.png);
   background-repeat: repeat;
 
-  width:  100%;
+  width:  100vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -23,13 +23,12 @@ body {
 }
 
 .logo {
-
   width: 31.6vw;
   height: 6.8vh;
 
   position: absolute;
   left: 34.1vw;
-  top: 14.6vh;
+  top: 9.6vh;
 }
 
 .speaker-shadow {
@@ -81,7 +80,8 @@ body {
 
   // right: 22.9%;
   // left: 22.8%;
-  margin-top: 27.4vh;
+  margin-top: 23.4vh;
+  margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -121,25 +121,42 @@ footer {
   color: $green-mooxoo;
 
   font-family: Nexa;
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 300;
   line-height: 1.25;
 
-  .copyright {
-    height: 12px;
-
-    margin-left: 2%;
-    margin-top: 54.5px;
-    margin-bottom: 15px;
+  a{
+    color: $green-mooxoo;
+    font-family: Nexa;
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 1.25;
   }
 
-  .fa-linkedin {
+  a:hover{
+    text-decoration: none;
+    color: $green-mooxoo;
+  }
+
+  li{
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 20px;
+    height: 12px;
+    left: 5%;
+  }
+
+  .linkedin {
     height: 19.5px;
     width: 20px;
-
-    margin-right: 2%;
-    margin-bottom: 27px;
-
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
     font-size: 22.9px;
     font-weight: 300;
     line-height: 1.12;
