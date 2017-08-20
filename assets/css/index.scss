@@ -6,7 +6,7 @@
 @import "fonts";
 
 body {
-  background-color: $green-mooxoo;
+  background-color: $green-mooxoo !important;
   background-image: url(/assets/images/bg-pattern.png);
   background-repeat: repeat;
 
@@ -86,7 +86,7 @@ body {
   margin-right: auto;
 }
 
-.description-color{
+.description-color {
   width: 39.2vw;
   height: 12vh;
 
@@ -125,7 +125,7 @@ footer {
   font-weight: 300;
   line-height: 1.25;
 
-  a{
+  a {
     color: $green-mooxoo;
     font-family: Nexa;
     font-size: 1vw;
@@ -133,12 +133,12 @@ footer {
     line-height: 1.25;
   }
 
-  a:hover{
+  a:hover {
     text-decoration: none;
     color: $green-mooxoo;
   }
 
-  li{
+  li {
     position: absolute;
     display: inline-block;
     list-style: none;
