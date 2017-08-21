@@ -9,17 +9,64 @@ body {
   background-color: $green-mooxoo !important;
   background-image: url(/assets/images/bg-pattern.png);
   background-repeat: repeat;
-
-  width:  100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  bottom: 0;
 }
 
 .bg-pattern {
   opacity: 0.3;
   mix-blend-mode: soft-light;
+}
+
+.overflow-block{
+  width:  100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.navbar{
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: white;
+  transition: all 0.3s ease;
+  height: 70px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+
+  a{
+    color: $green-mooxoo;
+    img{
+      margin-left: 3vw;
+      width: 5vw;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $green-mooxoo;
+  }
+}
+
+.container{
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  font-family: Nexa;
+  h1{
+    font-size: 4vmin;
+    color: $white-fff;
+  }
+
+  p{
+    font-size: 2.5vmin;
+    color: $green-deep;
+  }
+
+  h4{
+    font-weight: bold;
+    color: $white-main;
+    font-size: 3vmin;
+  }
 }
 
 .logo {
@@ -49,7 +96,7 @@ body {
   width:1094.5px;
   position: absolute;
   top:55.5vh;
-  z-index: 10;
+  z-index: 1;
 }
 
 .glass-shadow {
@@ -103,7 +150,7 @@ img {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -140,17 +187,14 @@ footer {
   .copyright {
     position: absolute;
     bottom: 15px;
-    height: 12px;
     left: 2%;
   }
 
   .linkedin {
-    height: 19.5px;
-    width: 20px;
     position: absolute;
     bottom: 15px;
     right: 10%;
-    font-size: 22.9px;
+    font-size: 3vmin;
     font-weight: 300;
     line-height: 1.12;
   }
@@ -183,7 +227,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 700px){
     /* For mobile phones: */
   #iphone { display:block; }
   #macbook { display:none }
@@ -229,9 +273,15 @@ footer {
 
     .copyright {
       font-size: 2vmin;
-      bottom: 8px;
+      bottom: 1vmin;
+    }
+
+    .linkedin{
+      bottom: 1vmin;
     }
   }
 
-
+  .navbar{
+    height: 41px;
+  }
 }
