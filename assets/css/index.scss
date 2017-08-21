@@ -24,7 +24,6 @@ body {
 
 .logo {
   width: 31.6vw;
-  height: 6.8vh;
 
   position: absolute;
   left: 34.1vw;
@@ -32,28 +31,25 @@ body {
 }
 
 .speaker-shadow {
+  width: 12.55vw;
+  height: 30.7vh;
   position: absolute;
-  top: 0%;
   bottom: 70%;
   left: 8%;
 }
 
 .i-phone-6-gold {
-  width: 5.5vw;
-  height: 37.6vh;
+  width: 11.1vw;
   position: absolute;
-  left: -10.3vw;
+  right: 95.7vw;
   top: 49.7vh;
 }
 
-.macbook {
-  width: 1094.5px;
-  height: 400.5px;
+.main {
+  width:1094.5px;
   position: absolute;
-  top:49.3%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  top:55.5vh;
+
 }
 
 .glass-shadow {
@@ -68,11 +64,9 @@ body {
 
 .headline {
   width: 54.3vw;
-  height: 5.6vh;
 
   font-family: Nexa;
-  font-size: 49.2px;
-  font-size: 3vw;
+  font-size: 3.4vw;
   font-weight: bold;
 
   text-align: center;
@@ -86,13 +80,24 @@ body {
   margin-right: auto;
 }
 
+img {
+  width: inherit;  /* This makes the next two lines work in IE8. */
+  max-width: 100%; /* Add !important if needed. */
+  height: auto;    /* Add !important if needed. */
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
 .description-color {
   width: 39.2vw;
-  height: 12vh;
 
   font-family: Nexa;
-  font-size: 30.7px;
-  font-size: 1.8vw;
+  font-size: 2.1vw;
   font-weight: 300;
 
   line-height: 1.24;
@@ -110,7 +115,7 @@ footer {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 81.5px;
+  height: 9.05vh;
 
   -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
@@ -121,16 +126,12 @@ footer {
   color: $green-mooxoo;
 
   font-family: Nexa;
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 300;
   line-height: 1.25;
 
   a {
     color: $green-mooxoo;
-    font-family: Nexa;
-    font-size: 1vw;
-    font-weight: 300;
-    line-height: 1.25;
   }
 
   a:hover {
@@ -146,19 +147,90 @@ footer {
 
   .copyright {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     height: 12px;
-    left: 5%;
+    left: 2%;
   }
 
   .linkedin {
     height: 19.5px;
     width: 20px;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     right: 10%;
     font-size: 22.9px;
     font-weight: 300;
     line-height: 1.12;
   }
+}
+
+#iphone {display:none}
+#macbook-ipad { display:none }
+
+@media only screen and (max-width: 1024px) {
+  #macbook { display:none }
+  #macbook-ipad { display:block }
+
+  .main{
+    width: 550px;
+    top:79.5vh;
+    left: 15vw;
+  }
+
+  .headline {
+    font-size: 6vw;
+  }
+
+  .description-color {
+    font-size: 4vw;
+  }
+
+}
+
+@media only screen and (max-width: 736px){
+    /* For mobile phones: */
+  #iphone { display:block; }
+  #macbook { display:none }
+  #iphone-rotate { display:none }
+  #macbook-ipad { display:none }
+
+  .speaker-shadow {
+    width: 28.2vw;
+    bottom: 81.1vh;
+    left: 0vw;
+  }
+  .glass-shadow {
+    width: 41.7vw;
+    object-fit: contain;
+
+    top: 0vw;
+    right: 0vh;
+  }
+
+  .logo{
+    width: 68.5vw;
+    left: 15.7vw;
+    top: 21.6vh;
+  }
+
+  .headline {
+    font-size: 6.72vw;
+    margin-top: 33.7vh;
+  }
+  .description-color {
+    width: 65.6vw;
+    font-size: 5.21vw;
+    top:47.1;
+  }
+
+  .main{
+    width: 157px;
+    top:71.5vh;
+    left:28.8vw;
+  }
+
+  .copyright {
+    font-size: 2vw;
+  }
+
 }
