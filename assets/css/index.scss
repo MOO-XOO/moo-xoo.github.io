@@ -37,16 +37,12 @@ body {
   padding: 0px 30px;
 
   a {
-    color: $green-mooxoo;
     img {
+      position: absolute;
+      top: -1vh;
       margin-left: 3vw;
       width: 5vw;
     }
-  }
-
-  a:hover {
-    text-decoration: none;
-    color: $green-mooxoo;
   }
 }
 
