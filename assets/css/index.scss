@@ -36,9 +36,9 @@ body {
   top: 0px;
   padding: 0px 30px;
 
-  a{
+  a {
     color: $green-mooxoo;
-    img{
+    img {
       margin-left: 3vw;
       width: 5vw;
     }
@@ -50,23 +50,23 @@ body {
   }
 }
 
-.impressum{
+.impressum {
   margin-top: 12vmin;
   margin-bottom: 10vh;
 
   font-family: Nexa;
 
-  h1{
+  h1 {
     font-size: 4vmin;
     color: $white-fff;
   }
 
-  p{
+  p {
     font-size: 2.5vmin;
     color: $green-deep;
   }
 
-  h4{
+  h4 {
     font-weight: bold;
     color: $white-main;
     font-size: 3vmin;
@@ -214,7 +214,7 @@ footer {
   #macbook { display:none }
   #macbook-ipad { display:block }
 
-  .main{
+  .main {
     width: 670px;
 
     margin-top: 10.5vh;
@@ -232,10 +232,16 @@ footer {
     font-size: 3.5vmin;
   }
 
-  .copyright{
+  .copyright {
     font-size: 0.9vmin;
   }
 
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .main {
+    margin-left: 10vw;
+  }
 }
 
 @media only screen and (max-width: 736px){
@@ -259,7 +265,7 @@ footer {
     right: 0vh;
   }
 
-  .logo{
+  .logo {
     width: 68.5vmin;
 
     left: 15.7vw;
@@ -276,14 +282,14 @@ footer {
     font-size: 4vmin;
   }
 
-  .main{
+  .main {
     width: 157px;
 
-    bottom:-30.5vmin;
+    bottom:-25.5vmin;
     left:27.9vmin;
   }
 
-  footer{
+  footer {
     height: 41px;
 
     .copyright {
@@ -291,23 +297,23 @@ footer {
       bottom: 1vmin;
     }
 
-    .linkedin{
+    .linkedin {
       bottom: 1vmin;
     }
   }
 
-  .navbar-mooxoo{
+  .navbar-mooxoo {
     height: 41px;
   }
 }
 
 @media only screen and (max-width: 736px) and (orientation: landscape){
-  .logo{
+  .logo {
     top: 6.6vh;
     left: 30vw;
   }
 
-  .headline{
+  .headline {
     margin-top: 18.4vh;
   }
 
