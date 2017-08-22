@@ -51,7 +51,7 @@ body {
   }
 }
 
-.container{
+.impressum{
   margin-top: 5vh;
   margin-bottom: 10vh;
   font-family: Nexa;
@@ -99,7 +99,7 @@ body {
 .main {
   width:1094.5px;
   position: absolute;
-  top:55.5vh;
+  bottom: -26vh;
   z-index: 1;
 }
 
@@ -117,7 +117,7 @@ body {
   width: 54.3vw;
 
   font-family: Nexa;
-  font-size: 3.4vw;
+  font-size: 3.2vw;
   font-weight: bold;
 
   text-align: center;
@@ -212,9 +212,11 @@ footer {
   #macbook-ipad { display:block }
 
   .main{
-    width: 700px;
+    width: 670px;
     margin-top: 10.5vh;
-    margin-left: 10vw;
+    position: absolute;
+    bottom: -10vw;
+    left: 8vmin;
   }
 
   .headline {
@@ -225,8 +227,8 @@ footer {
     font-size: 4vmin;
   }
 
-  .main{
-    position: fixed;
+  .copyright{
+    font-size: 0.9vmin;
   }
 
 }
@@ -268,8 +270,8 @@ footer {
 
   .main{
     width: 157px;
-    top:60.5vh;
-    left:18.8vw;
+    bottom:-30.5vmin;
+    left:28.9vmin;
   }
 
   footer{
