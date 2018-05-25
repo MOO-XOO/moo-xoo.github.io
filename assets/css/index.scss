@@ -46,7 +46,7 @@ body {
   }
 }
 
-.impressum {
+.information {
   margin-top: 12vmin;
   margin-bottom: 10vh;
 
@@ -58,14 +58,30 @@ body {
   }
 
   p {
-    font-size: 2.5vmin;
+    font-size: 1.5vmin;
     color: $green-deep;
   }
 
   h4 {
     font-weight: bold;
     color: $white-main;
-    font-size: 3vmin;
+    font-size: 2vmin;
+  }
+
+  ul {
+    color: $green-deep;
+    font-size: 1.5vmin;
+  }
+
+  a, a:hover {
+    text-decoration: none;
+    color: $green-deep;
+    font-size: 2vmin;
+  }
+
+  .center {
+    position: relative;
+    text-align: center;
   }
 }
 
@@ -192,14 +208,22 @@ footer {
     left: 2%;
   }
 
-  .linkedin {
+  .footer-right {
     position: absolute;
     bottom: 15px;
-    right: 10%;
+  }
 
+  .linkedin {
     font-size: 3vmin;
     font-weight: 300;
     line-height: 1.12;
+    right: 2%;
+  }
+
+  .policy-link {
+    right: 5%;
+    font-size: 1.5vmin;
+    bottom: 20px;
   }
 }
 
