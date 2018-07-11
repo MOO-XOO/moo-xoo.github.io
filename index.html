@@ -1,59 +1,398 @@
 ---
 layout: home
+title: MOO-XOO GmbH
 ---
-<div class="overflow-block">
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container">
-    <div class="logo"><img src="/assets/images/moo-xoo-logo_white.svg"></div>
-    <div class="headline"><p>Creating simplicity in your business</p></div>
-    <div class="description-color">
-      <p>
-        <span>
-          Our mission is to arm brands with tools
-          and services to simplify and accelerate
-          the marketing and sales workflow.
-        </span>
-      </p>
-    </div>
+    <div class="navbar-brand">
+      <figure class="image">
+        <a class="navbar-item" href="/">
+          <img src="/assets/images/top-logo.png" srcset="/assets/images/top-logo@2x.png 2x, /assets/images/top-logo@3x.png 3x" alt="MOO-XOO">
+        </a>
+      </figure>
+      <div class="navbar-menu" id=navMenu>
+        <div class="navbar-end">
+          <a class="navbar-item">
+            {% t navbar.company %}
+          </a>
 
-    <div class="bg-pattern">
-      <img src="/assets/images/bg-pattern.png"
-           srcset="/assets/images/bg-pattern@2x.png 2x, /assets/images/bg-pattern@3x.png 3x">
-    </div>
+          <a class="navbar-item">
+            {% t navbar.services %}
+          </a>
 
-    <div class="speaker-shadow">
-      <img src="/assets/images/speaker-shadow.png"
-           srcset="/assets/images/speaker-shadow@2x.png 2x, /assets/images/speaker-shadow@3x.png 3x">
-    </div>
+          <a class="navbar-item">
+            {% t global.dpworx %}
+          </a>
 
-    <div class="i-phone-6-gold">
-      <img id="iphone-rotate" src="/assets/images/i-phone-6-gold.png"
-           srcset="/assets/images/i-phone-6-gold@2x.png 2x, /assets/images/i-phone-6-gold@3x.png 3x">
-    </div>
+          <a class="navbar-item">
+            {% t navbar.hiring %}
+          </a>
 
-    <div class="main">
-      <img id="macbook" src="/assets/images/macbook.png"
-         	 srcset="/assets/images/macbook@2x.png 2x, /assets/images/macbook@3x.png 3x" usemap="#macbook-map">
-      <map name="macbook-map">
-        <area shape="rect" coords="368,338,660,396" href="mailto:office@moo-xoo.com">
-      </map>
-
-      <img id="macbook-ipad" src="/assets/images/macbook.png" usemap="#macbook-ipad-map">
-      <map name="macbook-ipad-map">
-        <area shape="rect" coords="238,215,425,250" href="mailto:office@moo-xoo.com">
-      </map>
-
-      <img id="iphone" src="/assets/images/i-phone-6-gold-m.png"
-           srcset="/assets/images/i-phone-6-gold-m@2x.png 2x, /assets/images/i-phone-6-gold-m@3x.png 3x" usemap="#iphone-map">
-      <map name="iphone-map">
-        <area shape="rect" coords="48,165,145,145" href="mailto:office@moo-xoo.com">
-      </map>
-    </div>
-
-    <div class="glass-shadow">
-      <img src="/assets/images/glass-shadow.png"
-         	 srcset="/assets/images/glass-shadow@2x.png 2x, /assets/images/glass-shadow@3x.png 3x">
+          <a class="navbar-item left">
+            {% t navbar.contact %}
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+</nav>
+<section class="first-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-two-fifths">
+        <h1> {% t main-container.title %} </h1>
+        <h2> {% t main-container.sub-title %} </h2>
+        <p> {% t main-container.sub-text %} </p>
+        <div class="ipad-island">
+          <img src="/assets/images/ipad.png" srcset="/assets/images/ipad@2x.png 2x, /assets/images/ipad@3x.png 3x" alt="MOO-XOO">
+          <div class="island"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="mooxoo-shapes">
+          <div class="doughnut">
+            <img src="/assets/images/photo-mask.png" srcset="/assets/images/photo-mask@2x.png 2x, /assets/images/photo-mask@3x.png 3x" alt="MOO-XOO">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  {% include footer.html %}
-</div>
+<section class="second-container">
+  <div class="container">
+    <h1> {% t second-container.title %} </h1>
+    <div class="columns">
+      <div class="column">
+        <div class="green-description">
+          <h2>{% t second-container.description %}</h2>
+        </div>
+      </div>
+      <div class="column">
+        <div class="black-description">
+          <p>{% t second-container.sub-description %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="third-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/hands-icon.png" srcset="/assets/images/hands-icon@2x.png 2x, /assets/images/hands-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t third-container.vision %}</h3>
+          <p> {% t third-container.vision-text %} </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/timer-icon.png" srcset="/assets/images/timer-icon@2x.png 2x, /assets/images/timer-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t third-container.mission %}</h3>
+          <p> {% t third-container.mission-text %} </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/world-icon.png" srcset="/assets/images/world-icon@2x.png 2x, /assets/images/world-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t third-container.product %}</h3>
+          <p> {% t third-container.product-text %} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fourth-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="mooxoo-shapes">
+          <div class="triangle-container">
+            <div class="triangle">
+              <div class="triangle-center"></div>
+            </div>
+            <img src="/assets/images/photo.png" srcset="/assets/images/photo@2x.png 2x, /assets/images/photo@3x.png 3x" alt="MOO-XOO">
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="chart-container">
+          <div class="island"></div>
+          <img src="/assets/images/charts.png" srcset="/assets/images/charts@2x.png 2x, /assets/images/charts@3x.png 3x" alt="MOO-XOO">
+          <h2>{% t fourth-container.main-text %}</h2>
+          <p>{% t fourth-container.sub-text %}</p>
+        </div>
+        <div class="sub-text">
+          <h1>{% t fourth-container.services %}</h1>
+          <h2>{% t fourth-container.services-description %}</h2>
+          <h3> {% t fourth-container.services-sub-description %}</h3>
+          <p>{% t fourth-container.services-text %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fifth-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/assets/images/m-ec.png" srcset="/assets/images/m-ec@2x.png 2x, /assets/images/m-ec@3x.png 3x" alt="MOO-XOO" class="icon-box">
+        <div class="sub-text">
+          <h3>{% t fifth-container.consulting-description %}</h3>
+          <h4> {% t fifth-container.consulting-step1 %}</h4>
+          <h4> {% t fifth-container.consulting-step2 %}</h4>
+          <h4> {% t fifth-container.consulting-step3 %}</h4>
+        </div>
+      </div>
+      <div class="column">
+        <img src="/assets/images/m-pt.png" srcset="/assets/images/m-pt@2x.png 2x, /assets/images/m-pt@3x.png 3x" alt="MOO-XOO" class="icon-box">
+        <div class="sub-text">
+          <h3>{% t fifth-container.training-description %}</h3>
+          <h4>{% t fifth-container.training-onboarding.title %}</h4>
+          <p>{% t fifth-container.training-onboarding.description %}</p>
+          <h4>{% t fifth-container.training-team.title %}</h4>
+          <p>{% t fifth-container.training-team.description %}</p>
+          <h4>{% t fifth-container.training-online.title %}</h4>
+          <p>{% t fifth-container.training-online.description %}</p>
+          <h4>{% t fifth-container.training-customized.title %}</h4>
+          <p>{% t fifth-container.training-customized.description %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sixth-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="island">
+          <img src="/assets/images/brain-icon.png" srcset="/assets/images/brain-icon@2x.png 2x, /assets/images/brain-icon@3x.png 3x" alt="MOO-XOO">
+          <img src="/assets/images/chart-2.png" srcset="/assets/images/chart-2@2x.png 2x, /assets/images/chart-2@3x.png 3x" alt="MOO-XOO">
+        </div>
+        <h2>{% t sixth-container.description %}</h2>
+        <p>{% t sixth-container.sub-description %}</p>
+        <h1>{% t global.dpworx %}</h1>
+        <h3>{% t sixth-container.dpworx-description %}</h3>
+      </div>
+      <div class="column">
+        <div class="mooxoo-shapes">
+          <div class="cross"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seventh-container">
+  <div class="container">
+    <div class="columns">
+      <div class="island"></div>
+      <div class="column">
+        <div class="text-container">
+          <h2>{% t seventh-container.from %}</h2>
+          <h3>{% t seventh-container.brand-activation.title %}</h3>
+          <p>{% t seventh-container.brand-activation.description %}</p>
+        </div>
+        <div class="text-container">
+          <h2>{% t seventh-container.to %}</h2>
+          <h3>{% t seventh-container.point-of-sale.title %}</h3>
+          <p>{% t seventh-container.point-of-sale.description %}</p>
+        </div>
+
+        <div class="text-container">
+          <h2>{% t seventh-container.to %}</h2>
+          <h3>{% t seventh-container.retail-design.title %}</h3>
+          <p>{% t seventh-container.retail-design.description %}</p>
+        </div>
+        <div class="text-container">
+          <h2>{% t seventh-container.more %}</h2>
+        </div>
+        <img src="/assets/images/dp-worx.png" srcset="/assets/images/dp-worx@2x.png 2x, /assets/images/dp-worx@3x.png 3x" alt="MOO-XOO" class="icon-box center">
+      </div>
+      <div class="column">
+        <img src="/assets/images/macbook.png" srcset="/assets/images/macbook@2x.png 2x, /assets/images/macbook@3x.png 3x" alt="MOO-XOO">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="eighth-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h2 class="text-box">{% t eighth-container.request.title %}</h2>
+        <p>{% t eighth-container.request.description %}</p>
+      </div>
+      <div class="column">
+        <h2 class="text-box">{% t eighth-container.planning.title %}</h2>
+        <p>{% t eighth-container.planning.description %}</p>
+      </div>
+      <div class="column">
+        <h2 class="text-box">{% t eighth-container.execution.title %}</h2>
+        <p>{% t eighth-container.execution.description %}</p>
+      </div>
+      <div class="column">
+        <h2 class="text-box">{% t eighth-container.evaluation.title %}</h2>
+        <p>{% t eighth-container.evaluation.description %}</p>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <h1>{% t eighth-container.description %}</h1>
+        <a class="btn">{% t eighth-container.button-text %}</a>
+      </div>
+      <div class="column">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ninth-container">
+  <div class="container">
+    <ul class="slide-navigation">
+      <li>For whom DP WORX is</li>
+      <li class="active">Modules #1</li>
+      <li>Modules #2</li>
+      <li>Modules #3</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tenth-container">
+  <div class="container">
+    <h1>{% t tenth-container.dpworx-is %}</h1>
+    <div class="columns">
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/hands-icon.png" srcset="/assets/images/hands-icon@2x.png 2x, /assets/images/hands-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t tenth-container.software.title %}</h3>
+          <p> {% t tenth-container.software.description %} </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/timer-icon.png" srcset="/assets/images/timer-icon@2x.png 2x, /assets/images/timer-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t tenth-container.web-based.title %}</h3>
+          <p> {% t tenth-container.web-based.description %} </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/intuitive-icon.png" srcset="/assets/images/intuitive-icon@2x.png 2x, /assets/images/intuitive-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t tenth-container.efficient.title %}</h3>
+          <p> {% t tenth-container.efficient.description %} </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <div class="island">
+          <h3>{% t tenth-container.description %}</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card-icon">
+          <img src="/assets/images/roles-icon.png" srcset="/assets/images/roles-icon@2x.png 2x, /assets/images/roles-icon@3x.png 3x" alt="MOO-XOO" class="center">
+          <h3>{% t tenth-container.roles.title %}</h3>
+          <p> {% t tenth-container.roles.description %} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="eleventh-container">
+  <div class="container">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column">
+        <h1>{% t eleventh-container.title %}</h1>
+        <h2>{% t eleventh-container.description %}</h2>
+        <h3>{% t eleventh-container.description-location %}</h3>
+        <p>{% t eleventh-container.sub-description %}</p>
+        <a class="btn">{% t eleventh-container.apply-now %}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="twelveth-container has-text-centered">
+  <div class="text-rectangle">
+    <div class="container">
+      <div class="company-logos"></div>
+      <h1>{% t twelveth-container.title %}</h1>
+      <p>{% t twelveth-container.description %}</p>
+      <div class="subscrition-container center">
+        <h3>{% t twelveth-container.subscription.slogan %}</h3>
+        <p>{% t twelveth-container.subscription.description %}</p>
+        <div class="field has-addons">
+          <div class="control">
+            <input class="input" type="text" placeholder="{% t twelveth-container.subscription.email %}">
+          </div>
+          <div class="control">
+            <a class="button btn">
+              {% t twelveth-container.subscription.button-text %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="separator"></div>
+
+<section class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/assets/images/top-logo.png" srcset="/assets/images/top-logo@2x.png 2x, /assets/images/top-logo@3x.png 3x" alt="MOO-XOO">
+        <p>{% t footer.description %}</p>
+        <p class="copyright">{% t footer.copyright %}</p>
+      </div>
+      <div class="column">
+        <div class="columns">
+          <div class="column">
+            <h3>{% t footer.learn-more.title %}</h3>
+            <a href=""><p>{% t footer.learn-more.services %}</p></a>
+            <a href=""><p>{% t footer.learn-more.dpworx %}</p></a>
+            <a href=""><p>{% t footer.learn-more.pricing %}</p></a>
+            <a href=""><p>{% t footer.learn-more.support %}</p></a>
+          </div>
+          <div class="column">
+            <h3>{% t footer.company.title %}</h3>
+            <a href=""><p>{% t footer.company.about %}</p></a>
+            <a href=""><p>{% t footer.company.terms %}</p></a>
+            <a href=""><p>{% t footer.company.privacy %}</p></a>
+            <a href=""><p>{% t footer.company.impressum %}</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>{% t footer.contact-us.contact %}</h3>
+        <h4>{% t footer.contact-us.telephone %}</h4>
+        <h4>{% t footer.contact-us.email %}</h4>
+        <div class="social-network">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+    var cards = $(".mooxoo-shapes");
+    for(var i = 0; i < cards.length; i++){
+        var target = Math.floor(Math.random() * cards.length -1) + 1;
+        var target2 = Math.floor(Math.random() * cards.length -1) +1;
+        cards.eq(target).before(cards.eq(target2));
+    }
+  });
+</script>

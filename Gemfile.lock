@@ -17,6 +17,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-multiple-languages-plugin (1.5.1)
+      jekyll (>= 2.0, < 4.0)
     jekyll-redirect-from (0.12.1)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
@@ -55,10 +57,11 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.5)
+  jekyll-multiple-languages-plugin
   jekyll-redirect-from (~> 0.12)
   jekyll-sitemap (~> 1.1)
   jekyll-toc (~> 0.3)
   scss_lint (~> 0.54)
 
 BUNDLED WITH
-   1.15.3
+   1.16.2

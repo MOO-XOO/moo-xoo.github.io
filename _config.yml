@@ -1,4 +1,4 @@
-title: MOO-XOO GmbH - Coming soon!
+title: MOO-XOO GmbH
 email: office@moo-xoo.com
 description: 'Creating simplicity in your business'
 url: 'https://moo-xoo.github.io'
@@ -22,6 +22,10 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-toc
+  - jekyll-multiple-languages-plugin
+
+languages: ["en", "de"]
+baseurl: ""
 
 # Custom variables
 current_version: 0.1

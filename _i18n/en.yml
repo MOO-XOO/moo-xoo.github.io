@@ -1,0 +1,145 @@
+global:
+  german: Deutsch
+  english: English
+  dpworx: DP WORX
+
+navbar:
+  company: Company
+  services: Services
+  hiring: Hiring
+  contact: Contact us
+
+main-container:
+  title: Work Smarter
+  sub-title: DP WORX simplifies the way how brands work in marketing and sales activation today
+  sub-text: Eliminate productivity killers and save time and money
+
+second-container:
+  title: COMPANY
+  description: We are a result driven team specialized in the development of SaaS solutions for the process optimization and simplification of marketing and sales activation workflows.
+  sub-description: Our products are developed with the needs of marketing and sales organizations in mind, by marketing and sales people for marketing and sales people.
+
+third-container:
+  vision: 'Our vision:'
+  vision-text: Enable every marketing and sales manager to work smarter, even together
+  mission: 'Our mission:'
+  mission-text: To arm brands with tools and services to simplify and accelerate their marketing and sales activation process
+  product: 'Our Product:'
+  product-text: Sound industry knowledge combined with international marketing and sales executive expertise
+
+fourth-container:
+  main-text: With DP WORX you can see the big picture.
+  sub-text: Take the actions that matter
+  services: SERVICES
+  services-description: Our knowledge is your power. We are not another consulting agency focusing on the perfect board presentation.
+  services-sub-description: We focus on what matters most. We want you to work smarter – more productive, more efficient, better trained and happier with less stress.
+  services-text: Discover how easy the management of marketing and sales activation operations can be with our services.
+
+fifth-container:
+  consulting-description: 'Our consultants work with you from the first brief to the company-wide launch of DP WORX till the continuous improvement process of your business operations. Our consulting is based on three principles:'
+  consulting-step1: We analyze and understand
+  consulting-step2: Only then we optimize
+  consulting-step3: Finally we launch together
+  training-description: Learn how to get the most out of DP WORX through our onboarding process, team training sessions, online webinars and special trainings customized to your needs.
+  training-onboarding:
+    title: Onboarding Training
+    description: Easy Adoption from day one
+  training-team:
+    title: Team training
+    description: Users become experts
+  training-online:
+    title: Online Training
+    description: Strengthen the user knowledge
+  training-customized:
+    title: Customized training
+    description: For your user and business' needs
+
+sixth-container:
+  description: Work smarter with DP WORX
+  sub-description: Save time and money.
+  dpworx-description: simplifies how brands work in marketing and sales activation today.
+
+seventh-container:
+  from: 'From:'
+  to: 'To:'
+  brand-activation:
+    title: Brand activation projects
+    description: Such as roadshows, product samplings, sponsorships, promotions
+  point-of-sale:
+    title: Point of sale executions
+    description: Merchandising presentation to visual merchandising
+  retail-design:
+    title: Retail design
+    description: From basic to shop in shop concepts
+  more: and more.
+
+eighth-container:
+  request:
+    title: 1 - FIRST REQUEST
+    description: All internal & external requests are captured, presorted for an immediate response.
+  planning:
+    title: 2 - PLANNING
+    description: Plan, streamline, organize all resources (material, agencies, logistic, & 3rd parties, material, budget,..) and workflow steps with no effort.
+  execution:
+    title: 3 - EXECUTION
+    description: Execute with the highest quality level, cost minimizing and time saving. Company wide knowledge transfer for positive alignment.
+  evaluation:
+    title: 4 - EVALUATION
+    description: Monitor and track real time results of every project. See how the projects contribute to your strategy.
+  description: Step-By-Step guidance, user role-based dashboards, team and task orientated workflows keep everyone aligned and focused on the loop.
+  button-text: More info + Modules
+slider: text
+
+tenth-container:
+  dpworx-is: 'DP WORX is:'
+  description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of DP WORX
+  software:
+    title: Software as a Service
+    description: Our team takes care of everything. From feature development to backups. Your data is private and secure. Start working today.
+  web-based:
+    title: Web based – 24/7
+    description: Everything is in the cloud. No software application is needed. DP WORX can be accessed securely via the web 24/7.
+  efficient:
+    title: Intuitive & efficient
+    description: Easy to use for everyone. No IT or digital knowledge is needed.
+  roles:
+    title: Roles and right based
+    description: User only see work-related data. Focus on what matters most.
+
+eleventh-container:
+  title: HIRING
+  description: We are team of fun-loving, code enthusiasts who are keen to revolutionize how marketing and sales department work today.
+  description-location: Our team is headquartered in Munich, Germany, with a branch in Lisbon, Portugal.
+  sub-description: If you are someone who is up for a challenge and looking forward to working in a fast paced environment you are our team member.
+  apply-now: Apply now
+
+twelveth-container:
+  title: You'll be in good company.
+  description: Big companies and small businesses worldwide use MOO-XOO to keep their marketing operations working.
+  subscription:
+    slogan: Work smarter.
+    description: Contacts us today.
+    email: Your email adress
+    button-text: Send
+
+footer:
+  description: We're consulting company working with some of the best companies to help with their marketing operations and platform needs.
+  copyright: © 2018  MOO-XOO. All rights reserved.
+  learn-more:
+    title: Learn More
+    services: Services
+    dpworx: DPWorx
+    pricing: Pricing
+    support: Support
+  company:
+    title: Company
+    about: About Us
+    terms: Terms of Service
+    privacy: Privacy Policy
+    impressum: Impressum
+  contact-us:
+    contact: Contact Us
+    telephone: +6221-2269 2089
+    email: support@moo-xoo.com
+
+
