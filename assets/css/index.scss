@@ -38,8 +38,7 @@ section {
 }
 
 .btn {
-  width: 216.5px;
-  height: 36px;
+  padding: 10px 24px 10px 24px;
   border-radius: 1px;
   box-shadow: 0px 5px 17px 0 rgba(57, 213, 45, 0.26), 0px 6px 11px 0 rgba(57, 213, 45, 0.41);
   background-color: $bright-green;
@@ -53,26 +52,37 @@ section {
   background-color: #ebebeb;
 }
 
+a:hover {
+  color: $moo-xoo-green !important;
+}
+
 .navbar {
   height: 60px;
   padding-bottom: 20px;
 
-  .navbar-brand {
+  .image {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-item {
     font-family: $bold-font;
     font-size: 14.5px;
     text-align: left;
     color: $hunter-green;
   }
 
-  .navbar-item::hover {
-    color: $moo-xoo-green;
-  }
-
   .navbar-menu {
     margin-left: 10vw;
 
+    .pale {
+      color: $pinkish-grey;
+    }
+
     .left {
       margin-left: 8vw;
+      font-family: $primary-font;
+      color: $moo-xoo-green;
     }
   }
 }
@@ -81,24 +91,23 @@ section {
   padding-top: 110px;
 
   h1 {
-    width: 179.5px;
+    width: 279.5px;
     @include main-title;
-    font-size: 43.5px;
+    font-size: 63.5px;
   }
 
   h2 {
-    width: 289.5px;
-    height: 129.5px;
+    width: 30vw;
     @include copyright;
-    font-size: 25.5px;
+    font-size: 35.5px;
     text-shadow: 0.25px 0.25px 0.25px $bright-green;
-    margin-top: 100px;
+    margin-top: 10vh;
     text-align: left;
   }
 
   p {
     padding-top: 43px;
-    width: 295.5px;
+    width: 30vw;
     @include card-style;
     font-size: 22px;
   }
@@ -108,13 +117,13 @@ section {
     color: $moo-xoo-green;
     border: 150px solid;
     border-radius: 50%;
-    height:796.5px;
-    width:796.5px;
-    margin-left: 20%;
+    height: 800px;
+    width: 800px;
+    margin-left: 40%;
 
     img {
-      width: 496px;
-      height: 496px;
+      width: 500px;
+      height: 500px;
       transform: rotate(-30deg);
       transform-origin: 40% 10%;
     }
@@ -122,9 +131,10 @@ section {
 
 .ipad-island {
   width: 600px;
-  margin-top: 20vh;
+  margin-top: 10vh;
 
   img {
+    width: 100vw;
     margin-left: -10vh;
     position: relative;
     z-index: 1;
@@ -136,9 +146,20 @@ section {
     margin-left: -15vw;
     width: 457px;
     height: 431px;
-    border-radius: 20%;
-    transform: rotate(-30deg);
-    background-color: $very-light-green;
+    background: url(/assets/images/island-1.svg) bottom center;
+  }
+
+  .island::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-image: url(/assets/images/island-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 100;
+
   }
 }
 
@@ -147,7 +168,6 @@ section {
 
   h1 {
     @include main-title;
-    font-size: 35px;
   }
 
   .green-description {
@@ -200,26 +220,7 @@ section {
   .triangle-container {
     width: 401.5px;
     height: 753.5px;
-
-    .triangle {
-      position: relative;
-      margin-top: 200px;
-      width:0;
-      height:100px;
-      border-right: 378.5px solid $moo-xoo-green;
-      border-top: 378.5px solid transparent;
-      border-bottom: 378.5px solid transparent;
-    }
-
-    .triangle-center {
-      position: absolute;
-      width:0;
-      height:100px;
-      padding-left: 150px;
-      border-right: 178.5px solid $white;
-      border-top: 178.5px solid transparent;
-      border-bottom: 178.5px solid transparent;
-    }
+    background-image: url(/assets/images/big-triangle@3x.png);
   }
 
   .chart-container {
@@ -297,8 +298,6 @@ section {
 }
 
 .fifth-container {
-  margin-top: 200px;
-
   .sub-text {
     h3 {
       width: 269px;
