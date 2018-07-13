@@ -214,9 +214,12 @@ title: MOO-XOO GmbH
           <h2>{% t seventh-container.more %}</h2>
         </div>
         <img src="/assets/images/dp-worx.png" srcset="/assets/images/dp-worx@2x.png 2x, /assets/images/dp-worx@3x.png 3x" alt="MOO-XOO" class="icon-box center">
+        <h1> {% t seventh-container.dpworx-description %} </h1>
       </div>
       <div class="column">
         <img src="/assets/images/macbook.png" srcset="/assets/images/macbook@2x.png 2x, /assets/images/macbook@3x.png 3x" alt="MOO-XOO">
+        <p> {% t seventh-container.miss-deadline %} </p>
+        <p class="green"> {% t seventh-container.anymore %} </p>
       </div>
     </div>
   </div>
@@ -319,6 +322,7 @@ title: MOO-XOO GmbH
         <a class="btn">{% t eleventh-container.apply-now %}</a>
       </div>
     </div>
+    <div class="island"></div>
   </div>
 </section>
 
@@ -386,13 +390,4 @@ title: MOO-XOO GmbH
   </div>
 </section>
 
-<script type="text/javascript">
-  $( document ).ready(function() {
-    var cards = $(".mooxoo-shapes");
-    for(var i = 0; i < cards.length; i++){
-        var target = Math.floor(Math.random() * cards.length -1) + 1;
-        var target2 = Math.floor(Math.random() * cards.length -1) +1;
-        cards.eq(target).before(cards.eq(target2));
-    }
-  });
-</script>
+
