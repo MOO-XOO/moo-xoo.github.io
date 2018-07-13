@@ -559,6 +559,66 @@ a:hover {
 }
 
 .eleventh-container {
+  h1 {
+    width: 131px;
+    font-family: $bold-font;
+    font-size: 39.8px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $pinkish-grey;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    width: 396px;
+    height: 67px;
+    font-family: $bold-font;
+    font-size: 18.5px;
+    line-height: 1.34;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    width: 434.5px;
+    font-family: $primary-font;
+    font-size: 21.3px;
+    font-weight: 300;
+    line-height: 1.35;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $tree-green;
+    margin-bottom: 24px;
+  }
+
+  p {
+    width: 357px;
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+    margin-bottom: 26.5px;
+  }
+
+  .island {
+    width: 930px;
+    height: 465px;
+    border-top-left-radius: 465px;
+    border-top-right-radius: 465px;
+    border: 200px solid $moo-xoo-green;
+    border-bottom: 0;
+    transform: rotate(-150deg);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -60px;
+    margin-bottom: -450px;
+  }
 }
 
 .twelveth-container {
