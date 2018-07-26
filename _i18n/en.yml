@@ -74,8 +74,9 @@ seventh-container:
   more: and more.
   miss-deadline: Never miss a material, task, order or deadline.
   anymore: Anymore!
-  dpworx-description: with DP WORX you can map and manage the entire process from the first request to the planning phase, execution phase to the evaluation phase in just one click.
-
+  dpworx-description: with DP WORX you <strong> can map and manage the entire process </strong>
+                      from the <strong> first request </strong> to the <strong> planning </strong> phase,
+                      <strong> execution </strong> phase to the <strong> evaluation </strong> phase in just one click.
 
 eighth-container:
   request:
@@ -90,9 +91,40 @@ eighth-container:
   evaluation:
     title: 4 - EVALUATION
     description: Monitor and track real time results of every project. See how the projects contribute to your strategy.
-  description: Step-By-Step guidance, user role-based dashboards, team and task orientated workflows keep everyone aligned and focused on the loop.
+  description: <strong> Step-By-Step guidance, user role-based dashboards, team and task orientated workflows </strong> keep everyone aligned and focused on the loop.
   button-text: More info + Modules
-slider: text
+
+ninth-container:
+  main-slide:
+    title: For whom DP WORX is
+    description: DP WORX is for all the marketing and sales project owners who are thinking that there must be a better way to execute projects day by day.
+    sub-description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of DP WORX.
+  modules:
+    title: Modules
+    description: DPWORX is developed as a modular system, offering you the highest grade of flexibility.
+    sub-description: You only pay for what you need.
+    management_description: Convert requests into projects with a given workflow.
+      Assign agencies, manage resources, create tasks, deadlines, communicate effortlessly and track progress in one place from anywhere.
+      With DP WORX your team will be more efficient and more effective.
+    analysing_description: Understand the health
+      of your marketing sales activities. See in one click how all your activities contribute
+      to your business strategy and goals. Measure KPIs and spot outliners immediately.
+    communication_description: You can stop screening hundreds of complicated spreadsheets and emails, having back and forth emails, never ending meetings.
+      No further back and fourth calls are needed. All information you need for your work is accessible in just one click.
+    material_description: With the DP WORX material module you have all your marketing collateral under control.
+      No matter with how many warehouses you work. Planning has never been easier.
+  management:
+    title: Management
+    description:
+  analysing:
+    title: Analysing
+    description:
+  communication:
+    title: Communication
+    description:
+  material:
+    title: Material
+    description:
 
 tenth-container:
   dpworx-is: 'DP WORX is:'

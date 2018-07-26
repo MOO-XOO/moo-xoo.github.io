@@ -2,6 +2,8 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 @import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import '/node_modules/bulma/css/bulma.css';
+@import '/node_modules/bulma-extensions/bulma-steps/dist/css/bulma-steps.min.css';
 @import "variables";
 @import "fonts";
 @import "error_pages";
@@ -12,7 +14,12 @@ body {
 }
 
 section {
-  padding-bottom: 200px;
+  padding: 0px 60px 200px 210px;
+  position: relative;
+}
+
+.main-title {
+  padding-top: 80px;
 }
 
 .center {
@@ -26,12 +33,22 @@ section {
   padding: 35px 35px 35px 35px;
   box-shadow: 0px 8px 34.5px 0 rgba(60, 60, 60, 0.09), 0px 13px 27px 0 rgba(65, 65, 65, 0.06);
   margin-bottom: 58px;
+  background-color: $white;
+}
+
+.icon-container {
+  padding-bottom: 34px;
+  height: 80px;
+
+  img {
+    height: 50px;
+  }
 }
 
 .text-box {
-  width: 160px;
   opacity: 0.9;
   border-radius: 3px;
+  width: 9.5vw;
   padding: 17.5px 17.5px 17.5px 17.5px;
   box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
   margin-bottom: 58px;
@@ -47,7 +64,8 @@ section {
 }
 
 .separator {
-  width: 799px;
+  margin: 5vh 15vw;
+  width: 70vw;
   height: 1px;
   background-color: #ebebeb;
 }
@@ -56,9 +74,87 @@ a:hover {
   color: $moo-xoo-green !important;
 }
 
+.mooxoo-shapes {
+  .doughnut {
+    color: $moo-xoo-green;
+    border: 150px solid;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    margin-left: 40%;
+
+    img {
+      width: 500px;
+      height: 500px;
+      transform: rotate(-30deg);
+      transform-origin: 40% 10%;
+    }
+  }
+
+  .triangle {
+    background-image: url(/assets/images/-e-BIG-triangle.svg);
+    height: 75vw;
+    height: 60vw;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    margin-left: -24vw;
+
+    img {
+      transform: rotate(10deg);
+      margin-top: 15vw;
+      margin-left: 20vw;
+      width: 25vw;
+    }
+  }
+
+}
+
+.bullets {
+  position: relative;
+  border-left: 1px solid black;
+
+  li {
+    position: relative;
+    text-align: left;
+    display: block;
+  }
+
+  li:first-child:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    width: 5px;
+    height: 8px;
+    background: $light-grey;
+  }
+
+  li:last-child:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    bottom: 0;
+    width: 1px;
+    background: $light-grey;
+  }
+
+  li:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -2.5vw;
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 100%;
+    background: $light-grey;
+  }
+}
+
 .navbar {
   height: 60px;
-  padding-bottom: 20px;
+  padding: 0px 0px 20px 150px;
 
   .image {
     display: flex;
@@ -67,20 +163,21 @@ a:hover {
 
   .navbar-item {
     font-family: $bold-font;
-    font-size: 14.5px;
+    font-size: 16px;
     text-align: left;
     color: $hunter-green;
+    padding-left: 3vw;
   }
 
   .navbar-menu {
-    margin-left: 10vw;
+    margin-left: 7vw;
 
     .pale {
       color: $pinkish-grey;
     }
 
     .left {
-      margin-left: 8vw;
+      margin-left: 12vw;
       font-family: $primary-font;
       color: $moo-xoo-green;
     }
@@ -113,25 +210,9 @@ a:hover {
   }
 }
 
-.doughnut {
-    color: $moo-xoo-green;
-    border: 150px solid;
-    border-radius: 50%;
-    height: 800px;
-    width: 800px;
-    margin-left: 40%;
-
-    img {
-      width: 500px;
-      height: 500px;
-      transform: rotate(-30deg);
-      transform-origin: 40% 10%;
-    }
-}
-
 .ipad-island {
   width: 600px;
-  margin-top: 10vh;
+  margin-top: 15vh;
 
   img {
     width: 100vw;
@@ -139,44 +220,35 @@ a:hover {
     position: relative;
     z-index: 1;
   }
-
-  .island {
-    margin-top: -30vh;
-    float: left;
-    margin-left: -15vw;
-    width: 457px;
-    height: 431px;
-    background: url(/assets/images/island-1.svg) bottom center;
-  }
-
-  .island::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-image: url(/assets/images/island-1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 100;
-
-  }
 }
 
 .second-container {
   margin-top: -10vh;
+  position: relative;
+
+  .island {
+    position: absolute;
+    margin-top: -60vh;
+    float: left;
+    margin-left: -15vw;
+    width: 657px;
+    height: 631px;
+    background-image: url(/assets/images/island-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
   h1 {
     @include main-title;
   }
 
   .green-description {
-    width: 367px;
+    width: 467px;
     height: 193px;
 
     h2 {
       font-family: $primary-font;
-      font-size: 25px;
+      font-size: 28px;
       line-height: 1.4;
       letter-spacing: 0.1px;
       text-align: left;
@@ -185,12 +257,12 @@ a:hover {
   }
 
   .black-description {
-    width: 351px;
+    width: 451px;
     height: 135.5px;
 
     p {
       font-family: $secondary-font;
-      font-size: 19.8px;
+      font-size: 28px;
       font-weight: 500;
       line-height: 1.47;
       text-align: left;
@@ -201,13 +273,9 @@ a:hover {
 
 .third-container {
   .card-icon {
-    width: 230px;
+    width: 270px;
     height: 92px;
     @include card-style;
-
-    img {
-      padding-bottom: 34px;
-    }
 
     h3 {
       font-family: $bold-font;
@@ -217,33 +285,29 @@ a:hover {
 }
 
 .fourth-container {
-  .triangle-container {
-    width: 401.5px;
-    height: 753.5px;
-    background-image: url(/assets/images/big-triangle@3x.png);
+  .mooxoo-shapes {
+    padding-top: 30vh;
   }
 
   .chart-container {
-    .island {
-      float: left;
-      width: 321px;
-      height: 307.5px;
-      margin-right: -300px;
-      opacity: 0.3;
-      border-radius: 20%;
-      transform: rotate(-30deg);
-      background-color: $light-blue;
-      z-index: -10;
-    }
+    height: 25vw;
+    margin-right: -100px;
+    position: relative;
+    background-image: url(/assets/images/island-2.svg);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: center right;
 
     img {
+      width: 50%;
       position: relative;
       z-index: 1;
     }
 
     h2 {
+      width: 60%;
       font-family: $primary-font;
-      font-size: 27.3px;
+      font-size: 30px;
       line-height: 1.17;
       color: $hunter-green;
     }
@@ -257,19 +321,19 @@ a:hover {
   }
 
   .sub-text {
-    margin-top: 180px;
+    margin-top: 10vh;
     background-image: url(/assets/images/bg-chart.png);
-    width: 500px;
-    height: 500px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 30vw;
+    height: 26vw;
 
     h1 {
       @include main-title;
-      font-size: 35px;
     }
 
     h2 {
-      width: 456.5px;
-      height: 129px;
       font-family: $primary-font;
       font-size: 24.8px;
       font-weight: 300;
@@ -298,9 +362,13 @@ a:hover {
 }
 
 .fifth-container {
+  padding-top: 0px;
+
   .sub-text {
+    margin: 0 auto;
+
     h3 {
-      width: 269px;
+      width: 369px;
       padding-top: 20px;
       @include text-blue;
     }
@@ -312,7 +380,7 @@ a:hover {
       font-size: 17px;
       font-weight: normal;
       line-height: 1.47;
-      color: #35d32f;
+      color: $moo-xoo-green;
     }
 
     p {
@@ -322,40 +390,60 @@ a:hover {
 }
 
 .sixth-container {
-  .island {
-    width: 426px;
-    height: 326px;
-    background-color: $light-purple;
-    border-radius: 50%;
+  padding-bottom: 0px;
+
+  .island-3 {
+    height: 30vw;
+    width: 32vw;
+    position: relative;
+    background-image: url(/assets/images/island-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 95% auto;
+    right: 30%;
+
+    .brain-icon {
+      width: 9vw;
+    }
+
+    img {
+      padding-left: 5vw;
+      width: 20vw;
+    }
+
+    .text-area {
+      padding: 2vw 0px 0px 15vw;
+      h2 {
+        @include medium-text;
+        text-align: center;
+      }
+
+      p {
+        @include medium-text;
+        text-align: center;
+        color: $bright-green;
+        margin-bottom: 305px;
+      }
+    }
   }
 
   h1 {
     @include main-title;
-    font-size: 35px;
-  }
-
-  h2 {
-    @include medium-text;
-    text-align: center;
   }
 
   h3 {
     @include text-blue;
     color: $moo-xoo-green;
-  }
-
-  p {
-    @include medium-text;
-    text-align: center;
-    color: $bright-green;
-    margin-bottom: 305px;
+    font-size: 28px;
+    width: 55%;
   }
 
   .cross {
-    width: 572px;
-    height: 572px;
+    width: 40vw;
+    height: 40vw;
     position: relative;
     transform: rotate(-45deg);
+    left: 40%;
   }
 
   .cross:before, .cross:after {
@@ -381,17 +469,15 @@ a:hover {
 }
 
 .seventh-container {
-  .island {
-    border-radius: 20%;
-    transform: rotate(-30deg);
-    background-color: $very-light-green;
-  }
+  padding-top: 0px;
+  background: url(/assets/images/-e-green-waves-bg.svg) top center no-repeat,  url(/assets/images/bg-chart.png) bottom right no-repeat, rgba(255, 255, 255, 0.7);
+  background-size: cover, contain, cover;
 
   .text-container {
     font-family: $secondary-font;
     font-size: 20px;
     font-weight: 300;
-    font-style: Light;
+    font-style: $primary-font;
     font-stretch: normal;
     line-height: 1.38;
     letter-spacing: 0.1px;
@@ -400,7 +486,7 @@ a:hover {
 
     h2 {
       color: $moo-xoo-green;
-      font-style: Medium;
+      font-style: $bold-font;
     }
 
     h3 {
@@ -409,9 +495,40 @@ a:hover {
       line-height: 1.11;
     }
   }
+
+  h1 {
+    width: 25vw;
+    font-family: $secondary-font;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+  }
+
+  .macbook-container {
+    p {
+      width: 18vw;
+      @include medium-text;
+
+      strong {
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    p:last-child {
+      color: $moo-xoo-green;
+    }
+  }
 }
 
 .eighth-container {
+  margin-top: 35vh;
+
   h1 {
     margin: 50px 50px 50px 0px;
     @include text-blue;
@@ -426,13 +543,9 @@ a:hover {
   }
 
   p {
-    width: 143px;
-    height: 195px;
+    width: 8vw;
     font-family: $primary-font;
-    font-size: 15.3px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
+    font-size: 18px;
     line-height: 1.34;
     letter-spacing: 0.1px;
     text-align: left;
@@ -441,17 +554,18 @@ a:hover {
 }
 
 .ninth-container {
-  .container {
-    width: 100%;
-  }
   .slide-navigation {
     li {
       list-style-type: none;
       float: left;
-      width: 25%;
+      width: 15%;
       position: relative;
       text-align: center;
-      font-family: $secondary-font;
+
+      a {
+        font-family: $secondary-font;
+        color: $medium-grey;
+      }
     }
 
     li:before {
@@ -465,7 +579,7 @@ a:hover {
       margin-top: 0 auto 10px auto;
       border-radius: 50%;
       background-color: $light-grey;
-      margin-left: 45%;
+      margin-left: 50%;
       z-index: 1;
     }
 
@@ -486,6 +600,11 @@ a:hover {
 
     li.active {
       color: $apple-green;
+      z-index: 1;
+
+      a {
+        color: $apple-green;
+      }
     }
 
     li.active:before {
@@ -497,6 +616,12 @@ a:hover {
       color: $apple-green;
     }
   }
+
+  .slide-bar {
+    height: 50vh;
+    object-fit: contain;
+    background-image: linear-gradient(to right, $pale-grey, $white);
+  }
 }
 
 .tenth-container {
@@ -504,22 +629,32 @@ a:hover {
     font-family: $primary-font;
     font-size: 25.3px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 0.92;
     letter-spacing: 0.1px;
     text-align: center;
     color: $gun-metal;
   }
 
-  p {
-    font-family: $primary-font;
-    font-size: 17px;
-    line-height: 1.47;
-    letter-spacing: 0.1px;
-    text-align: left;
-    color: $moo-xoo-green;
-    padding-bottom: 20px;
+  .card-icon {
+    width: 15vw;
+
+    h3 {
+      font-family: $primary-font;
+      font-size: 1.3vw;
+      font-weight: bold;
+      line-height: 0.62;
+      color: $dark-grey-blue;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: 1.1vw;
+      line-height: 1.47;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: $moo-xoo-green;
+      padding-bottom: 20px;
+    }
   }
 
   h3 {
@@ -536,37 +671,34 @@ a:hover {
   }
 
   .island {
-    margin-top: 132px;
-    position: absolute;
-    float: left;
-    width: 463px;
-    height: 309.5px;
-    opacity: 0.3;
-    border-radius: 40%;
-    background-color: $dull-yellow;
+    margin-top: 10vh;
+    width: 60vw;
+    height: 25vw;
+    background-image: url(/assets/images/island-macbook.svg);
+    background-size: 60% 90%;
+    background-repeat: no-repeat;
 
     h3 {
-      width: 369.5px;
-      height: 109px;
+      width: 35vw;
+      padding-top: 10vh;
       font-family: $primary-font;
-      font-size: 22px;
+      font-size: 30px;
       line-height: 1.41;
       text-align: center;
       color: $hunter-green;
-      text-shadow: 3.5px 6.1px 41px #83cd32;
     }
   }
 }
 
 .eleventh-container {
   h1 {
-    width: 131px;
+    width: 25vw;
     font-family: $bold-font;
-    font-size: 39.8px;
+    font-size: 40px;
     letter-spacing: 0.2px;
     text-align: left;
     color: $pinkish-grey;
-    margin-bottom: 50px;
+    margin-bottom: 2vh;
   }
 
   h2 {
@@ -578,7 +710,7 @@ a:hover {
     letter-spacing: 0.1px;
     text-align: left;
     color: $dark-grey-blue;
-    margin-bottom: 24px;
+    margin-bottom: 5vh;
   }
 
   h3 {
@@ -590,7 +722,7 @@ a:hover {
     letter-spacing: 0.1px;
     text-align: left;
     color: $tree-green;
-    margin-bottom: 24px;
+    margin-bottom: 3vh;
   }
 
   p {
@@ -601,86 +733,100 @@ a:hover {
     letter-spacing: 0.1px;
     text-align: left;
     color: $dark-grey-blue;
-    margin-bottom: 26.5px;
+    margin-bottom: 6vh;
   }
 
-  .island {
-    width: 930px;
-    height: 465px;
-    border-top-left-radius: 465px;
-    border-top-right-radius: 465px;
-    border: 200px solid $moo-xoo-green;
+  a {
+    z-index: 10;
+  }
+
+  .semi-circle {
+    width: 70vw;
+    height: 35vw;
+    border-top-left-radius: 35vw;
+    border-top-right-radius: 35vw;
+    border: 13vw solid $moo-xoo-green;
     border-bottom: 0;
     transform: rotate(-150deg);
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: -60px;
-    margin-bottom: -450px;
+    background-color: transparent;
+    margin-top: -9vw;
+    margin-bottom: -25vw;
+    margin-left: -9vw;
   }
 }
 
 .twelveth-container {
+  padding: 0px 0px 200px 0px;
+
   .text-rectangle {
-    padding-top: 100px;
-    height: 300px;
+    height: 50vh;
+    width: 100vw;
+    position: relative;
     background-color: $moo-xoo-green;
 
-    .container {
-      h1 {
+    h1 {
+      font-family: $bold-font;
+      font-size: 2vw;
+      font-weight: bold;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $off-white;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: 0.75vw;
+      line-height: 1.28;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $tree-green;
+    }
+
+    .subscrition-container {
+      width: 50vw;
+      background-color: $white;
+      padding: 7.5vw 7.5vw 7.5vw 7.5vw;
+      box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
+      margin-top: 15vh;
+
+      h3 {
         font-family: $bold-font;
         font-size: 22px;
-        font-weight: bold;
         letter-spacing: 0.1px;
         text-align: center;
-        color: $off-white;
-        margin-bottom: 10px;
+        color: $dark-grey-blue;
       }
 
       p {
         font-family: $primary-font;
-        font-size: 15px;
-        line-height: 1.28;
+        font-size: 12.3px;
         letter-spacing: 0.1px;
         text-align: center;
-        color: $tree-green;
+        color: $steel;
+        padding-bottom: 34px;
       }
 
-      .subscrition-container {
-        width: 650px;
-        background-color: $white;
-        padding: 75px 100px 75px 100px;
-        box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
-        margin-top: 25px;
-
-        h3 {
-          font-family: $bold-font;
-          font-size: 22px;
-          letter-spacing: 0.1px;
-          text-align: center;
-          color: $dark-grey-blue;
-        }
-
-        p {
-          font-family: $primary-font;
-          font-size: 12.3px;
-          letter-spacing: 0.1px;
-          text-align: center;
-          color: $steel;
-          padding-bottom: 34px;
-        }
+      .control {
+        text-align: center;
 
         .input {
-          width: 343.5px;
+          margin-left: 5vw;
+          width: 20vw;
           opacity: 0.3;
           border-radius: 2.1px;
-          background-color: #a3adb5;
-          border: solid 0.7px #a3adb5;
+          background-color: rgba(44, 62, 80, 0.5);
+          border: solid 0.7px $cool-grey;
+          color: rgba(44, 62, 80, 0.5);
+
+        }
+
+        .button {
+          color: $white;
         }
 
         .btn {
-          width: 106px;
+          width: 5vw;
           background-color: $moo-xoo-green;
         }
       }
@@ -689,16 +835,25 @@ a:hover {
 }
 
 .footer {
+  background-color: transparent !important;
+
+  #contact-us {
+    float: right;
+  }
+
+  #links {
+    display: flex;
+    align-content: center;
+  }
+
   img {
-    width: 99.5px;
-    height: 13px;
+    width: 5vw;
   }
 
   p {
-    width: 200.5px;
-    height: 59px;
+    width: 10vw;
     font-family: $primary-font;
-    font-size: 12.3px;
+    font-size: 13px;
     line-height: 1.29;
     letter-spacing: 0.1px;
     text-align: left;
@@ -706,8 +861,8 @@ a:hover {
   }
 
   .copyright {
-    width: 178.5px;
-    height: 10.5px;
+    padding-top: 2vh;
+    width: 10vw;
     font-family: $primary-font;
     font-size: 9.5px;
     text-align: left;
