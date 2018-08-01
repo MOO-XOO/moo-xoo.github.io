@@ -95,10 +95,16 @@ eighth-container:
   button-text: More info + Modules
 
 ninth-container:
+  more-info: More info
+  next: Next >>
+  home: Home
   main-slide:
-    title: For whom DP WORX is
+    title: For whom DPWORX is
     description: DP WORX is for all the marketing and sales project owners who are thinking that there must be a better way to execute projects day by day.
     sub-description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of DP WORX.
+    description-island: "Discover how easy the management of marketing and sales activation can be."
+    sub-description-island: "Enable your team to manage multiple projects smarter and more efficient."
+    slogan-island: Stop wasting time.
   modules:
     title: Modules
     description: DPWORX is developed as a modular system, offering you the highest grade of flexibility.
@@ -115,17 +121,76 @@ ninth-container:
       No matter with how many warehouses you work. Planning has never been easier.
   management:
     title: Management
-    description:
+    project:
+      sub-title: Project management
+      slogan: From the material booking to the project communication with all stakeholders, to the  agency management, staff allocation, arranging delivery, managing costs, sharing next steps, to the project analysis, and much more. All can be done one place.
+      description: 'We offer you three project management modules, specially developed for needs of the management of projects in:'
+      brand-activation: Brand activation
+      point-of-sales: Point of sales
+      retail-design: Retail design
+    request-management:
+      sub-title: Request management
+      slogan: Never miss a request anymore.
+      description: All internal and external requests are captured, presorted for an immediate response.
+    warehouse:
+      sub-title: The Warehouse & third-party module
+      slogan: Balance your resources, monitor performance and recalibrate when necessary.
+      description: With DP WORX you can manage and monitor all your warehouses and third partners. No matter if it is an advertising, promotion, design, POS agency.balance.
+    human-resource:
+      sub-title: Human resource planner
+      slogan: With DP WORX you can hire, book and track the work of all your team members.
+      description: Book the right person for your projects.
   analysing:
     title: Analysing
-    description:
+    business:
+      sub-title: Business Intelligence module
+      slogan: See and understand what matters.
+      description: With DP Worx you will understand how your projects and actions affect your business.
+      sub-description: Live reports and dashboards allow all user stay on the same page and get insights.
+    cost-budget:
+      sub-title: Cost and Budget
+      slogan: Stay on track with your budget and spendings.
+      description: With the DP WORX project budget manager and the easy to use invoicing system, you have full cost control.
+    forecast:
+      sub-title: Forecast
+      slogan: Create marketing and sales activation forecasts efficiently..
+      description: Planning for the next year, season or updates of the business year will become easy.
+    customer-satisfaction:
+      sub-title: Customer Satisfaction
+      slogan: Understand easily how the execution of the projects matched to the expectations of your customer and your company.
+      description: Make sure everyone is up to date with the latest company media.
   communication:
     title: Communication
-    description:
+    communication-title:
+      sub-title: Communication
+      slogan: Keep all users in the loop.
+      description: Manage and track every communication, activity and streams in one click.
+    top-news:
+      sub-title: Top News
+      slogan: Share and engage with all the user about the latest news.
+      description: Manage and track every communication, activity and streams in one click.
+    media-library:
+      sub-title: Media Library
+      slogan: DP WORX is your team`s media database.
+      description: Make sure everyone is up to date with the latest company media.
   material:
     title: Material
-    description:
-
+    manager:
+      sub-title: Material manager
+      slogan: Keep track of all your advertising material and marketing collateral.
+      description: No matter with how many warehouses you work. Planning has never been easier.
+      sub-description: Our material booking planner, easy order system for material bundles, repair manager, booking calendar, touring plan and the material webshop will help you to manage all your material and material requests on the fly.
+    logistic:
+      sub-title: Logistic
+      slogan: DP WORX is a multi warehouse application allowing you to automatize the creation of logistic jobs.
+      description: The time-consuming  pain of managing all your logistic jobs and partners is removed from you.
+      sub-description: DP WORX makes sure that your business has always the right level of inventory, your material is in the proper condition and assigns jobs automatically to the warehouse with the best cost balance.
+    shop:
+      sub-title: The Online Shop
+      slogan: Delight your user.
+      description: Allow them in an easily and intuitively to order material for all their customers based on their user roles and booking rights.
+      sub-description: Maximize sales by offering a self-service, with all the product information needed. 
+      sub-description2: No further actions are needed from your side.
 tenth-container:
   dpworx-is: 'DP WORX is:'
   description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of DP WORX
@@ -154,7 +219,7 @@ twelveth-container:
   description: Big companies and small businesses worldwide use MOO-XOO to keep their marketing operations working.
   subscription:
     slogan: Work smarter.
-    description: Contacts us today.
+    contact-us: Contact us
     email: Your email adress
     button-text: Send
 
