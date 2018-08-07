@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 84 82" style="enable-background:new 0 0 84 82;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#222222;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#38D430;stroke:#222222;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#222222;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M27.3,34.9c0-0.8,1.1-12.7,1.1-12.7l8-5.3"/>
+			<path class="st1" d="M36.5,17L36.5,17l0.1,5.9c0,1.7,0.8,3.3,2.1,4.4L42,30l3.2-2.7c1.3-1.1,2.1-2.7,2.1-4.4l0.1-5.9h0
+				C44.2,19.4,39.8,19.4,36.5,17z"/>
+			<path class="st0" d="M56.7,34.9c0-0.8-1.1-12.7-1.1-12.7l-8-5.3"/>
+			<path class="st2" d="M47.8,7.5c0-4-2.6-7.2-5.8-7.2c-3.2,0-5.8,3.2-5.8,7.2s2.6,7.2,5.8,7.2C45.2,14.7,47.8,11.5,47.8,7.5z"/>
+		</g>
+		<g>
+			<path class="st0" d="M1,81.7C1,80.9,2.1,69,2.1,69l8-5.3"/>
+			<path class="st1" d="M10.2,63.7L10.2,63.7l0.1,5.9c0,1.7,0.8,3.3,2.1,4.4l3.2,2.7l3.2-2.7c1.3-1.1,2.1-2.7,2.1-4.4l0.1-5.9l0,0
+				C17.9,66.1,13.4,66.1,10.2,63.7z"/>
+			<path class="st0" d="M30.3,81.7c0-0.8-1.1-12.7-1.1-12.7l-8-5.3"/>
+			<path class="st2" d="M21.5,54.2c0-4-2.6-7.2-5.8-7.2c-3.2,0-5.8,3.2-5.8,7.2s2.6,7.2,5.8,7.2C18.9,61.4,21.5,58.2,21.5,54.2z"/>
+			<line class="st0" x1="15.7" y1="76.8" x2="15.7" y2="81.7"/>
+		</g>
+		<g>
+			<path class="st0" d="M53.7,80.6c0-0.8,1.1-12.7,1.1-12.7l8-5.3"/>
+			<path class="st1" d="M62.8,62.6L62.8,62.6l0.1,5.9c0,1.7,0.8,3.3,2.1,4.4l3.2,2.7l3.2-2.7c1.3-1.1,2.1-2.7,2.1-4.4l0.1-5.9v0
+				C70.6,65.1,66.1,65.1,62.8,62.6z"/>
+			<path class="st0" d="M83,80.6c0-0.8-1.1-12.7-1.1-12.7l-8-5.3"/>
+			<ellipse class="st2" cx="68.3" cy="53.2" rx="5.8" ry="7.2"/>
+			<line class="st0" x1="68.3" y1="75.7" x2="68.3" y2="80.6"/>
+		</g>
+		<g>
+			<line class="st2" x1="42.1" y1="50.6" x2="32.9" y2="59.8"/>
+			<polyline class="st2" points="42.1,40.5 42.1,50.6 51.1,59.6 			"/>
+		</g>
+		<line class="st0" x1="42" y1="30" x2="42" y2="34.9"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,1065 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import '/node_modules/bulma/css/bulma.css';
+@import "variables";
+@import "fonts";
+
+body {
+  background-image: linear-gradient(to right, $pale-grey, $white);
+  font-family: $primary-font;
+  overflow: hidden;
+}
+
+section {
+  padding: 0px 60px 200px 190px;
+  position: relative;
+}
+
+.main-title {
+  padding-top: 80px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-box {
+  width: 221px;
+  padding: 35px 35px 35px 35px;
+  box-shadow: 0px 8px 34.5px 0 rgba(60, 60, 60, 0.09), 0px 13px 27px 0 rgba(65, 65, 65, 0.06);
+  margin-bottom: 58px;
+  background-color: $white;
+}
+
+.icon-container {
+  padding-bottom: 34px;
+  height: 80px;
+
+  img {
+    height: 50px;
+  }
+}
+
+.text-box {
+  opacity: 0.9;
+  border-radius: 3px;
+  width: 11vw;
+  padding: 17.5px 17.5px 17.5px 17.5px;
+  box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
+  margin-bottom: 58px;
+}
+
+.btn {
+  padding: 10px 24px 10px 24px;
+  border-radius: 1px;
+  box-shadow: 0px 5px 17px 0 rgba(57, 213, 45, 0.26), 0px 6px 11px 0 rgba(57, 213, 45, 0.41);
+  background-color: $moo-xoo-green;
+  border: solid 0.3px $apple-green;
+  @include button-style;
+}
+
+.separator {
+  margin: 5vh 15vw;
+  width: 70vw;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+a:hover {
+  // color: $moo-xoo-green !important;
+  color:  rgba(0, 0, 0, 0.5) !important;
+}
+
+.mooxoo-shapes {
+  .doughnut {
+    color: $moo-xoo-green;
+    border: 150px solid;
+    border-radius: 50%;
+    height: 800px;
+    width: 800px;
+    margin-left: 40%;
+
+    img {
+      width: 500px;
+      height: 500px;
+      transform: rotate(-30deg);
+      transform-origin: 40% 10%;
+    }
+  }
+
+  .triangle {
+    background-image: url(/assets/images/-e-BIG-triangle.svg);
+    height: 75vw;
+    height: 60vw;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    margin-left: -24vw;
+
+    img {
+      transform: rotate(10deg);
+      margin-top: 15vw;
+      margin-left: 20vw;
+      width: 25vw;
+    }
+  }
+
+}
+
+.bullets {
+  position: relative;
+  border-left: 1px solid black;
+  display: inline;
+
+  li {
+    position: relative;
+    text-align: left;
+    display: block;
+  }
+
+  li:first-child:after {
+    content: "";
+    position: absolute;
+    // top: 0px;
+    // width: 5px;
+    // height: 8px;
+    background: $light-grey;
+  }
+
+  li:last-child:after {
+    content: "";
+    position: absolute;
+    // top: 0px;
+    // bottom: 0;
+    // width: 1px;
+    background: $light-grey;
+  }
+
+  li:after {
+    /* bullets */
+    content: "\2022";
+    font-size: 60px;
+    position: absolute;
+    left: -60px; /*adjust manually*/
+    top: -26px;
+    color: $light-grey;
+  }
+
+  li:before {
+    top: 15px;
+    content:"";
+    position: absolute;
+    left: -50px; /* adjust manually */
+    border-left: 1px solid $light-grey;
+    height: 100%;
+    width: 1px;
+  }
+}
+
+.navbar {
+  height: 60px;
+  padding: 0px 0px 20px 0px;
+
+  .image {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-item {
+    font-family: $bold-font;
+    font-size: 16px;
+    text-align: left;
+    color: $hunter-green;
+    padding-left: 3vw;
+  }
+
+  a:hover {
+    color: $moo-xoo-green !important;
+  }
+
+  .navbar-menu {
+    margin-left: 7vw;
+
+    .pale {
+      color: $pinkish-grey;
+    }
+
+    .left {
+      margin-left: 12vw;
+      font-family: $primary-font;
+      color: $moo-xoo-green;
+    }
+  }
+}
+
+.first-container {
+  padding-top: 110px;
+
+  h1 {
+    width: 279.5px;
+    @include main-title;
+    font-size: 63.5px;
+  }
+
+  h2 {
+    width: 30vw;
+    @include copyright;
+    font-size: 35.5px;
+    text-shadow: 0.25px 0.25px 0.25px $moo-xoo-green;
+    margin-top: 10vh;
+    text-align: left;
+  }
+
+  p {
+    padding-top: 43px;
+    width: 30vw;
+    @include card-style;
+    font-size: 22px;
+  }
+}
+
+.ipad-island {
+  width: 600px;
+  margin-top: 15vh;
+
+  img {
+    width: 100vw;
+    margin-left: -10vh;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.second-container {
+  margin-top: -10vh;
+  position: relative;
+
+  .island {
+    position: absolute;
+    margin-top: -60vh;
+    float: left;
+    margin-left: -15vw;
+    width: 657px;
+    height: 631px;
+    background-image: url(/assets/images/island-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  h1 {
+    @include main-title;
+  }
+
+  .green-description {
+    width: 467px;
+    height: 193px;
+
+    h2 {
+      font-family: $primary-font;
+      font-size: 28px;
+      line-height: 1.4;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: $moo-xoo-green;
+    }
+  }
+
+  .black-description {
+    width: 451px;
+    height: 135.5px;
+
+    p {
+      font-family: $primary-font;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.47;
+      text-align: left;
+      color: $hunter-green;
+    }
+  }
+}
+
+.third-container {
+  .card-icon {
+    width: 270px;
+    height: 92px;
+    @include card-style;
+
+    h3 {
+      font-family: $bold-font;
+      color: $hunter-green;
+    }
+  }
+}
+
+.fourth-container {
+  .mooxoo-shapes {
+    padding-top: 30vh;
+  }
+
+  .chart-container {
+    height: 25vw;
+    margin-right: -100px;
+    position: relative;
+    background-image: url(/assets/images/island-2.svg);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: center right;
+
+    img {
+      width: 20%;
+      margin-left: 50%;
+      margin-top: 30%;
+      margin-bottom: 10%;
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      width: 60%;
+      font-family: $primary-font;
+      font-size: 30px;
+      line-height: 1.17;
+      color: $hunter-green;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: 18px;
+      line-height: 1.76;
+      color: $moo-xoo-green;
+    }
+  }
+
+  .sub-text {
+    margin-top: 10vh;
+    background-image: url(/assets/images/island-services-svg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35vw;
+    height: 100vh;
+
+    h1 {
+      @include main-title;
+    }
+
+    h2 {
+      font-family: $primary-font;
+      font-size: 24.8px;
+      font-weight: 300;
+      line-height: 1.41;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: $moo-xoo-green;
+    }
+
+    h3 {
+      padding-bottom: 5vh;
+      font-family: $primary-font;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.38;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: $hunter-green;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: 17.8px;
+    }
+  }
+}
+
+.fifth-container {
+  padding-top: 0px;
+
+  .sub-text {
+    margin: 0 auto;
+
+    h3 {
+      width: 369px;
+      padding-top: 20px;
+      @include text-blue;
+    }
+
+    h4 {
+      @include copyright;
+      font-family: $bold-font;
+      padding-top: 20px;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 1.47;
+      color: $moo-xoo-green;
+    }
+
+    p {
+      @include card-style
+    }
+  }
+}
+
+.sixth-container {
+  padding-bottom: 0px;
+
+  .island-3 {
+    width: 50vw;
+    position: relative;
+    background-image: url(/assets/images/island-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 95% auto;
+    right: 30%;
+    padding-bottom: 15vw;
+
+    .brain-icon {
+      width: 5vw;
+      margin: 4vw 20vw;
+    }
+
+    img {
+      margin-left: 5vw;
+    }
+
+    .text-area {
+      h2 {
+        @include medium-text;
+        text-align: center;
+      }
+
+      p {
+        @include medium-text;
+        text-align: center;
+        color: $moo-xoo-green;
+      }
+    }
+  }
+
+  h1 {
+    @include main-title;
+  }
+
+  h3 {
+    @include text-blue;
+    color: $moo-xoo-green;
+    font-size: 28px;
+    width: 55%;
+  }
+
+  .cross {
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+    transform: rotate(-45deg);
+    left: 40%;
+  }
+
+  .cross:before, .cross:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: $moo-xoo-green;
+  }
+
+  .cross:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+  }
+
+  .cross:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+  }
+}
+
+.seventh-container {
+  padding-top: 0px;
+  background: url(/assets/images/island-dpworx-svg.svg) top left no-repeat,  url(/assets/images/island-macbook-svg.svg) top right no-repeat, rgba(255, 255, 255, 0.7);
+  background-size: 50%, 50%, cover;
+
+  .text-container {
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: $primary-font;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 0.1px;
+    text-align: left;
+    margin-top: 30px;
+
+    h2 {
+      color: $moo-xoo-green;
+      font-style: $bold-font;
+    }
+
+    h3 {
+      font-size: 24.8px;
+      font-weight: 500;
+      line-height: 1.11;
+    }
+  }
+
+  h1 {
+    width: 25vw;
+    font-family: $primary-font;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.46;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+  }
+
+  .macbook-container {
+    p {
+      width: 18vw;
+      @include medium-text;
+
+      strong {
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    p:last-child {
+      color: $moo-xoo-green;
+    }
+  }
+}
+
+.eighth-container {
+  margin-top: 35vh;
+
+  h1 {
+    margin: 40px 40px 40px 0px;
+    @include text-blue;
+    font-family: $primary-font;
+    font-weight: normal;
+  }
+
+  h2 {
+    @include text-blue;
+    color: $moo-xoo-green;
+    font-size: 10.8px;
+  }
+
+  p {
+    width: 10vw;
+    font-family: $primary-font;
+    font-size: 18px;
+    line-height: 1.34;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+  }
+}
+
+.ninth-container {
+  padding: 0px 0px 50px 0px;
+
+  .slide-navigation {
+    padding-left: 12.5%;
+
+    li {
+      list-style-type: none;
+      float: left;
+      width: 15%;
+      position: relative;
+      text-align: center;
+      margin-bottom: 10vh;
+
+      a {
+        font-family: $primary-font;
+        color: $medium-grey;
+      }
+    }
+
+    li:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      border: 1px solid $light-grey;
+      display: block;
+      text-align: center;
+      margin-top: 0 auto 8px auto;
+      border-radius: 50%;
+      background-color: $light-grey;
+      margin-left: 50%;
+      z-index: 1;
+    }
+
+    li:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1%;
+      border: 0.5px solid $light-grey;
+      background-color: $light-grey;
+      top: 8px;
+      left: -50%;
+    }
+
+    li:first-child:after {
+      content: none;
+    }
+
+    li.active {
+      color: $apple-green;
+      z-index: 1;
+
+      a {
+        color: $apple-green;
+      }
+    }
+
+    li.active:before {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      border-color: $apple-green;
+      background-color: $apple-green;
+    }
+
+    li.active + li:after {
+      color: $apple-green;
+    }
+  }
+
+  .slide-wrap {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background-image: url(/assets/images/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .slide-bar {
+      padding: 0vw 10vw 2vw 10vw;
+      max-width:100%;
+
+      .icon {
+        height: 4vw;
+      }
+
+      h1 {
+        margin-bottom: 35px;
+        font-family: $light-font;
+        text-transform: uppercase;
+        font-size: 25.8px;
+        text-align: left;
+        color: $toxic-green;
+      }
+
+      .sub-description {
+        @include text-blue;
+        width: 397.5px;
+        font-weight: 200;
+        font-size: 18px;
+        color: $grey;
+        font-family: $primary-font;
+      }
+
+      .sub-title {
+        @include text-blue;
+        color: $moo-xoo-green;
+        text-transform: capitalize;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .slogan {
+        width: 397.5px;
+        @include text-blue;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .slide-module {
+        height: 30vh;
+      }
+
+      .modules-description {
+        margin-bottom: 10vh;
+      }
+
+      .slide-item {
+        width: 100%;
+        height: 75vh;
+        @include text-blue;
+        font-size: 18px;
+        font-family: $primary-font;
+        font-weight: 200;
+
+        ul {
+          list-style-type: inherit;
+          padding-left: 20px;
+        }
+      }
+
+      #main-slide {
+        .island {
+          width: 40vw;
+          height: 20vw;
+          background-image: url(/assets/images/bubble.svg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          margin-left: 15vw;
+
+          .island-container {
+            padding-top: 5vh;
+
+            p {
+              font-size: 20px;
+              font-weight: 100;
+              width: 20vw;
+              margin-left: 10vw;
+              margin-bottom: 3vh;
+            }
+          }
+        }
+      }
+
+      #modules {
+      }
+
+      #management {
+        .island {
+          background-image: url(/assets/images/bubble-m.svg);
+          background-position: -20px -30px;
+          background-size: 50vh;
+          background-repeat: no-repeat;
+        }
+      }
+
+      #analysing {
+        .island {
+          background-image: url(/assets/images/bubble-m.svg);
+          background-position: -20px -30px;
+          background-size: 50vh;
+          background-repeat: no-repeat;
+        }
+      }
+
+      #communication {
+        .island {
+          background-image: url(/assets/images/bubble-m.svg);
+          background-position: -20px -30px;
+          background-size: 50vh;
+          background-repeat: no-repeat;
+        }
+      }
+
+      #material {
+        .island {
+          background-image: url(/assets/images/bubble-m.svg);
+          background-position: -20px -30px;
+          background-size: 50vh;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.tenth-container {
+  h1 {
+    font-family: $primary-font;
+    font-size: 25.3px;
+    font-weight: 300;
+    line-height: 0.92;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: $gun-metal;
+  }
+
+  .card-icon {
+    width: 15vw;
+
+    h3 {
+      font-family: $primary-font;
+      font-size: 1.3vw;
+      font-weight: bold;
+      line-height: 0.62;
+      color: $dark-grey-blue;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: 1.1vw;
+      line-height: 1.47;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: $moo-xoo-green;
+      padding-bottom: 20px;
+    }
+  }
+
+  h3 {
+    font-size: 19.8px;
+    font-weight: bold;
+    line-height: 0.62;
+    color: $dark-grey-blue;
+    margin-bottom: 1vw;
+  }
+
+  img {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+
+  .island {
+    margin-top: 10vh;
+    width: 60vw;
+    height: 25vw;
+    background-image: url(/assets/images/island-macbook.svg);
+    background-size: 60% 90%;
+    background-repeat: no-repeat;
+
+    h3 {
+      width: 35vw;
+      padding-top: 10vh;
+      font-family: $primary-font;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 1.41;
+      text-align: center;
+      color: $hunter-green;
+    }
+  }
+}
+
+.eleventh-container {
+  h1 {
+    width: 25vw;
+    font-family: $bold-font;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $pinkish-grey;
+    margin-bottom: 2vh;
+  }
+
+  h2 {
+    width: 396px;
+    height: 67px;
+    font-family: $bold-font;
+    font-size: 18.5px;
+    line-height: 1.34;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+    margin-bottom: 5vh;
+  }
+
+  h3 {
+    width: 434.5px;
+    font-family: $primary-font;
+    font-size: 21.3px;
+    font-weight: 300;
+    line-height: 1.35;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $tree-green;
+    margin-bottom: 3vh;
+  }
+
+  p {
+    width: 357px;
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $dark-grey-blue;
+    margin-bottom: 6vh;
+  }
+
+  a {
+    z-index: 10;
+  }
+
+  .semi-circle {
+    width: 70vw;
+    height: 35vw;
+    border-top-left-radius: 35vw;
+    border-top-right-radius: 35vw;
+    border: 13vw solid $moo-xoo-green;
+    border-bottom: 0;
+    transform: rotate(-150deg);
+    background-color: transparent;
+    margin-top: -9vw;
+    margin-bottom: -25vw;
+    margin-left: -9vw;
+  }
+}
+
+.twelveth-container {
+  padding: 0px 0px 0px 0px;
+
+  .text-rectangle {
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    background-color: $moo-xoo-green;
+
+    h1 {
+      font-family: $bold-font;
+      font-size: 2vw;
+      font-weight: bold;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $off-white;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: $primary-font;
+      font-size: 0.75vw;
+      line-height: 1.28;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $tree-green;
+    }
+
+    .input {
+      opacity: 0.3;
+      border-radius: 2.1px;
+      background-color: #edf5f9;
+      border: solid 0.7px $cool-grey;
+      color: $dark-grey-blue;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      opacity: 0.3;
+      border-radius: 2.1px;
+      background-color: #edf5f9;
+      border: solid 0.7px $cool-grey;
+      color: $dark-grey-blue;
+      margin-bottom: 10px;
+    }
+
+    .contact-container {
+      width: 50vw;
+      background-color: $white;
+      padding: 7.5vw 7.5vw 7.5vw 7.5vw;
+      box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
+      margin-top: 15vh;
+
+      h3 {
+        font-family: $bold-font;
+        font-size: 22px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        color: $dark-grey-blue;
+        margin-bottom: 3vh;
+      }
+
+      .contact-content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .subscription-container {
+    margin-top: 30vh;
+
+    p {
+      font-family: $light-font;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $steel;
+      padding-bottom: 34px;
+    }
+
+    .control {
+      text-align: center;
+
+      .input {
+        margin-left: 5vw;
+        width: 20vw;
+        opacity: 0.3;
+        border-radius: 2.1px;
+        background-color: #edf5f9;
+        border: solid 0.7px $cool-grey;
+        color: $dark-grey-blue;
+        margin-left: 37.5vw;
+      }
+
+      .btn {
+        color: $white;
+        width: 10vw;
+        background-color: $moo-xoo-green;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: transparent !important;
+
+  #contact-us {
+    float: right;
+  }
+
+  #links {
+    display: flex;
+    align-content: center;
+    padding-left: 3vw;
+  }
+
+  img {
+    width: 5vw;
+  }
+
+  p {
+    width: 10vw;
+    font-family: $primary-font;
+    font-size: 13px;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: $steel;
+  }
+
+  .copyright {
+    padding-top: 2vh;
+    width: 10vw;
+    font-family: $primary-font;
+    font-size: 9.5px;
+    text-align: left;
+    color: $moo-xoo-green;
+  }
+
+  h3 {
+    font-family: $primary-font;
+    font-size: 12.3px;
+    line-height: 1.22;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: $moo-xoo-green;
+  }
+}

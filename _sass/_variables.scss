@@ -1,8 +1,110 @@
-//
-// Color system
-//
+//colors
 
-$white-fff:    #ffffff !default;
+$white: #ffffff;
+$off-white: #f8fff7;
 $white-main:   #fcfcfc !default;
-$green-mooxoo: #44d62c !default;
+
 $green-deep:   #007400 !default;
+$white-main:   #fcfcfc !default;
+
+$moo-xoo-green: #35d32f;
+$toxic-green: #3ad52e;
+$apple-green: #83cd32;
+$tree-green: #25821e;
+$hunter-green: #0d2f0b;
+$very-light-green: rgba(217, 255, 222, 0.5);
+
+$pale-grey: #fcfcfd;
+$light-grey: #f0f0f0;
+$grey: #999999;
+$cool-grey: #a3adb5;
+$medium-grey: #a2abb2;
+$gun-metal: #555658;
+$steel: #808b96;
+$dark-grey-blue: #2c3e50;
+$pinkish-grey: #cccccc;
+
+$dull-yellow: #feffb9;
+$light-blue: #cbfbf6;
+$light-purple: #f4f6ff;
+
+
+//Bulma overrride
+$navbar-item-color: $hunter-green !default;
+$navbar-item-active-color: $moo-xoo-green !default;
+$navbar-item-hover-color: $moo-xoo-green !default;
+$button-text-color: $white !default;
+
+$steps-maker-default-color: $pale-grey !default;
+$steps-marker-default-border: .2em solid $white !default;
+$steps-default-color: $pale-grey !default;
+$steps-completed-color: $apple-green !default;
+$steps-active-color: $apple-green !default;
+$steps-divider-height: .1em !default;
+
+$primary-font: 'Work Sans', sans-serif;
+$bold-font: 'NexaBold', sans-serif;
+$light-font: 'NexaLight', sans-serif;
+
+
+/* Text styles */
+
+@mixin sub-headline {
+  font-family: $primary-font;
+  font-size: 30.7px;
+  font-weight: 300;
+  line-height: 1.24;
+  text-align: center;
+  color: $green-dark;
+}
+
+@mixin copyright {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: left;
+  color: $moo-xoo-green;
+}
+
+@mixin card-style {
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 1.47;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: $grey;
+}
+
+@mixin text-blue {
+  font-family: $bold-font;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.42;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: $dark-grey-blue;
+}
+
+@mixin medium-text {
+  font-family: $primary-font;
+  font-size: 22.8px;
+  line-height: 1.23;
+  color: $hunter-green;
+}
+
+@mixin main-title {
+  font-family: $bold-font;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: $hunter-green;
+  font-size: 40px;
+}
+
+@mixin button-style {
+  font-family: $primary-font;
+  font-size: 16.3px;
+  font-weight: 300;
+  text-align: left;
+  color: $white;
+}

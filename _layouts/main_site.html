@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    {% include scripts.html %}
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
+
+<script>
+  var button = document.getElementsByClassName("collapsible")[0];
+
+    button.addEventListener("click", function() {
+      this.classList.toggle("contact-content");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+</script>

@@ -2,9 +2,18 @@
 // Text Styles
 //
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 @font-face {
-  font-family: Nexa;
+  font-family: NexaLight;
   font-weight: normal;
   font-style:  normal;
   src: url("/assets/fonts/Nexa Light.otf") format('truetype');
+}
+
+@font-face {
+  font-family: NexaBold;
+  font-weight: normal;
+  font-style:  normal;
+  src: url("/assets/fonts/Nexa Bold.otf") format('truetype');
 }

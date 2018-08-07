@@ -1,1 +1,5 @@
-<script src="https://use.fontawesome.com/6dd49f6d87.js"></script>
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
