@@ -1,0 +1,93 @@
+<svg id="_-eg-charts.svg" data-name="-eg-charts.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="481" height="266.81" viewBox="0 0 481 266.81">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #e8e8ec;
+      }
+
+      .cls-10, .cls-3 {
+        fill: #46d68c;
+      }
+
+      .cls-3 {
+        opacity: 0.5;
+      }
+
+      .cls-4 {
+        filter: url(#filter-2);
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: none;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        stroke: #46d68c;
+      }
+
+      .cls-6 {
+        stroke: #1cabf2;
+      }
+
+      .cls-7 {
+        stroke: #2e5d8c;
+      }
+
+      .cls-8 {
+        fill: #2e5d8c;
+      }
+
+      .cls-9 {
+        fill: #1cabf2;
+      }
+    </style>
+    <filter id="filter" x="99" y="64.81" width="382" height="202" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="5" dy="8.66" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="5.477"/>
+      <feFlood result="flood" flood-color="#3275d0" flood-opacity="0.07"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="0" y="0" width="362" height="199.81" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="25" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="4.472"/>
+      <feFlood result="flood" flood-color="#3275d0" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="o1">
+    <rect id="Rounded_Rectangle_744_copy_5" data-name="Rounded Rectangle 744 copy 5" class="cls-1" x="123.84" y="85.59" width="322.16" height="141.25" rx="3" ry="3"/>
+    <g>
+      <rect id="Rectangle_1474_copy_7" data-name="Rectangle 1474 copy 7" class="cls-2" x="277.16" y="149.28" width="14.28" height="53.15"/>
+      <rect id="Rectangle_1474_copy_11" data-name="Rectangle 1474 copy 11" class="cls-2" x="234.22" y="146.22" width="14.28" height="56.21"/>
+      <rect id="Rectangle_1474_copy_12" data-name="Rectangle 1474 copy 12" class="cls-2" x="191.28" y="157.62" width="14.31" height="44.81"/>
+      <rect id="Rectangle_1474_copy_13" data-name="Rectangle 1474 copy 13" class="cls-2" x="148.34" y="173.62" width="14.28" height="28.81"/>
+      <rect id="Rectangle_1474_copy_8" data-name="Rectangle 1474 copy 8" class="cls-3" x="320.03" y="111.28" width="14.31" height="91.15"/>
+      <rect id="Rectangle_1474_copy_9" data-name="Rectangle 1474 copy 9" class="cls-2" x="362.97" y="111.28" width="14.37" height="91.15"/>
+      <rect id="Rectangle_1474_copy_10" data-name="Rectangle 1474 copy 10" class="cls-2" x="405.94" y="126.5" width="14.31" height="75.93"/>
+    </g>
+  </g>
+  <g id="o2">
+    <rect id="Rounded_Rectangle_744_copy_5-2" data-name="Rounded Rectangle 744 copy 5" class="cls-4" x="19.41" width="322.18" height="154.12" rx="3" ry="3"/>
+    <g>
+      <path id="Ellipse_1499_copy_2" data-name="Ellipse 1499 copy 2" class="cls-5" d="M1663.18,3804.89a52.108,52.108,0,0,1,52.2-52.01" transform="translate(-1618 -3727.19)"/>
+      <path id="Ellipse_1499_copy_3" data-name="Ellipse 1499 copy 3" class="cls-6" d="M1740.93,3850.25a52.243,52.243,0,0,1-77.75-45.36" transform="translate(-1618 -3727.19)"/>
+      <path class="cls-7" d="M1715.38,3752.88a51.988,51.988,0,0,1,25.22,97.56" transform="translate(-1618 -3727.19)"/>
+    </g>
+    <circle class="cls-8" cx="178.56" cy="48.15" r="3.22"/>
+    <circle class="cls-9" cx="178.56" cy="80.295" r="3.22"/>
+    <image id="_7-17_years_old" data-name="7-17 years old" x="194" y="39.81" width="120" height="79" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABPCAMAAAAXxfH1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEX///8AAACMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqCMlqAAAAAe4EWVAAAAEHRSTlMAACKZ3apEu4h3M+7MEWZVmLioCwAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxIXIQqqSxolAAAEV0lEQVRo3u2a65qjIAyGBQMoB839X+3mAJ5aO53a3f1jnpkWEX0hCTx8zHTdwcy5WWuu2wZlewBwvpWC37ccqI6/R0CE8QrT8osEGSB2XUz0QkQcO9tK29aeKhjsUMxdAWMDZyRwwGC7MmAqa2ltXAAdt58Qp1L482vgebRcTkhDp0tTxnEDps5Ebh/UDyMG/gKYuU8QzRSyk9jYPgcPYEsOI8BgSg/JaVJwBLkoYB8STAKWMNsRkQY3Ua3bxnjEZAUMGPlayhR35k/0ESQ45AXqdaALtLZGJPP1rKFFTJiigD2XyRhMfZC2HcdXY8wJBeCJg948AdPbC716njBbYia+mLibAh5KpK9EraXzPbpSuKsMznS39AKeGJfC2BHYla7QIEsFkw9CjDP3dg+mkU6eigGzcw7QF0mMImBNkYAQNGaAVm4VAnO7risCBuyLOhwkxiYpw0jrajFrVtEQ5c6MwZFnAqbaxQ1Yu0adx5oQAk4VjBvwbMU4v8lHm6wu8lqeZHGkXxowtLkGyA4eyEemcFJsXK3gKUo/ZCL2O1fzxFFwG5WtxXk/C9S9GTHzb62kZ3uZbJwVo0z3llwtCwB0xLw80M9DckGzSF3JAH00B7CsXJwRBGvOsCgB4SeyhJJSNPsM1uo6Z2JIqba2LiUX68pF9TA6iN37a3Xxfp3gdUL/3roze/N5yuT/AvaQ32v4Pvi222677bbbbrvtHxhvMOkrijaeN1sfUcu9ZYkGVdJ8bKTm6ksFpmDaAZOAEiEjm+VqVTcnb9rOe/6QaqqaEDAuYOu5nEXIeFzkCwtUa4qjbSztKEVqfM59Cu4il0mbcCdw3bWSbjYqIwRcms+aMj6XxiIL2l6+RovAVE7BH8Ez+dWRBhl2HbXWkWgRV5NO4JpFGZ9LY0dvyjoAusUBswxuBx0HcISjNjaz6uZJkwv1FKIpY3MujcWtsYaL1DCJNgY7Dh2pzgNYzz/48QYW3byeAZF2An2XKOMX0rgn7zgRtSxK9QSCwEnC7B9jPHM5rakLi0IbBo12ktCrMn4ljccMOj301mvwOuIVXHUz+dJFG0OVaaqMX0jj2S8nB0EPHtziartxNUcSJl/PP9Z53GavaFpJL+3TUEdzJo1J+0NO+qIoajg9T67ADpu6GKg2j+vKtehmet7VNUxnos71U2ksK16dHZGlsdWVi+t52j0unpbPQn5cCz5WxmqnS/cbi9CFNfsC+HNl/AP4tttuu+2222677e9bqHvJdSPPG8uH2t9blcS0h3y2sWR9qrbs4Hi/bB5qPwBjA+NTsI1kebNlZb1sHmq/D+abcTe09ofLVvtNSXwAu93QGrjVflMS78E6tEUXV/DihmuSuNtJ4j1Yh3YEr264JIn5YOUEHA/Jq+BN7SVJ/ALsDskb679frLVXJHFnz1x9HLDq5V3t1yTxDuxgP2DVy7vavyCJ3/vr6RVJfLpWv/PwFUl8BXxJEp9x/wDw9VgzDYvpqwAAAABJRU5ErkJggg=="/>
+    <circle class="cls-10" cx="178.56" cy="112.39" r="3.22"/>
+  </g>
+</svg>
