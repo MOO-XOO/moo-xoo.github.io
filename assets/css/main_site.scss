@@ -1,11 +1,11 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
 @import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
 @import '/node_modules/bulma/css/bulma.css';
 @import "variables";
 @import "fonts";
-@import "error_pages";
 
 body {
   background-image: linear-gradient(to right, $pale-grey, $white);
@@ -115,6 +115,7 @@ a:hover {
 .bullets {
   position: relative;
   border-left: 1px solid black;
+  display: inline;
 
   li {
     position: relative;
@@ -125,31 +126,39 @@ a:hover {
   li:first-child:after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: -12px;
-    width: 5px;
-    height: 8px;
+    // top: 0px;
+    // width: 5px;
+    // height: 8px;
     background: $light-grey;
   }
 
   li:last-child:after {
     content: "";
     position: absolute;
-    top: 9px;
-    bottom: 0;
-    width: 1px;
+    // top: 0px;
+    // bottom: 0;
+    // width: 1px;
     background: $light-grey;
   }
 
-  li:before {
-    content: '';
+  li:after {
+    /* bullets */
+    content: "\2022";
+    font-size: 60px;
     position: absolute;
-    top: 2px;
-    left: -2.5vw;
-    width: 13.5px;
-    height: 13.5px;
-    border-radius: 100%;
-    background: $light-grey;
+    left: -60px; /*adjust manually*/
+    top: -26px;
+    color: $light-grey;
+  }
+
+  li:before {
+    top: 15px;
+    content:"";
+    position: absolute;
+    left: -50px; /* adjust manually */
+    border-left: 1px solid $light-grey;
+    height: 100%;
+    width: 1px;
   }
 }
 
@@ -905,7 +914,7 @@ a:hover {
 }
 
 .twelveth-container {
-  padding: 0px 0px 200px 0px;
+  padding: 0px 0px 0px 0px;
 
   .text-rectangle {
     height: 50vh;
@@ -932,7 +941,25 @@ a:hover {
       color: $tree-green;
     }
 
-    .subscrition-container {
+    .input {
+      opacity: 0.3;
+      border-radius: 2.1px;
+      background-color: #edf5f9;
+      border: solid 0.7px $cool-grey;
+      color: $dark-grey-blue;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      opacity: 0.3;
+      border-radius: 2.1px;
+      background-color: #edf5f9;
+      border: solid 0.7px $cool-grey;
+      color: $dark-grey-blue;
+      margin-bottom: 10px;
+    }
+
+    .contact-container {
       width: 50vw;
       background-color: $white;
       padding: 7.5vw 7.5vw 7.5vw 7.5vw;
@@ -945,39 +972,47 @@ a:hover {
         letter-spacing: 0.1px;
         text-align: center;
         color: $dark-grey-blue;
+        margin-bottom: 3vh;
       }
 
-      p {
-        font-family: $primary-font;
-        font-size: 12.3px;
-        letter-spacing: 0.1px;
-        text-align: center;
-        color: $steel;
-        padding-bottom: 34px;
+      .contact-content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .subscription-container {
+    margin-top: 30vh;
+
+    p {
+      font-family: $light-font;
+      font-size: 16px;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $steel;
+      padding-bottom: 34px;
+    }
+
+    .control {
+      text-align: center;
+
+      .input {
+        margin-left: 5vw;
+        width: 20vw;
+        opacity: 0.3;
+        border-radius: 2.1px;
+        background-color: #edf5f9;
+        border: solid 0.7px $cool-grey;
+        color: $dark-grey-blue;
+        margin-left: 37.5vw;
       }
 
-      .control {
-        text-align: center;
-
-        .input {
-          margin-left: 5vw;
-          width: 20vw;
-          opacity: 0.3;
-          border-radius: 2.1px;
-          background-color: rgba(44, 62, 80, 0.5);
-          border: solid 0.7px $cool-grey;
-          color: rgba(44, 62, 80, 0.5);
-
-        }
-
-        .button {
-          color: $white;
-        }
-
-        .btn {
-          width: 5vw;
-          background-color: $moo-xoo-green;
-        }
+      .btn {
+        color: $white;
+        width: 10vw;
+        background-color: $moo-xoo-green;
       }
     }
   }
@@ -993,6 +1028,7 @@ a:hover {
   #links {
     display: flex;
     align-content: center;
+    padding-left: 3vw;
   }
 
   img {
