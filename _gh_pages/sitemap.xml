@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://moo-xoo.github.io/impressum/</loc>
+<loc>http://localhost:4000/impressum/</loc>
 </url>
 <url>
-<loc>https://moo-xoo.github.io/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>https://moo-xoo.github.io/new_website/</loc>
+<loc>http://localhost:4000/new_website/</loc>
 </url>
 <url>
-<loc>https://moo-xoo.github.io/privacy_policy/</loc>
+<loc>http://localhost:4000/privacy_policy/</loc>
 </url>
 </urlset>

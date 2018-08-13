@@ -82,34 +82,83 @@ a:hover {
     border-radius: 50%;
     height: 800px;
     width: 800px;
-    margin-left: 40%;
+    margin-left: 20%;
 
-    img {
+    .image {
+      background-image: url(/assets/images/circle-image.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
       width: 500px;
       height: 500px;
-      transform: rotate(-30deg);
+      transform: rotate(-20deg);
       transform-origin: 40% 10%;
+      object-fit: cover;
     }
   }
 
   .triangle {
     background-image: url(/assets/images/-e-BIG-triangle.svg);
+    background-repeat: no-repeat;
     height: 75vw;
-    height: 60vw;
     object-fit: contain;
     background-repeat: no-repeat;
     -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-    margin-left: -24vw;
+    margin-left: -40vw;
 
     img {
+      height: 50%;
+      width: auto;
+      -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0);
+      clip-path: polygon(0% 50%, 100% 100%, 100% 0);
       transform: rotate(10deg);
       margin-top: 15vw;
-      margin-left: 20vw;
-      width: 25vw;
+      margin-left: -4vw;
+      z-index: 100;
+      object-fit: contain;
+
     }
   }
 
+  .cross {
+    width: 50vw;
+    height: auto;
+    position: relative;
+    background-image: url(/assets/images/-e-BigX.svg);
+    background-repeat: no-repeat;
+
+    img {
+      height: 40vw;
+      width: 40vw;
+      -webkit-clip-path: polygon(25% 0, 0 25%, 25% 50%, 0 75%, 25% 100%, 50% 76%, 75% 100%, 100% 75%, 75% 49%, 100% 25%, 75% 0, 50% 24%);
+      clip-path: polygon(25% 0, 0 25%, 25% 50%, 0 75%, 25% 100%, 50% 76%, 75% 100%, 100% 75%, 75% 49%, 100% 25%, 75% 0, 50% 24%);
+      margin-left: 20%;
+      margin-top: 20vh;
+      object-fit: cover;
+      object-position: 80% 20%;
+    }
+  }
+
+  .semi-circle {
+    width: 70vw;
+    height: 35vw;
+    border-top-left-radius: 35vw;
+    border-top-right-radius: 35vw;
+    border: 13vw solid $moo-xoo-green;
+    border-bottom: 0;
+    transform: rotate(-160deg);
+    margin-top: -9vw;
+    margin-bottom: -30vw;
+
+    img {
+      width: 100%;
+      -webkit-clip-path: circle(50% at 50% 10%);
+      clip-path: circle(50% at 70% 10%);
+      transform: rotate(-180deg);
+      margin-top: -10vw;
+      margin-left: 15vw;
+    }
+  }
 }
 
 .bullets {
@@ -452,35 +501,6 @@ a:hover {
     font-size: 28px;
     width: 55%;
   }
-
-  .cross {
-    width: 40vw;
-    height: 40vw;
-    position: relative;
-    transform: rotate(-45deg);
-    left: 40%;
-  }
-
-  .cross:before, .cross:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: $moo-xoo-green;
-  }
-
-  .cross:before {
-    left: 50%;
-    width: 30%;
-    margin-left: -15%;
-    height: 100%;
-  }
-
-  .cross:after {
-    top: 50%;
-    height: 30%;
-    margin-top: -15%;
-    width: 100%;
-  }
 }
 
 .seventh-container {
@@ -654,7 +674,7 @@ a:hover {
     background-repeat: no-repeat;
 
     .slide-bar {
-      padding: 0vw 10vw 2vw 10vw;
+      padding: 5vw 10vw 2vw 10vw;
       max-width:100%;
 
       .icon {
@@ -831,7 +851,7 @@ a:hover {
     margin-top: 10vh;
     width: 60vw;
     height: 25vw;
-    background-image: url(/assets/images/island-macbook.svg);
+    background-image: url(/assets/images/island-macbook-svg.svg);
     background-size: 60% 90%;
     background-repeat: no-repeat;
 
@@ -849,6 +869,8 @@ a:hover {
 }
 
 .eleventh-container {
+  z-index: 10;
+
   h1 {
     width: 25vw;
     font-family: $bold-font;
@@ -894,27 +916,19 @@ a:hover {
     margin-bottom: 6vh;
   }
 
-  a {
-    z-index: 10;
+  .hiring {
+    position: relative;
   }
 
-  .semi-circle {
-    width: 70vw;
-    height: 35vw;
-    border-top-left-radius: 35vw;
-    border-top-right-radius: 35vw;
-    border: 13vw solid $moo-xoo-green;
-    border-bottom: 0;
-    transform: rotate(-150deg);
-    background-color: transparent;
-    margin-top: -9vw;
-    margin-bottom: -25vw;
-    margin-left: -9vw;
+  .mooxoo-shapes {
+    position: relative;
+    z-index: -1;
   }
 }
 
 .twelveth-container {
   padding: 0px 0px 0px 0px;
+  z-index: 10;
 
   .text-rectangle {
     height: 50vh;
@@ -960,11 +974,11 @@ a:hover {
     }
 
     .contact-container {
-      width: 50vw;
+      width: 30vw;
       background-color: $white;
-      padding: 7.5vw 7.5vw 7.5vw 7.5vw;
+      padding: 2.5vw 2.5vw 2.5vw 2.5vw;
       box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
-      margin-top: 15vh;
+      margin-top: 25vh;
 
       h3 {
         font-family: $bold-font;
