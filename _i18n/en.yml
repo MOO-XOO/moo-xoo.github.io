@@ -75,8 +75,8 @@ seventh-container:
   miss-deadline: Never miss a material, task, order or deadline.
   anymore: Anymore!
   dpworx-description: with DP WORX you <strong> can map and manage the entire process </strong>
-                      from the <strong> first request </strong> to the <strong> planning </strong> phase,
-                      <strong> execution </strong> phase to the <strong> evaluation </strong> phase in just one click.
+                      from the <a href="#first-request"> first request </a> to the <a href="#planning"> planning </a> phase,
+                      <a href="#execution"> execution </a> phase to the <a href="#evaluation"> evaluation </a> phase in just one click.
 
 eighth-container:
   request:
