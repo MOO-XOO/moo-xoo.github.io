@@ -14,8 +14,11 @@ body {
 }
 
 section {
-  padding: 0px 60px 200px 190px;
   position: relative;
+}
+
+a:hover {
+  color: $moo-xoo-green;
 }
 
 .main-title {
@@ -100,20 +103,20 @@ a:hover {
   .triangle {
     background-image: url(/assets/images/-e-BIG-triangle.svg);
     background-repeat: no-repeat;
-    height: 75vw;
+    height: 60vw;
     object-fit: contain;
     background-repeat: no-repeat;
     -webkit-transform: rotate(-15deg);
-    margin-left: -40vw;
+    margin-left: -30vw;
 
     img {
       height: 50%;
       width: auto;
       -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0);
-      clip-path: polygon(0% 50%, 100% 100%, 100% 0);
+      clip-path: polygon(0% 50%, 75% 100%, 75% 0);
       transform: rotate(10deg);
       margin-top: 15vw;
-      margin-left: -4vw;
+      margin-left: 7.5vw;
       z-index: 100;
       object-fit: contain;
 
@@ -126,6 +129,8 @@ a:hover {
     position: relative;
     background-image: url(/assets/images/-e-BigX.svg);
     background-repeat: no-repeat;
+    margin-top: -950px;
+    margin-left: 20vw;
 
     img {
       height: 40vw;
@@ -148,7 +153,8 @@ a:hover {
     border-bottom: 0;
     transform: rotate(-160deg);
     margin-top: -9vw;
-    margin-bottom: -30vw;
+    margin-bottom: -40vw;
+    margin-left: 10vw;
 
     img {
       width: 100%;
@@ -175,18 +181,12 @@ a:hover {
   li:first-child:after {
     content: "";
     position: absolute;
-    // top: 0px;
-    // width: 5px;
-    // height: 8px;
     background: $light-grey;
   }
 
   li:last-child:after {
     content: "";
     position: absolute;
-    // top: 0px;
-    // bottom: 0;
-    // width: 1px;
     background: $light-grey;
   }
 
@@ -213,19 +213,18 @@ a:hover {
 
 .navbar {
   height: 60px;
-  padding: 0px 0px 20px 0px;
-
-  .image {
-    display: flex;
-    align-items: center;
-  }
 
   .navbar-item {
     font-family: $bold-font;
     font-size: 16px;
     text-align: left;
     color: $hunter-green;
-    padding-left: 3vw;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    margin-left: -45px;
   }
 
   a:hover {
@@ -233,7 +232,6 @@ a:hover {
   }
 
   .navbar-menu {
-    margin-left: 7vw;
 
     .pale {
       color: $pinkish-grey;
@@ -286,9 +284,6 @@ a:hover {
 }
 
 .second-container {
-  margin-top: -10vh;
-  position: relative;
-
   .island {
     position: absolute;
     margin-top: -60vh;
@@ -335,6 +330,9 @@ a:hover {
 }
 
 .third-container {
+  padding-top: 100px;
+  min-height: 50vh;
+
   .card-icon {
     width: 270px;
     height: 92px;
@@ -387,12 +385,11 @@ a:hover {
   }
 
   .sub-text {
-    margin-top: 10vh;
     background-image: url(/assets/images/island-services-svg.svg);
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 35vw;
+    background-position: 50% 30%;
+    width: 25vw;
     height: 100vh;
 
     h1 {
@@ -407,6 +404,7 @@ a:hover {
       letter-spacing: 0.1px;
       text-align: left;
       color: $moo-xoo-green;
+      margin-bottom: 40px;
     }
 
     h3 {
@@ -428,7 +426,10 @@ a:hover {
 }
 
 .fifth-container {
+  display: flex;
+  justify-content: center;
   padding-top: 0px;
+  margin-bottom: 150px;
 
   .sub-text {
     margin: 0 auto;
@@ -463,14 +464,16 @@ a:hover {
     position: relative;
     background-image: url(/assets/images/island-3.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 95% auto;
+    background-size: 60% auto;
+    background-position: top center;
     right: 30%;
     padding-bottom: 15vw;
 
     .brain-icon {
       width: 5vw;
-      margin: 4vw 20vw;
+      margin-top: 10vw;
+      margin-left: 20vw;
+      margin-bottom: 2.5vw;
     }
 
     img {
@@ -504,9 +507,17 @@ a:hover {
 }
 
 .seventh-container {
-  padding-top: 0px;
-  background: url(/assets/images/island-dpworx-svg.svg) top left no-repeat,  url(/assets/images/island-macbook-svg.svg) top right no-repeat, rgba(255, 255, 255, 0.7);
-  background-size: 50%, 50%, cover;
+  background: url(/assets/images/island-dpworx-svg.svg) 20% 0% no-repeat, rgba(255, 255, 255, 0.7);
+  background-size: 40%, cover;
+
+  strong, a {
+    font-weight: bold;
+    color: $dark-grey-blue;
+  }
+
+  .icon-box {
+    margin-top: 50px;
+  }
 
   .text-container {
     font-family: $primary-font;
@@ -545,31 +556,42 @@ a:hover {
   }
 
   .macbook-container {
-    p {
-      width: 18vw;
-      @include medium-text;
+    height: 700px;
+    margin-top: 30vh;
+    background: url(/assets/images/island-macbook-svg.svg) 0% 0% no-repeat;
+    background-size: 700px 600px;
+    margin-left: 5vw;
 
-      strong {
-        font-style: normal;
-        font-weight: 500;
-      }
+    img {
+      margin-top: -200px;
+      width: 790px;
+      height: auto;
     }
 
-    p:last-child {
-      color: $moo-xoo-green;
+    .macbook-text {
+      margin-top: -10vh;
+      width: 25vw;
+      margin-left: 7.5vw;
+
+      p {
+        @include medium-text;
+        font-size: 30px;
+
+        strong {
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+
+      p:last-child {
+        color: $moo-xoo-green;
+      }
     }
   }
 }
 
 .eighth-container {
-  margin-top: 35vh;
-
-  h1 {
-    margin: 40px 40px 40px 0px;
-    @include text-blue;
-    font-family: $primary-font;
-    font-weight: normal;
-  }
+  margin-top: 150px;
 
   h2 {
     @include text-blue;
@@ -589,7 +611,19 @@ a:hover {
 }
 
 .ninth-container {
-  padding: 0px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
+
+  .container {
+    margin-bottom: 100px;
+
+    h1 {
+      @include text-blue;
+      font-family: $primary-font;
+      font-weight: normal;
+      margin-bottom: 40px;
+      width: 559px;
+    }
+  }
 
   .slide-navigation {
     padding-left: 12.5%;
@@ -715,7 +749,7 @@ a:hover {
       }
 
       .slide-module {
-        height: 30vh;
+        height: 40vh;
       }
 
       .modules-description {
@@ -808,8 +842,12 @@ a:hover {
     font-weight: 300;
     line-height: 0.92;
     letter-spacing: 0.1px;
-    text-align: center;
     color: $gun-metal;
+  }
+
+  .column {
+    display: flex;
+    justify-content: center;
   }
 
   .card-icon {
@@ -927,7 +965,7 @@ a:hover {
 }
 
 .twelveth-container {
-  padding: 0px 0px 0px 0px;
+  padding: 40vh 0px 0px 0px;
   z-index: 10;
 
   .text-rectangle {
