@@ -989,18 +989,21 @@ a:hover {
     background-color: $moo-xoo-green;
 
     h1 {
+      padding-top: 5%;
       font-family: $bold-font;
       font-size: 2vw;
       font-weight: bold;
       letter-spacing: 0.1px;
       text-align: center;
       color: $off-white;
-      margin-bottom: 10px;
+      margin-bottom: 1%;
     }
 
     p {
+      margin-left: 20%;
+      width: 60%;
       font-family: $primary-font;
-      font-size: 0.75vw;
+      font-size: 1vw;
       line-height: 1.28;
       letter-spacing: 0.1px;
       text-align: center;
@@ -1030,7 +1033,7 @@ a:hover {
       background-color: $white;
       padding: 2.5vw 2.5vw 2.5vw 2.5vw;
       box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
-      margin-top: 25%;
+      margin-top: 15%;
 
       h3 {
         font-family: $bold-font;
