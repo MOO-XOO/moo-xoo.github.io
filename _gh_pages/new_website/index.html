@@ -42,7 +42,7 @@
             Hiring
           </a>
 
-          <a class="navbar-item left" href="#contact-us">
+          <a class="navbar-item" href="#contact-us">
             Contact us
           </a>
         </div>
@@ -60,8 +60,10 @@
           <li><h2> DP WORX simplifies the way how brands work in marketing and sales activation today </h2></li>
           <li><p> Eliminate productivity killers and save time and money </p></li>
           <div class="ipad-island">
-            <img src="/assets/images/ipad.png" srcset="/assets/images/ipad@2x.png 2x, /assets/images/ipad@3x.png 3x" alt="MOO-XOO">
+            <img src="/assets/images/ipad@3x.png" alt="MOO-XOO" class="ipad">
+            <img src="/assets/images/island-1.svg" class="island">
           </div>
+          <div id="company"></div>
         </div>
         <div class="column">
           <div class="mooxoo-shapes">
@@ -76,20 +78,21 @@
 
   <section class="second-container">
     <div class="container">
-      <div class="island"></div>
-      <li><h1 class="main-title" id="company"> COMPANY </h1></li>
-      <div class="columns">
-        <div class="column">
-          <div class="green-description">
-            <h2>We are a result driven team specialized in the development of SaaS solutions for the process optimization and simplification of marketing and sales activation workflows.</h2>
+      <li>
+        <h1 class="main-title"> COMPANY </h1>
+        <div class="columns">
+          <div class="column">
+            <div class="green-description">
+              <h2>We are a result driven team specialized in the development of SaaS solutions for the process optimization and simplification of marketing and sales activation workflows.</h2>
+            </div>
+          </div>
+          <div class="column">
+            <div class="black-description">
+              <p>Our products are developed with the needs of marketing and sales organizations in mind, by marketing and sales people for marketing and sales people.</p>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="black-description">
-            <p>Our products are developed with the needs of marketing and sales organizations in mind, by marketing and sales people for marketing and sales people.</p>
-          </div>
-        </div>
-      </div>
+      </li>
     </div>
   </section>
 
@@ -130,27 +133,28 @@
   <section class="fourth-container">
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column is-one-third">
           <div class="mooxoo-shapes">
             <div class="triangle">
               <img src="/assets/images/triangle-image.png">
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="column is-two-thirds">
           <div class="columns">
-            <div class="column is-one-third"></div>
+            <div class="column"></div>
             <div class="column">
               <div class="island-2"></div>
-              <div class="chart-container">
+              <div class="eye-container">
                 <img src="/assets/images/-e-island-2-icon.svg" alt="MOO-XOO">
                 <h2>With DP WORX you can see the big picture.</h2>
                 <p>Take the actions that matter</p>
+                <div id="services"></div>
               </div>
             </div>
           </div>
           <div class="sub-text">
-            <h1 class="main-title" id="services">SERVICES</h1>
+            <li><h1 class="main-title">SERVICES</h1></li>
             <h2>Our knowledge is your power. We are not another consulting agency focusing on the perfect board presentation.</h2>
             <h3> We focus on what matters most. We want you to work smarter – more productive, more efficient, better trained and happier with less stress.</h3>
             <p>Discover how easy the management of marketing and sales activation operations can be with our services.</p>
@@ -164,8 +168,8 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <img src="/assets/images/-e-M_EC.svg" alt="MOO-XOO" class="icon-box">
           <div class="sub-text">
+            <img src="/assets/images/-e-M_EC.svg" alt="MOO-XOO" class="icon-box">
             <h3>Our consultants work with you from the first brief to the company-wide launch of DP WORX till the continuous improvement process of your business operations. Our consulting is based on three principles:</h3>
             <h4> We analyze and understand</h4>
             <h4> Only then we optimize</h4>
@@ -173,8 +177,8 @@
           </div>
         </div>
         <div class="column">
-          <img src="/assets/images/-e-M_pt.svg" alt="MOO-XOO" class="icon-box">
           <div class="sub-text">
+            <img src="/assets/images/-e-M_pt.svg" alt="MOO-XOO" class="icon-box">
             <h3>Learn how to get the most out of DP WORX through our onboarding process, team training sessions, online webinars and special trainings customized to your needs.</h3>
             <h4>Onboarding Training</h4>
             <p>Easy Adoption from day one</p>
@@ -201,7 +205,8 @@
               <p>Save time and money.</p>
             </div>
           </div>
-          <li><h1 class="main-title" id="dpworx">DP WORX</h1></li>
+          <div id="dpworx"></div>
+          <li><h1 class="main-title">DP WORX</h1></li>
           <h3>simplifies how brands work in marketing and sales activation today.</h3>
         </div>
       </div>
@@ -211,7 +216,7 @@
   <section class="seventh-container">
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column is-two-fifths">
           <div class="text-container">
             <h2>From:</h2>
             <h3>Brand activation projects</h3>
@@ -579,13 +584,13 @@
     </div>
   </section>
 
-  <section class="eleventh-container">
+  <section class="eleventh-container" id="hiring">
     <div class="columns">
       <div class="column is-one-third">
       </div>
       <div class="column is-one-third">
         <div class="hiring">
-          <h1 class="main-title" id="hiring">HIRING</h1>
+          <h1 class="main-title">HIRING</h1>
           <h2>We are team of fun-loving, code enthusiasts who are keen to revolutionize how marketing and sales department work today.</h2>
           <h3>Our team is headquartered in Munich, Germany, with a branch in Lisbon, Portugal.</h3>
           <p>If you are someone who is up for a challenge and looking forward to working in a fast paced environment you are our team member.</p>
@@ -664,7 +669,6 @@
                 <h3>Learn More</h3>
                 <a href="#services"><p>Services</p></a>
                 <a href="#dpworx"><p>DPWorx</p></a>
-                <a href=""><p>Pricing</p></a>
                 <a href=""><p>Support</p></a>
               </div>
               <div class="column">

@@ -30,7 +30,7 @@ custom_css: main_site
             {% t navbar.hiring %}
           </a>
 
-          <a class="navbar-item left" href="#contact-us">
+          <a class="navbar-item" href="#contact-us">
             {% t navbar.contact %}
           </a>
         </div>
@@ -48,8 +48,10 @@ custom_css: main_site
           <li><h2> {% t main-container.sub-title %} </h2></li>
           <li><p> {% t main-container.sub-text %} </p></li>
           <div class="ipad-island">
-            <img src="/assets/images/ipad.png" srcset="/assets/images/ipad@2x.png 2x, /assets/images/ipad@3x.png 3x" alt="MOO-XOO">
+            <img src="/assets/images/ipad@3x.png" alt="MOO-XOO" class="ipad">
+            <img src="/assets/images/island-1.svg" class="island">
           </div>
+          <div id="company"></div>
         </div>
         <div class="column">
           <div class="mooxoo-shapes">
@@ -64,20 +66,21 @@ custom_css: main_site
 
   <section class="second-container">
     <div class="container">
-      <div class="island"></div>
-      <li><h1 class="main-title" id="company"> {% t second-container.title %} </h1></li>
-      <div class="columns">
-        <div class="column">
-          <div class="green-description">
-            <h2>{% t second-container.description %}</h2>
+      <li>
+        <h1 class="main-title"> {% t second-container.title %} </h1>
+        <div class="columns">
+          <div class="column">
+            <div class="green-description">
+              <h2>{% t second-container.description %}</h2>
+            </div>
+          </div>
+          <div class="column">
+            <div class="black-description">
+              <p>{% t second-container.sub-description %}</p>
+            </div>
           </div>
         </div>
-        <div class="column">
-          <div class="black-description">
-            <p>{% t second-container.sub-description %}</p>
-          </div>
-        </div>
-      </div>
+      </li>
     </div>
   </section>
 
@@ -118,27 +121,28 @@ custom_css: main_site
   <section class="fourth-container">
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column is-one-third">
           <div class="mooxoo-shapes">
             <div class="triangle">
               <img src="/assets/images/triangle-image.png">
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="column is-two-thirds">
           <div class="columns">
-            <div class="column is-one-third"></div>
+            <div class="column"></div>
             <div class="column">
               <div class="island-2"></div>
-              <div class="chart-container">
+              <div class="eye-container">
                 <img src="/assets/images/-e-island-2-icon.svg" alt="MOO-XOO">
                 <h2>{% t fourth-container.main-text %}</h2>
                 <p>{% t fourth-container.sub-text %}</p>
+                <div id="services"></div>
               </div>
             </div>
           </div>
           <div class="sub-text">
-            <h1 class="main-title" id="services">{% t fourth-container.services %}</h1>
+            <li><h1 class="main-title">{% t fourth-container.services %}</h1></li>
             <h2>{% t fourth-container.services-description %}</h2>
             <h3> {% t fourth-container.services-sub-description %}</h3>
             <p>{% t fourth-container.services-text %}</p>
@@ -152,8 +156,8 @@ custom_css: main_site
     <div class="container">
       <div class="columns">
         <div class="column">
-          <img src="/assets/images/-e-M_EC.svg" alt="MOO-XOO" class="icon-box">
           <div class="sub-text">
+            <img src="/assets/images/-e-M_EC.svg" alt="MOO-XOO" class="icon-box">
             <h3>{% t fifth-container.consulting-description %}</h3>
             <h4> {% t fifth-container.consulting-step1 %}</h4>
             <h4> {% t fifth-container.consulting-step2 %}</h4>
@@ -161,8 +165,8 @@ custom_css: main_site
           </div>
         </div>
         <div class="column">
-          <img src="/assets/images/-e-M_pt.svg" alt="MOO-XOO" class="icon-box">
           <div class="sub-text">
+            <img src="/assets/images/-e-M_pt.svg" alt="MOO-XOO" class="icon-box">
             <h3>{% t fifth-container.training-description %}</h3>
             <h4>{% t fifth-container.training-onboarding.title %}</h4>
             <p>{% t fifth-container.training-onboarding.description %}</p>
@@ -189,7 +193,8 @@ custom_css: main_site
               <p>{% t sixth-container.sub-description %}</p>
             </div>
           </div>
-          <li><h1 class="main-title" id="dpworx">{% t global.dpworx %}</h1></li>
+          <div id="dpworx"></div>
+          <li><h1 class="main-title">{% t global.dpworx %}</h1></li>
           <h3>{% t sixth-container.dpworx-description %}</h3>
         </div>
       </div>
@@ -199,7 +204,7 @@ custom_css: main_site
   <section class="seventh-container">
     <div class="container">
       <div class="columns">
-        <div class="column">
+        <div class="column is-two-fifths">
           <div class="text-container">
             <h2>{% t seventh-container.from %}</h2>
             <h3>{% t seventh-container.brand-activation.title %}</h3>
@@ -567,13 +572,13 @@ custom_css: main_site
     </div>
   </section>
 
-  <section class="eleventh-container">
+  <section class="eleventh-container" id="hiring">
     <div class="columns">
       <div class="column is-one-third">
       </div>
       <div class="column is-one-third">
         <div class="hiring">
-          <h1 class="main-title" id="hiring">{% t eleventh-container.title %}</h1>
+          <h1 class="main-title">{% t eleventh-container.title %}</h1>
           <h2>{% t eleventh-container.description %}</h2>
           <h3>{% t eleventh-container.description-location %}</h3>
           <p>{% t eleventh-container.sub-description %}</p>
@@ -652,7 +657,6 @@ custom_css: main_site
                 <h3>{% t footer.learn-more.title %}</h3>
                 <a href="#services"><p>{% t footer.learn-more.services %}</p></a>
                 <a href="#dpworx"><p>{% t footer.learn-more.dpworx %}</p></a>
-                <a href=""><p>{% t footer.learn-more.pricing %}</p></a>
                 <a href=""><p>{% t footer.learn-more.support %}</p></a>
               </div>
               <div class="column">
