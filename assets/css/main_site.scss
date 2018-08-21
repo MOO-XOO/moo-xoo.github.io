@@ -112,7 +112,7 @@ a:hover {
     img {
       height: 50%;
       width: auto;
-      -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0);
+      -webkit-clip-path: polygon(0% 50%, 75% 100%, 75% 0);
       clip-path: polygon(0% 50%, 75% 100%, 75% 0);
       transform: rotate(10deg);
       margin-top: 30%;
@@ -338,23 +338,14 @@ a:hover {
     text-align: left;
     display: block;
 
-    &:after {
-      content: "\2022";
-      font-size: 60px;
-      position: absolute;
-      left: -60px;
-      top: -24px;
-      color: $light-grey;
-    }
-
     &:before {
       top: 20px;
       content:"";
       position: absolute;
-      left: -271px;
+      left: -19vw;
       border-top: 1px solid $light-grey;
       height: 1px;
-      width: 230px;
+      width: 16vw;
     }
   }
 
@@ -557,12 +548,10 @@ a:hover {
   }
 
   h1 {
-    width: 25vw;
+    width: 45vw;
     font-family: $primary-font;
     font-size: 30px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
+    font-weight: 50;
     line-height: 1.46;
     letter-spacing: 0.1px;
     text-align: left;
