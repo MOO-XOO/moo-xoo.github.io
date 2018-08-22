@@ -154,8 +154,8 @@ custom_css: main_site
 
   <section class="fifth-container">
     <div class="container">
-      <div class="columns">
-        <div class="column">
+      <div class="columns is-12">
+        <div class="column is-3 is-offset-2">
           <div class="sub-text">
             <img src="/assets/images/-e-M_EC.svg" alt="MOO-XOO" class="icon-box">
             <h3>{% t fifth-container.consulting-description %}</h3>
@@ -164,7 +164,7 @@ custom_css: main_site
             <h4> {% t fifth-container.consulting-step3 %}</h4>
           </div>
         </div>
-        <div class="column">
+        <div class="column is-3 is-offset-2">
           <div class="sub-text">
             <img src="/assets/images/-e-M_pt.svg" alt="MOO-XOO" class="icon-box">
             <h3>{% t fifth-container.training-description %}</h3>
@@ -225,8 +225,10 @@ custom_css: main_site
             <h2>{% t seventh-container.more %}</h2>
           </div>
           <img src="/assets/images/-e-DP Worx.svg" alt="MOO-XOO" class="icon-box">
-          <h1> {% t seventh-container.dpworx-can %} </h1>
-          <h1> {% t seventh-container.dpworx-description %} </h1>
+          <div class="text-links">
+            <h1> {% t seventh-container.dpworx-can %} </h1>
+            <h1> {% t seventh-container.dpworx-description %} </h1>
+          </div>
         </div>
         <div class="column">
           <div class="mooxoo-shapes">
@@ -251,19 +253,19 @@ custom_css: main_site
     <div class="container">
       <div class="columns">
         <div class="column" id="first-request">
-          <h2 class="text-box">{% t eighth-container.request.title %}</h2>
+          <h2 class="text-box has-text-centered">{% t eighth-container.request.title %}</h2>
           <p>{% t eighth-container.request.description %}</p>
         </div>
         <div class="column" id="planning">
-          <h2 class="text-box">{% t eighth-container.planning.title %}</h2>
+          <h2 class="text-box has-text-centered">{% t eighth-container.planning.title %}</h2>
           <p>{% t eighth-container.planning.description %}</p>
         </div>
         <div class="column" id="execution">
-          <h2 class="text-box">{% t eighth-container.execution.title %}</h2>
+          <h2 class="text-box has-text-centered">{% t eighth-container.execution.title %}</h2>
           <p>{% t eighth-container.execution.description %}</p>
         </div>
         <div class="column" id="evaluation">
-          <h2 class="text-box">{% t eighth-container.evaluation.title %}</h2>
+          <h2 class="text-box has-text-centered">{% t eighth-container.evaluation.title %}</h2>
           <p>{% t eighth-container.evaluation.description %}</p>
         </div>
       </div>
@@ -538,7 +540,7 @@ custom_css: main_site
           <div class="card-icon">
             <img src="/assets/images/-e-vision-icon.svg" alt="MOO-XOO" class="icon-container center">
             <h3>{% t tenth-container.software.title %}</h3>
-            <p> {% t tenth-container.software.description %} </p>
+            <p> {% t tenth-container.software.description %}</p>
           </div>
         </div>
         <div class="column">
@@ -559,14 +561,16 @@ custom_css: main_site
       <div class="columns">
         <div class="column is-two-thirds">
           <div class="island">
-            <h3>{% t tenth-container.description %}</h3>
+            <h3>
+              {% t tenth-container.description %} <span class="green"> {% t global.dpworx %}</span>
+            </h3>
           </div>
         </div>
         <div class="column">
           <div class="card-icon">
             <img src="/assets/images/-e-roles-icon.svg" alt="MOO-XOO" class="icon-container center">
             <h3>{% t tenth-container.roles.title %}</h3>
-            <p> {% t tenth-container.roles.description %} </p>
+            <p> {% t tenth-container.roles.description %}</div> </p>
           </div>
         </div>
       </div>

@@ -31,8 +31,12 @@ a:hover {
   margin-right: auto;
 }
 
+.green {
+  color: $moo-xoo-green;
+}
+
 .icon-box {
-  width: 221px;
+  width: 85%;
   padding: 35px 35px 35px 35px;
   box-shadow: 0px 8px 34.5px 0 rgba(60, 60, 60, 0.09), 0px 13px 27px 0 rgba(65, 65, 65, 0.06);
   margin-bottom: 58px;
@@ -51,10 +55,13 @@ a:hover {
 .text-box {
   opacity: 0.9;
   border-radius: 3px;
-  width: 11vw;
-  padding: 17.5px 17.5px 17.5px 17.5px;
+  width: 70%;
+  padding: 7.5% 10%;
   box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
   margin-bottom: 58px;
+  @include text-blue;
+  color: $moo-xoo-green;
+  font-size: 0.8em;
 }
 
 .btn {
@@ -192,7 +199,7 @@ a:hover {
       position: absolute;
       left: -48px;
       border-left: 1px solid $light-grey;
-      height: 350vh;
+      height: 300vh;
       width: 1px;
     }
   }
@@ -242,9 +249,10 @@ a:hover {
   margin-top: 10%;
 
   h1 {
-    width: 279.5px;
+    width: 25vw;
+    font-weight: bold;
     @include main-title;
-    font-size: 63.5px;
+    font-size: 62.5px;
   }
 
   h2 {
@@ -295,6 +303,7 @@ a:hover {
       font-family: $primary-font;
       font-size: 28px;
       line-height: 1.4;
+      font-weight: lighter;
       letter-spacing: 0.1px;
       text-align: left;
       color: $moo-xoo-green;
@@ -308,7 +317,6 @@ a:hover {
     p {
       font-family: $primary-font;
       font-size: 28px;
-      font-weight: 500;
       line-height: 1.47;
       text-align: left;
       color: $hunter-green;
@@ -372,7 +380,7 @@ a:hover {
     }
 
     h2 {
-      width: 50%;
+      width: 70%;
       font-family: $primary-font;
       font-size: 30px;
       line-height: 1.17;
@@ -403,7 +411,7 @@ a:hover {
     h2 {
       font-family: $primary-font;
       font-size: 24.8px;
-      font-weight: 300;
+      font-weight: lighter;
       line-height: 1.41;
       letter-spacing: 0.1px;
       text-align: left;
@@ -430,14 +438,10 @@ a:hover {
 }
 
 .fifth-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: -15%;
-
   .sub-text {
+    margin-top: -70%;
+
     h3 {
-      width: 60%;
       padding-top: 5%;
       @include text-blue;
     }
@@ -446,14 +450,15 @@ a:hover {
       @include copyright;
       font-family: $bold-font;
       padding-top: 20px;
-      font-size: 17px;
+      font-size: 20px;
       font-weight: normal;
       line-height: 1.47;
       color: $moo-xoo-green;
     }
 
     p {
-      @include card-style
+      @include card-style;
+      font-size: 17px;
     }
   }
 }
@@ -468,7 +473,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 75% auto;
     background-position: top center;
-    right: 30%;
+    right: 25%;
     padding-bottom: 15vw;
 
     .brain-icon {
@@ -476,6 +481,7 @@ a:hover {
       margin-top: 15vw;
       margin-left: 20vw;
       margin-bottom: 2.5vw;
+      z-index: 100;
     }
 
     .text-area {
@@ -521,7 +527,8 @@ a:hover {
   }
 
   .icon-box {
-    margin-top: 50px;
+    width: 50%;
+    margin-top: 20%;
   }
 
   .text-container {
@@ -533,7 +540,7 @@ a:hover {
     line-height: 1.38;
     letter-spacing: 0.1px;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 2.5vh;
 
     h2 {
       color: $moo-xoo-green;
@@ -547,34 +554,41 @@ a:hover {
     }
   }
 
-  h1 {
-    width: 45vw;
-    font-family: $primary-font;
-    font-size: 30px;
-    font-weight: 50;
-    line-height: 1.46;
-    letter-spacing: 0.1px;
-    text-align: left;
-    color: $dark-grey-blue;
+  .text-links {
+    width: 40vw;
+    margin-top: 15%;
+
+    h1 {
+      width: 100%;
+      font-family: $primary-font;
+      font-size: 30px;
+      font-weight: 50;
+      line-height: 1.46;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: $dark-grey-blue;
+    }
   }
 
   .macbook-container {
     width: 100%;
-    margin-top: 35%;
-    background: url(/assets/images/island-macbook-svg.svg) 0% 0% no-repeat;
+    margin-top: 20%;
+    background: url(/assets/images/island-macbook-svg.svg) 15% 0% no-repeat;
     background-size: 60% 100%;
     margin-left: 5vw;
+    padding: 5vw;
 
     img {
-      margin-top: -20%;
+      margin-left: 5%;
+      margin-top: -25%;
       width: 50%;
       height: auto;
     }
 
     .macbook-text {
-      margin-top: -15vh;
+      margin-top: -5%;
       width: 30vw;
-      margin-left: 6vw;
+      padding-left: 4vw;
 
       p {
         @include medium-text;
@@ -595,12 +609,10 @@ a:hover {
 }
 
 .eighth-container {
-  margin-top: 10%;
+  padding-top: 10%;
 
   h2 {
-    @include text-blue;
-    color: $moo-xoo-green;
-    font-size: 10.8px;
+
   }
 
   p {
@@ -890,20 +902,21 @@ a:hover {
 
   .island {
     margin-top: 10vh;
-    width: 60vw;
+    width: 70vw;
     height: 25vw;
     background-image: url(/assets/images/island-macbook-svg.svg);
-    background-size: 60% 90%;
+    background-position: 40% 50%;
+    background-size: 70% 100%;
     background-repeat: no-repeat;
 
     h3 {
-      width: 35vw;
+      width: 70%;
       padding-top: 10vh;
       font-family: $primary-font;
       font-weight: normal;
       font-size: 30px;
       line-height: 1.41;
-      text-align: center;
+      text-align: justify;
       color: $hunter-green;
     }
   }
@@ -1022,7 +1035,7 @@ a:hover {
       background-color: $white;
       padding: 2.5vw 2.5vw 2.5vw 2.5vw;
       box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
-      margin-top: 15%;
+      margin-top: 20%;
 
       h3 {
         font-family: $bold-font;
@@ -1087,6 +1100,11 @@ a:hover {
     display: flex;
     align-content: center;
     padding-left: 3vw;
+  }
+
+  i {
+    color: $steel;
+    opacity: 0.5;
   }
 
   img {
