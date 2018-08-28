@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     {% include head.html %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     {% include scripts.html %}
   </head>
@@ -11,15 +12,55 @@
 </html>
 
 <script>
-  var button = document.getElementsByClassName("collapsible")[0];
-
-    button.addEventListener("click", function() {
-      this.classList.toggle("contact-content");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
+  $(document).ready(function () {
+    $('.main-link').click(function () {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
     });
+    $('.modules-link').click(function () {
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.management-link').click(function () {
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.analysing-link').click(function () {
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.communication-link').click(function () {
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.material-link').click(function () {
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    var $scroller = $('.slide-wrap');
+    // assign click handler
+    $('slide-navigation a').click( function (e) {
+      e.preventDefault();
+      // get the partial id of the div to scroll to
+      var divIdx = $(this).attr("href");
+      alert(divIdx);
+      // retrieve the jquery ref to the div
+      var scrollTo = idvIdx.position().left;
+      // simply update the scroll of the scroller
+      // $('.scroller').scrollLeft(scrollTo);
+      // use an animation to scroll to the destination
+      console.log(scrollTo)
+      $scroller.animate({'scrollLeft': scrollTo}, 500);
+    });
+  });
+
+  function myFunction() {
+    var x = document.getElementById("contact-form");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+  }
 </script>

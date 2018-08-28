@@ -80,8 +80,7 @@ a:hover {
   background-color: #ebebeb;
 }
 
-a:hover {
-  // color: $moo-xoo-green !important;
+a:hover, button:hover {
   color:  rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -163,13 +162,9 @@ a:hover {
     margin-bottom: -40vw;
     margin-left: 10vw;
 
-    img {
-      width: 100%;
-      -webkit-clip-path: circle(50% at 50% 10%);
-      clip-path: circle(50% at 70% 10%);
-      transform: rotate(-180deg);
-      margin-top: -10vw;
-      margin-left: 15vw;
+    .semi-circle-clipped {
+      -webkit-clip-path: url(#svgPath);
+      clip-path: url(#svgPath);
     }
   }
 }
@@ -202,6 +197,47 @@ a:hover {
       height: 300vh;
       width: 1px;
     }
+  }
+}
+
+.navbar-notification {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.notification-language {
+  width: 100vw;
+  height: 60px;
+  background-color: $light-yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-right: 15px;
+    font-family:  $primary-font;
+  }
+
+  .language-title {
+    font-weight: 500;
+    color: $hunter-green;
+    margin-right: 5px;
+  }
+
+  .description {
+    color: $grey;
+  }
+
+  .btn {
+    box-shadow: none;
+    text-transform: uppercase;
+  }
+
+  .grey {
+    background-color: $grey;
   }
 }
 
@@ -238,7 +274,7 @@ a:hover {
     }
 
     a:last-child {
-      left: 15%;
+      left: 13%;
       font-family: $primary-font;
       color: $moo-xoo-green;
     }
@@ -249,7 +285,7 @@ a:hover {
   margin-top: 10%;
 
   h1 {
-    width: 25vw;
+    width: 20vw;
     font-weight: bold;
     @include main-title;
     font-size: 62.5px;
@@ -341,6 +377,7 @@ a:hover {
 }
 
 .fourth-container {
+  width: 100%;
   li {
     position: relative;
     text-align: left;
@@ -350,15 +387,17 @@ a:hover {
       top: 20px;
       content:"";
       position: absolute;
-      left: -19vw;
+      left: -79%;
       border-top: 1px solid $light-grey;
       height: 1px;
-      width: 16vw;
+      width: 70%;
     }
   }
 
   .mooxoo-shapes {
     padding-top: 30%;
+    position: relative;
+    z-index: 10;
   }
 
   .eye-container {
@@ -627,7 +666,7 @@ a:hover {
 }
 
 .ninth-container {
-  padding: 100px 0px 50px 0px;
+  padding-top: 5%;
 
   .container {
     margin-bottom: 100px;
@@ -642,76 +681,83 @@ a:hover {
   }
 
   .slide-navigation {
+    padding-top: 5%;
     padding-left: 12.5%;
 
-    li {
-      list-style-type: none;
-      float: left;
-      width: 15%;
+    a {
+      font-family: $primary-font;
+      color: $medium-grey;
+
+      li {
+        list-style-type: none;
+        float: left;
+        width: 15%;
+        position: relative;
+        text-align: center;
+
+        &:before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          border: 1px solid $light-grey;
+          display: block;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $light-grey;
+          margin-left: 45%;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 90%;
+          height: 1px;
+          border: 0.5px solid $light-grey;
+          background-color: $light-grey;
+          left: -40%;
+          top: 8px;
+        }
+
+        &:first-child:after {
+          content: none;
+        }
+
+        p {
+          width: 60%;
+          margin-top: 10%;
+          margin-left: 20%
+        }
+      }
+    }
+
+    a.active{
       position: relative;
-      text-align: center;
-      margin-bottom: 10vh;
+      z-index: 10;
 
-      a {
-        font-family: $primary-font;
-        color: $medium-grey;
-      }
-    }
-
-    li:before {
-      content: "";
-      width: 16px;
-      height: 16px;
-      line-height: 16px;
-      border: 1px solid $light-grey;
-      display: block;
-      text-align: center;
-      margin-top: 0 auto 8px auto;
-      border-radius: 50%;
-      background-color: $light-grey;
-      margin-left: 50%;
-    }
-
-    li:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1%;
-      border: 0.5px solid $light-grey;
-      background-color: $light-grey;
-      top: 8px;
-      left: -50%;
-    }
-
-    li:first-child:after {
-      content: none;
-    }
-
-    li.active {
-      color: $apple-green;
-      z-index: 1;
-
-      a {
+      li {
         color: $apple-green;
+        font-weight: 500;
+
+        &:before {
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          border-color: $apple-green;
+          background-color: $apple-green;
+          margin-top: -4.5px;
+          margin-left: 45%;
+        }
+
+        &:after{
+          width: 85%;
+        }
       }
-    }
-
-    li.active:before {
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
-      border-color: $apple-green;
-      background-color: $apple-green;
-    }
-
-    li.active + li:after {
-      color: $apple-green;
     }
   }
 
   .slide-wrap {
     width: 100%;
-    height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
@@ -719,31 +765,33 @@ a:hover {
     align-items: center;
     align-self: flex-end;
     background-image: url(/assets/images/bg.svg);
+    background-position: 0% 20%;
     background-size: cover;
     background-repeat: no-repeat;
 
     .slide-bar {
-      padding: 5vw 10vw 2vw 10vw;
+      padding: 0vw 10vw 2vw 10vw;
       max-width:100%;
+      height: 100%;
 
       .icon {
         height: 4vw;
       }
 
       h1 {
-        margin-bottom: 35px;
+        margin-bottom: 10px;
         font-family: $light-font;
         text-transform: uppercase;
-        font-size: 25.8px;
+        font-size: 24.8px;
         text-align: left;
-        color: $toxic-green;
+        color: $moo-xoo-green;
       }
 
       .sub-description {
         @include text-blue;
         width: 397.5px;
         font-weight: 200;
-        font-size: 18px;
+        font-size: 15px;
         color: $grey;
         font-family: $primary-font;
       }
@@ -752,30 +800,30 @@ a:hover {
         @include text-blue;
         color: $moo-xoo-green;
         text-transform: capitalize;
-        font-size: 20px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
       }
 
       .slogan {
         width: 397.5px;
         @include text-blue;
-        font-size: 20px;
-        margin-bottom: 20px;
+        font-size: 17px;
+        margin-bottom: 10px;
       }
 
       .slide-module {
-        height: 40vh;
+        height: 70%;
       }
 
       .modules-description {
-        margin-bottom: 10vh;
+        margin-bottom: 2.5vh;
       }
 
       .slide-item {
-        width: 100%;
-        height: 75vh;
+        width: 70%;
+        height: 80%;
         @include text-blue;
-        font-size: 18px;
+        font-size: 16px;
         font-family: $primary-font;
         font-weight: 200;
 
@@ -785,10 +833,16 @@ a:hover {
         }
       }
 
+      .actions {
+        padding-top: 15%;
+      }
+
       #main-slide {
+        padding-top: 10vh;
+
         .island {
-          width: 40vw;
-          height: 20vw;
+          width: 80%;
+          height: 80%;
           background-image: url(/assets/images/bubble.svg);
           background-size: 100% 100%;
           background-repeat: no-repeat;
@@ -798,51 +852,66 @@ a:hover {
             padding-top: 5vh;
 
             p {
-              font-size: 20px;
+              font-size: 16px;
               font-weight: 100;
-              width: 20vw;
-              margin-left: 10vw;
-              margin-bottom: 3vh;
+              width: 70%;
+              margin-left: 5vw;
+              margin-bottom: 1vh;
             }
           }
         }
       }
 
       #modules {
+        padding-top: 10vh;
       }
 
       #management {
         .island {
+          padding-left: 5%;
+          padding-top: 100px;
           background-image: url(/assets/images/bubble-m.svg);
-          background-position: -20px -30px;
-          background-size: 50vh;
+          background-position: 0px 5%;
+          background-size: 20%;
           background-repeat: no-repeat;
+        }
+
+        ul {
+          padding-top: 5%;
         }
       }
 
       #analysing {
         .island {
-          background-image: url(/assets/images/bubble-m.svg);
-          background-position: -20px -30px;
-          background-size: 50vh;
+          padding-top: 100px;
+          padding-left: 5%;
+          background-image: url(/assets/images/bubble-a.svg);
+          background-position: 0px 15%;
+          background-size: 20%;
           background-repeat: no-repeat;
         }
       }
 
       #communication {
         .island {
-          background-image: url(/assets/images/bubble-m.svg);
-          background-position: -20px -30px;
-          background-size: 50vh;
+          padding-top: 100px;
+          padding-left: 7.5%;
+          background-image: url(/assets/images/bubble-c.svg);
+          background-position: 0px 5%;
+          background-size: 25%;
           background-repeat: no-repeat;
         }
       }
 
       #material {
+        margin-right: 10vw;
+
         .island {
-          background-image: url(/assets/images/bubble-m.svg);
-          background-position: -20px -30px;
-          background-size: 50vh;
+          padding-top: 100px;
+          padding-left: 7.5%;
+          background-image: url(/assets/images/bubble-d.svg);
+          background-position: 0px 17%;
+          background-size: 30%;
           background-repeat: no-repeat;
         }
       }
@@ -988,6 +1057,7 @@ a:hover {
     height: 50vh;
     width: 100vw;
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     background-color: $moo-xoo-green;
 
     h1 {
@@ -1027,35 +1097,48 @@ a:hover {
       background-color: #edf5f9;
       border: solid 0.7px $cool-grey;
       color: $dark-grey-blue;
-      margin-bottom: 10px;
+      margin-bottom: 5%;
+    }
+  }
+
+  .contact-container {
+    width: 35vw;
+    background-color: $white;
+    padding: 2.5vw 2.5vw 2.5vw 2.5vw;
+    box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
+    margin-top: -5%;
+    position: relative;
+    z-index: 1;
+
+    h3 {
+      font-family: $bold-font;
+      font-size: 22px;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: $dark-grey-blue;
+      margin-bottom: 4vh;
     }
 
-    .contact-container {
-      width: 30vw;
-      background-color: $white;
-      padding: 2.5vw 2.5vw 2.5vw 2.5vw;
-      box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
-      margin-top: 20%;
+    .contact-content {
+      padding: 0 18px;
 
-      h3 {
-        font-family: $bold-font;
-        font-size: 22px;
-        letter-spacing: 0.1px;
-        text-align: center;
-        color: $dark-grey-blue;
-        margin-bottom: 4vh;
-      }
-
-      .contact-content {
-        padding: 0 18px;
+      #contact-form {
+        padding-top: 19px;
+        padding-bottom: 20px;
         display: none;
-        overflow: hidden;
+        position: relative;
+        z-index: 1000;
+        height: 100%;
+
+        a {
+          margin-top: 20px;
+        }
       }
     }
   }
 
   .subscription-container {
-    margin-top: 20vh;
+    margin-top: 5%;
 
     p {
       font-family: $light-font;
@@ -1066,18 +1149,21 @@ a:hover {
       padding-bottom: 15px;
     }
 
+    .subscription-input {
+      display: flex;
+      justify-content: center;
+    }
+
     .control {
-      text-align: center;
+      z-index: -1;
 
       .input {
-        margin-left: 5vw;
         width: 20vw;
         opacity: 0.3;
         border-radius: 2.1px;
         background-color: #edf5f9;
         border: solid 0.7px $cool-grey;
         color: $dark-grey-blue;
-        margin-left: 37.5vw;
       }
 
       .btn {
@@ -1092,17 +1178,34 @@ a:hover {
 .footer {
   background-color: transparent !important;
 
-  #contact-us {
+  .column {
+    height: 20vh;
+  }
+
+  #language-preferences {
     float: right;
+    flex-direction: column;
   }
 
   #links {
     display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+  }
+
+  .links {
+    display: flex;
     align-content: center;
-    padding-left: 3vw;
+    flex-direction: column;
+    padding-left: 6vw;
+  }
+
+  .selected {
+    color: $dark-grey;
   }
 
   i {
+    margin-top: 4vh;
     color: $steel;
     opacity: 0.5;
   }
@@ -1111,23 +1214,31 @@ a:hover {
     width: 5vw;
   }
 
-  p {
-    width: 10vw;
+  p, a {
+    width: 100%;
     font-family: $primary-font;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.29;
     letter-spacing: 0.1px;
     text-align: left;
+    color: $dark-grey;
+    margin-bottom: 20px;
+  }
+
+  a {
     color: $steel;
+
+    &:hover {
+      color: $dark-grey;
+    }
   }
 
   .copyright {
-    padding-top: 2vh;
-    width: 10vw;
     font-family: $primary-font;
-    font-size: 9.5px;
+    font-size: 13px;
     text-align: left;
     color: $moo-xoo-green;
+    padding-top: 2vh;
   }
 
   h3 {
@@ -1137,5 +1248,11 @@ a:hover {
     letter-spacing: 1.2px;
     text-align: left;
     color: $moo-xoo-green;
+    text-transform: uppercase;
+  }
+
+  h3, img {
+    margin-bottom: 20px;
   }
 }
+

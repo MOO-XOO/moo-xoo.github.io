@@ -2,6 +2,16 @@ global:
   german: Deutsch
   english: English
   dpworx: DP WORX
+  afirmative: "yes"
+  negative: "no"
+  english: English
+  german: Deutsch
+
+language-container:
+  language-support: "Language support:"
+  description: Your system seems to be set in English. Is this correct?
+  language: Languages
+
 
 navbar:
   company: Company
@@ -224,6 +234,8 @@ twelveth-container:
     email: Your email adress
     button-text: Send
     subscribe-us: and join our newsletter.
+    send: Send
+    name: Name
 
 footer:
   description: We're consulting company working with some of the best companies to help with their marketing operations and platform needs.
@@ -243,6 +255,6 @@ footer:
   contact-us:
     contact: Contact Us
     telephone: +6221-2269 2089
-    email: support@moo-xoo.com
+    email: office@moo-xoo.com
 
 
