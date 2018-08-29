@@ -12,7 +12,6 @@ language-container:
   description: Your system seems to be set in English. Is this correct?
   language: Languages
 
-
 navbar:
   company: Company
   services: Services
