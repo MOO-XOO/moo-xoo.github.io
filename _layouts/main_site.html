@@ -13,46 +13,58 @@
 
 <script>
   $(document).ready(function () {
-    $('.main-link').click(function () {
-        $('.active').removeClass('active');
-        $(this).addClass('active');
-    });
-    $('.modules-link').click(function () {
+    $('.main-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
+      window.location = $(this).find("a").attr("href");
+      return false;
     });
-    $('.management-link').click(function () {
+    $('.modules-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
+      window.location = $(this).find("a").attr("href");
+      return false;
     });
-    $('.analysing-link').click(function () {
+    $('.management-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
+      window.location = $(this).find("a").attr("href");
+      return false;
     });
-    $('.communication-link').click(function () {
+    $('.analysing-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
+      window.location = $(this).find("a").attr("href");
+      return false;
     });
-    $('.material-link').click(function () {
+    $('.communication-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
+      window.location = $(this).find("a").attr("href");
+      return false;
+    });
+    $('.material-link').click(function() {
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+      window.location = $(this).find("a").attr("href");
+      return false;
     });
 
-    var $scroller = $('.slide-wrap');
-    // assign click handler
-    $('slide-navigation a').click( function (e) {
-      e.preventDefault();
-      // get the partial id of the div to scroll to
-      var divIdx = $(this).attr("href");
-      alert(divIdx);
-      // retrieve the jquery ref to the div
-      var scrollTo = idvIdx.position().left;
-      // simply update the scroll of the scroller
-      // $('.scroller').scrollLeft(scrollTo);
-      // use an animation to scroll to the destination
-      console.log(scrollTo)
-      $scroller.animate({'scrollLeft': scrollTo}, 500);
-    });
+    // var $scroller = $('.slide-wrap');
+    // // assign click handler
+    // $('slide-navigation a').click( function(e) {
+    //   e.preventDefault();
+    //   // get the partial id of the div to scroll to
+    //   var divIdx = $(this).attr("href");
+    //   alert(divIdx);
+    //   // retrieve the jquery ref to the div
+    //   var scrollTo = idvIdx.position().left;
+    //   // simply update the scroll of the scroller
+    //   // $('.scroller').scrollLeft(scrollTo);
+    //   // use an animation to scroll to the destination
+    //   console.log(scrollTo)
+    //   $scroller.animate({'scrollLeft': scrollTo}, 500);
+    // });
   });
 
   function myFunction() {

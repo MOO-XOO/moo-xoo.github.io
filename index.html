@@ -286,259 +286,257 @@ custom_css: main_site
     </div>
     <ul class="slide-navigation" id="slide-navigation">
       <div class="container">
-        <a class="main-link active" href="#main-slide">
-          <li><p> {% t ninth-container.main-slide.title %}</p></li>
-        </a>
-        <a class="modules-link" href="#modules">
-          <li><p> {% t ninth-container.modules.title %} </p></li>
-        </a>
-        <a class="management-link" href="#management">
-          <li><p> {% t ninth-container.management.title %} </p></li>
-        </a>
-        <a class="analysing-link" href="#analysing">
-          <li><p> {% t ninth-container.analysing.title %} </p></li>
-        </a>
-        <a class="communication-link" href="#communication">
-          <li><p> {% t ninth-container.communication.title %} </p></li>
-        </a>
-        <a class="material-link" href="#material">
-          <li><p> {% t ninth-container.material.title %} </p></li>
-        </a>
+        <li class="main-link active">
+          <a href="#main-slide"><p> {% t ninth-container.main-slide.title %}</p></a>
+        </li>
+        <li class="modules-link">
+          <a href="#modules"><p> {% t ninth-container.modules.title %} </p></a>
+        </li>
+        <li class="management-link">
+          <a href="#management"><p> {% t ninth-container.management.title %} </p></a>
+        </li>
+        <li class="analysing-link">
+          <a href="#analysing"><p> {% t ninth-container.analysing.title %} </p></a>
+        </li>
+        <li class="communication-link">
+          <a href="#communication"><p> {% t ninth-container.communication.title %} </p></a>
+        </li>
+        <li class="material-link">
+          <a href="#material"><p> {% t ninth-container.material.title %} </p></a>
+        </li>
       </div>
     </ul>
 
     <div class="slide-wrap">
       <div class="slide-bar">
-        <div class="container">
-          <div class="columns is-8">
-            <div class="column is-three-fifths">
-              <div id="main-slide">
-                <h1>{% t ninth-container.main-slide.title %}</h1>
-                <div class="slide-item">
-                  <p class="slogan">{% t ninth-container.main-slide.description %}</p>
-                  <p class="sub-description">{% t ninth-container.main-slide.sub-description %}</p>
-                  <div class="island">
-                    <div class="island-container">
-                      <p>{% t ninth-container.main-slide.description-island %}</p>
-                      <p>{% t ninth-container.main-slide.sub-description-island %}</p>
-                      <p>{% t ninth-container.main-slide.slogan-island %}</p>
-                    </div>
+        <div class="columns is-8">
+          <div class="column is-three-fifths">
+            <div id="main-slide">
+              <h1>{% t ninth-container.main-slide.title %}</h1>
+              <div class="slide-item">
+                <p class="slogan">{% t ninth-container.main-slide.description %}</p>
+                <p class="sub-description">{% t ninth-container.main-slide.sub-description %}</p>
+                <div class="island">
+                  <div class="island-container">
+                    <p>{% t ninth-container.main-slide.description-island %}</p>
+                    <p>{% t ninth-container.main-slide.sub-description-island %}</p>
+                    <p>{% t ninth-container.main-slide.slogan-island %}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="column">
-              <div id="modules">
-                <h1>{% t ninth-container.modules.title %}</h1>
-                <div class="modules-description">
-                  <h2 class="slogan">{% t ninth-container.modules.description %}</h2>
-                  <p class="sub-description">{% t ninth-container.modules.sub-description %}</p>
+          </div>
+          <div class="column">
+            <div id="modules">
+              <h1>{% t ninth-container.modules.title %}</h1>
+              <div class="modules-description">
+                <h2 class="slogan">{% t ninth-container.modules.description %}</h2>
+                <p class="sub-description">{% t ninth-container.modules.sub-description %}</p>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <div class="slide-module">
+                    <p class="sub-title">{% t ninth-container.management.title %}</p>
+                    <p class="sub-description">{% t ninth-container.modules.management_description %}</p>
+                  </div>
+                  <div class="actions">
+                    <a class="btn" href="#management">{% t ninth-container.more-info %}</a>
+                  </div>
                 </div>
+                <div class="column">
+                  <div class="slide-module">
+                    <p class="sub-title">{% t ninth-container.analysing.title %}</p>
+                    <p class="sub-description">{% t ninth-container.modules.analysing_description %}</p>
+                  </div>
+                  <div class="actions">
+                    <a class="btn" href="#analysing">{% t ninth-container.more-info %}</a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="slide-module">
+                    <p class="sub-title">{% t ninth-container.communication.title %}</p>
+                    <p class="sub-description">{% t ninth-container.modules.communication_description %}</p>
+                  </div>
+                  <div class="actions">
+                    <a class="btn" href="#communication">{% t ninth-container.more-info %}</a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="slide-module">
+                    <p class="sub-title">{% t ninth-container.material.title %}</p>
+                    <p class="sub-description">{% t ninth-container.modules.material_description %}</p>
+                  </div>
+                  <div class="actions">
+                    <a class="btn" href="#material">{% t ninth-container.more-info %}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div id="management">
+              <div class="island">
+                <h1>{% t ninth-container.management.title %}</h1>
                 <div class="columns">
                   <div class="column">
-                    <div class="slide-module">
-                      <p class="sub-title">{% t ninth-container.management.title %}</p>
-                      <p class="sub-description">{% t ninth-container.modules.management_description %}</p>
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-pm-icon.svg">
+                      <p class="sub-title">{% t ninth-container.management.project.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.management.project.slogan %}</p>
+                      <p class="description">{% t ninth-container.management.project.description %}</p>
+                      <ul class="green">
+                        <li>{% t ninth-container.management.project.brand-activation %}</li>
+                        <li>{% t ninth-container.management.project.point-of-sales %}</li>
+                        <li>{% t ninth-container.management.project.retail-design %}</li>
+                      </ul>
                     </div>
                     <div class="actions">
-                      <a class="btn" href="#management">{% t ninth-container.more-info %}</a>
+                      <a class="btn" href="#analysing">{% t ninth-container.next %}</a>
                     </div>
                   </div>
                   <div class="column">
-                    <div class="slide-module">
-                      <p class="sub-title">{% t ninth-container.analysing.title %}</p>
-                      <p class="sub-description">{% t ninth-container.modules.analysing_description %}</p>
-                    </div>
-                    <div class="actions">
-                      <a class="btn" href="#analysing">{% t ninth-container.more-info %}</a>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="slide-module">
-                      <p class="sub-title">{% t ninth-container.communication.title %}</p>
-                      <p class="sub-description">{% t ninth-container.modules.communication_description %}</p>
-                    </div>
-                    <div class="actions">
-                      <a class="btn" href="#communication">{% t ninth-container.more-info %}</a>
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-rm-icon.svg">
+                      <p class="sub-title">{% t ninth-container.management.request-management.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.management.request-management.slogan %}</p>
+                      <p class="description">{% t ninth-container.management.request-management.description %}</p>
                     </div>
                   </div>
                   <div class="column">
-                    <div class="slide-module">
-                      <p class="sub-title">{% t ninth-container.material.title %}</p>
-                      <p class="sub-description">{% t ninth-container.modules.material_description %}</p>
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-wtp-icon.svg">
+                      <p class="sub-title">{% t ninth-container.management.warehouse.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.management.warehouse.slogan %}</p>
+                      <p class="description">{% t ninth-container.management.warehouse.description %}</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-hr-icon.svg">
+                      <p class="sub-title">{% t ninth-container.management.human-resource.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.management.human-resource.slogan %}</p>
+                      <p class="description">{% t ninth-container.management.human-resource.description %}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div id="analysing">
+              <div class="island">
+                <h1>{% t ninth-container.analysing.title %}</h1>
+                <div class="columns">
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-bi-icon.svg">
+                      <p class="sub-title">{% t ninth-container.analysing.business.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.analysing.business.slogan %}</p>
+                      <p class="description">{% t ninth-container.analysing.business.description %}</p>
+                      <p class="description">{% t ninth-container.analysing.business.sub-description %}</p>
                     </div>
                     <div class="actions">
-                      <a class="btn" href="#material">{% t ninth-container.more-info %}</a>
+                      <a class="btn" href="#communication">{% t ninth-container.next %}</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-cb-icon.svg">
+                      <p class="sub-title">{% t ninth-container.analysing.cost-budget.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.analysing.cost-budget.slogan %}</p>
+                      <p class="description">{% t ninth-container.analysing.cost-budget.description %}</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-mission-icon.svg">
+                      <p class="sub-title">{% t ninth-container.analysing.forecast.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.analysing.forecast.slogan %}</p>
+                      <p class="description">{% t ninth-container.analysing.forecast.description %}</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-cs-icon.svg">
+                      <p class="sub-title">{% t ninth-container.analysing.customer-satisfaction.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.analysing.customer-satisfaction.slogan %}</p>
+                      <p class="description">{% t ninth-container.analysing.customer-satisfaction.description %}</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="column">
-              <div id="management">
-                <div class="island">
-                  <h1>{% t ninth-container.management.title %}</h1>
-                  <div class="columns">
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-pm-icon.svg">
-                        <p class="sub-title">{% t ninth-container.management.project.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.management.project.slogan %}</p>
-                        <p class="description">{% t ninth-container.management.project.description %}</p>
-                        <ul class="green">
-                          <li>{% t ninth-container.management.project.brand-activation %}</li>
-                          <li>{% t ninth-container.management.project.point-of-sales %}</li>
-                          <li>{% t ninth-container.management.project.retail-design %}</li>
-                        </ul>
-                      </div>
-                      <div class="actions">
-                        <a class="btn" href="#analysing">{% t ninth-container.next %}</a>
-                      </div>
+          </div>
+          <div class="column">
+            <div id="communication">
+              <div class="island">
+                <h1>{% t ninth-container.communication.title %}</h1>
+                <div class="columns">
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-c-icon.svg">
+                      <p class="sub-title">{% t ninth-container.communication.communication-title.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.communication.communication-title.slogan %}</p>
+                      <p class="description">{% t ninth-container.communication.communication-title.description %}</p>
                     </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-rm-icon.svg">
-                        <p class="sub-title">{% t ninth-container.management.request-management.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.management.request-management.slogan %}</p>
-                        <p class="description">{% t ninth-container.management.request-management.description %}</p>
-                      </div>
+                    <div class="actions">
+                      <a class="btn" href="#material">{% t ninth-container.next %}</a>
                     </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-wtp-icon.svg">
-                        <p class="sub-title">{% t ninth-container.management.warehouse.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.management.warehouse.slogan %}</p>
-                        <p class="description">{% t ninth-container.management.warehouse.description %}</p>
-                      </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-tn-icon.svg">
+                      <p class="sub-title">{% t ninth-container.communication.top-news.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.communication.top-news.slogan %}</p>
+                      <p class="description">{% t ninth-container.communication.top-news.description %}</p>
                     </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-hr-icon.svg">
-                        <p class="sub-title">{% t ninth-container.management.human-resource.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.management.human-resource.slogan %}</p>
-                        <p class="description">{% t ninth-container.management.human-resource.description %}</p>
-                      </div>
+                  </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-ml-icon.svg">
+                      <p class="sub-title">{% t ninth-container.communication.media-library.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.communication.media-library.slogan %}</p>
+                      <p class="description">{% t ninth-container.communication.media-library.description %}</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="column">
-              <div id="analysing">
-                <div class="island">
-                  <h1>{% t ninth-container.analysing.title %}</h1>
-                  <div class="columns">
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-bi-icon.svg">
-                        <p class="sub-title">{% t ninth-container.analysing.business.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.analysing.business.slogan %}</p>
-                        <p class="description">{% t ninth-container.analysing.business.description %}</p>
-                        <p class="description">{% t ninth-container.analysing.business.sub-description %}</p>
-                      </div>
-                      <div class="actions">
-                        <a class="btn" href="#communication">{% t ninth-container.next %}</a>
-                      </div>
+          </div>
+          <div class="column">
+            <div id="material">
+              <div class="island">
+                <h1>{% t ninth-container.material.title %}</h1>
+                <div class="columns">
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-mm-icon.svg">
+                      <p class="sub-title">{% t ninth-container.material.manager.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.material.manager.slogan %}</p>
+                      <p class="description">{% t ninth-container.material.manager.description %}</p>
+                      <p class="description">{% t ninth-container.material.manager.sub-description %}</p>
                     </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-cb-icon.svg">
-                        <p class="sub-title">{% t ninth-container.analysing.cost-budget.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.analysing.cost-budget.slogan %}</p>
-                        <p class="description">{% t ninth-container.analysing.cost-budget.description %}</p>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-mission-icon.svg">
-                        <p class="sub-title">{% t ninth-container.analysing.forecast.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.analysing.forecast.slogan %}</p>
-                        <p class="description">{% t ninth-container.analysing.forecast.description %}</p>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-cs-icon.svg">
-                        <p class="sub-title">{% t ninth-container.analysing.customer-satisfaction.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.analysing.customer-satisfaction.slogan %}</p>
-                        <p class="description">{% t ninth-container.analysing.customer-satisfaction.description %}</p>
-                      </div>
+                    <div class="actions">
+                      <a class="btn" href="#main-slide">{% t ninth-container.home %}</a>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div id="communication">
-                <div class="island">
-                  <h1>{% t ninth-container.communication.title %}</h1>
-                  <div class="columns">
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-c-icon.svg">
-                        <p class="sub-title">{% t ninth-container.communication.communication-title.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.communication.communication-title.slogan %}</p>
-                        <p class="description">{% t ninth-container.communication.communication-title.description %}</p>
-                      </div>
-                      <div class="actions">
-                        <a class="btn" href="#material">{% t ninth-container.next %}</a>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-tn-icon.svg">
-                        <p class="sub-title">{% t ninth-container.communication.top-news.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.communication.top-news.slogan %}</p>
-                        <p class="description">{% t ninth-container.communication.top-news.description %}</p>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-ml-icon.svg">
-                        <p class="sub-title">{% t ninth-container.communication.media-library.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.communication.media-library.slogan %}</p>
-                        <p class="description">{% t ninth-container.communication.media-library.description %}</p>
-                      </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-l-con.svg">
+                      <p class="sub-title">{% t ninth-container.material.logistic.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.material.logistic.slogan %}</p>
+                      <p class="description">{% t ninth-container.material.logistic.description %}</p>
+                      <p class="description">{% t ninth-container.material.logistic.sub-description %}</p>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div id="material">
-                <div class="island">
-                  <h1>{% t ninth-container.material.title %}</h1>
-                  <div class="columns">
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-mm-icon.svg">
-                        <p class="sub-title">{% t ninth-container.material.manager.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.material.manager.slogan %}</p>
-                        <p class="description">{% t ninth-container.material.manager.description %}</p>
-                        <p class="description">{% t ninth-container.material.manager.sub-description %}</p>
-                      </div>
-                      <div class="actions">
-                        <a class="btn" href="#main-slide">{% t ninth-container.home %}</a>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-l-con.svg">
-                        <p class="sub-title">{% t ninth-container.material.logistic.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.material.logistic.slogan %}</p>
-                        <p class="description">{% t ninth-container.material.logistic.description %}</p>
-                        <p class="description">{% t ninth-container.material.logistic.sub-description %}</p>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="slide-item">
-                        <img class="icon" src="/assets/images/-e-os-icon.svg">
-                        <p class="sub-title">{% t ninth-container.material.shop.sub-title %}</p>
-                        <p class="slogan">{% t ninth-container.material.shop.slogan %}</p>
-                        <p class="description">{% t ninth-container.material.shop.description %}</p>
-                        <p class="description">{% t ninth-container.material.shop.sub-description %}</p>
-                        <p class="description">{% t ninth-container.material.shop.sub-description2 %}</p>
-                      </div>
+                  <div class="column">
+                    <div class="slide-item">
+                      <img class="icon" src="/assets/images/-e-os-icon.svg">
+                      <p class="sub-title">{% t ninth-container.material.shop.sub-title %}</p>
+                      <p class="slogan">{% t ninth-container.material.shop.slogan %}</p>
+                      <p class="description">{% t ninth-container.material.shop.description %}</p>
+                      <p class="description">{% t ninth-container.material.shop.sub-description %}</p>
+                      <p class="description">{% t ninth-container.material.shop.sub-description2 %}</p>
                     </div>
                   </div>
                 </div>
@@ -605,13 +603,13 @@ custom_css: main_site
           <h2>{% t eleventh-container.description %}</h2>
           <h3>{% t eleventh-container.description-location %}</h3>
           <p>{% t eleventh-container.sub-description %}</p>
-          <a class="btn">{% t eleventh-container.apply-now %}</a>
+          <a class="button btn disabled">{% t eleventh-container.apply-now %}</a>
         </div>
       </div>
     </div>
     <div class="mooxoo-shapes">
       <div class="semi-circle">
-        <img class="semi-circle-clipped" src="/assets/images/semi-circle-image.png" alt="Semi Circle">
+        <!-- <img class="semi-circle-clipped" src="/assets/images/semi-circle-image.png" alt="Semi Circle"> -->
         <svg>
             <defs>
                 <clipPath id="svgPath">
