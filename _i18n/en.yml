@@ -2,6 +2,15 @@ global:
   german: Deutsch
   english: English
   dpworx: DP WORX
+  afirmative: "yes"
+  negative: "no"
+  english: English
+  german: Deutsch
+
+language-container:
+  language-support: "Language support:"
+  description: Your system seems to be set in English. Is this correct?
+  language: Languages
 
 navbar:
   company: Company
@@ -194,7 +203,7 @@ ninth-container:
       sub-description2: No further actions are needed from your side.
 tenth-container:
   dpworx-is: 'DP WORX is:'
-  description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of DP WORX
+  description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of
   software:
     title: Software as a Service
     description: Our team takes care of everything. From feature development to backups. Your data is private and secure. Start working today.
@@ -224,6 +233,8 @@ twelveth-container:
     email: Your email adress
     button-text: Send
     subscribe-us: and join our newsletter.
+    send: Send
+    name: Name
 
 footer:
   description: We're consulting company working with some of the best companies to help with their marketing operations and platform needs.
@@ -243,6 +254,6 @@ footer:
   contact-us:
     contact: Contact Us
     telephone: +6221-2269 2089
-    email: support@moo-xoo.com
+    email: office@moo-xoo.com
 
 
