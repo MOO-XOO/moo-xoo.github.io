@@ -7,6 +7,65 @@
 @import "variables";
 @import "fonts";
 
+// breakpoints + mixins
+
+@mixin responsive($class) {
+  @if $class==xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @else if $class==sm {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $class==sm-only {
+    @media (min-width: 576px) and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $class==md {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $class==md-only {
+    @media (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $class==lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $class==lg-only {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $class==xs {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+// --——————-------------
+
+
 body {
   background-image: linear-gradient(to right, $pale-grey, $white);
   font-family: $primary-font;
@@ -80,8 +139,9 @@ a:hover {
   background-color: #ebebeb;
 }
 
-a:hover, button:hover {
-  color:  rgba(0, 0, 0, 0.5) !important;
+a:hover,
+button:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .mooxoo-shapes {
@@ -125,7 +185,6 @@ a:hover, button:hover {
       margin-left: 7.5vw;
       z-index: 100;
       object-fit: contain;
-
     }
   }
 
@@ -190,7 +249,7 @@ a:hover, button:hover {
 
     &:before {
       top: 16px;
-      content:"";
+      content: "";
       position: absolute;
       left: -48px;
       border-left: 1px solid $light-grey;
@@ -201,7 +260,7 @@ a:hover, button:hover {
 }
 
 .navbar-notification {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -218,7 +277,7 @@ a:hover, button:hover {
 
   span {
     margin-right: 15px;
-    font-family:  $primary-font;
+    font-family: $primary-font;
   }
 
   .language-title {
@@ -246,7 +305,7 @@ a:hover, button:hover {
 
   .navbar-item {
     font-family: $bold-font;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     color: $hunter-green;
   }
@@ -254,8 +313,8 @@ a:hover, button:hover {
   .image {
     display: flex;
     align-items: center;
-    margin-left: -45px;
-    margin-right: 70%;
+    margin-right: 55%;
+    margin-left: -78px;
   }
 
   a {
@@ -281,14 +340,23 @@ a:hover, button:hover {
   }
 }
 
+
+ // ———————————————  @include responsive test //———————————————
+
 .first-container {
   margin-top: 10%;
+    @include responsive(xs) {
+      width: 100%;
+      margin-left: 5vh;
+      font-size: 23.5px;
+    }
 
   h1 {
     width: 20vw;
     font-weight: bold;
     @include main-title;
     font-size: 62.5px;
+    line-height: 1.2em;
   }
 
   h2 {
@@ -298,34 +366,30 @@ a:hover, button:hover {
     text-shadow: 0.25px 0.25px 0.25px $moo-xoo-green;
     margin-top: 10vh;
     text-align: left;
+
+
   }
 
-  p {
-    margin-top: 5%;
-    width: 30vw;
-    @include card-style;
-    font-size: 22px;
+  .ipad-island {
+    .island {
+      width: 70%;
+      height: 55%;
+      position: absolute;
+      margin-left: -20%;
+      margin-top: -35%;
+    }
+
+    .ipad {
+      max-width: 650px;
+      min-width: 400px;
+      margin-left: 5%;
+      position: relative;
+      margin-top: 20vh;
+      z-index: 10;
+    }
   }
 }
 
-.ipad-island {
-  .island {
-    width: 70%;
-    height: 55%;
-    position: absolute;
-    margin-left: -20%;
-    margin-top: -35%;
-  }
-
-  .ipad {
-    max-width: 650px;
-    min-width: 400px;
-    margin-left: 25%;
-    position: relative;
-    margin-top: 20vh;
-    z-index: 10;
-  }
-}
 
 .second-container {
   h1 {
@@ -339,7 +403,7 @@ a:hover, button:hover {
       font-family: $primary-font;
       font-size: 28px;
       line-height: 1.4;
-      font-weight: lighter;
+      font-weight: 300;
       letter-spacing: 0.1px;
       text-align: left;
       color: $moo-xoo-green;
@@ -361,11 +425,12 @@ a:hover, button:hover {
 }
 
 .third-container {
-  padding-top: 100px;
+  padding-top: 80px;
   min-height: 50vh;
 
   .card-icon {
-    width: 270px;
+    // width: 270px;
+    width: 80%;
     height: 92px;
     @include card-style;
 
@@ -378,6 +443,7 @@ a:hover, button:hover {
 
 .fourth-container {
   width: 100%;
+
   li {
     position: relative;
     text-align: left;
@@ -385,7 +451,7 @@ a:hover, button:hover {
 
     &:before {
       top: 20px;
-      content:"";
+      content: "";
       position: absolute;
       left: -79%;
       border-top: 1px solid $light-grey;
@@ -401,12 +467,13 @@ a:hover, button:hover {
   }
 
   .eye-container {
-    height: 100%;
+    height: 120%;
     margin-right: -10vw;
+    margin-bottom: 20%;
     position: relative;
     background-image: url(/assets/images/island-2.svg);
     background-repeat: no-repeat;
-    background-size: 60% auto;
+    background-size: 80% auto;
     background-position: 65% 0%;
 
     img {
@@ -436,11 +503,11 @@ a:hover, button:hover {
 
   .sub-text {
     background-image: url(/assets/images/island-services-svg.svg);
-    background-size: 100% 50%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: 50% 25%;
+    background-position: 50% 50%;
     height: 100vh;
-    width: 30vw;
+    width: 40vw;
     margin-left: 10vw;
 
     h1 {
@@ -449,19 +516,20 @@ a:hover, button:hover {
 
     h2 {
       font-family: $primary-font;
-      font-size: 24.8px;
-      font-weight: lighter;
+      font-size: 26px;
+      font-weight: 300;
       line-height: 1.41;
       letter-spacing: 0.1px;
       text-align: left;
       color: $moo-xoo-green;
       margin-bottom: 40px;
+      width: 100%;
     }
 
     h3 {
       padding-bottom: 5vh;
       font-family: $primary-font;
-      font-size: 20px;
+      font-size: 24.8px;
       font-weight: 600;
       line-height: 1.38;
       letter-spacing: 0.1px;
@@ -471,7 +539,8 @@ a:hover, button:hover {
 
     p {
       font-family: $primary-font;
-      font-size: 17.8px;
+      font-size: 20px;
+      color: $hunter-green;
     }
   }
 }
@@ -479,10 +548,13 @@ a:hover, button:hover {
 .fifth-container {
   .sub-text {
     margin-top: -70%;
+    width: 120%;
 
     h3 {
       padding-top: 5%;
       @include text-blue;
+      font-size: 23px;
+      line-height: 1.6;
     }
 
     h4 {
@@ -505,20 +577,22 @@ a:hover, button:hover {
 .sixth-container {
   padding-bottom: 0px;
 
+
   .island-3 {
     width: 50vw;
     position: relative;
     background-image: url(/assets/images/island-3.svg);
     background-repeat: no-repeat;
-    background-size: 75% auto;
-    background-position: top center;
+    background-size: 95% auto;
+    background-position: 80% -80%;
     right: 25%;
-    padding-bottom: 15vw;
+    padding-bottom: 25vw;
+    margin-top: -4vw;
 
     .brain-icon {
       width: 5vw;
       margin-top: 15vw;
-      margin-left: 20vw;
+      margin-left: 27vw;
       margin-bottom: 2.5vw;
       z-index: 100;
     }
@@ -547,10 +621,11 @@ a:hover, button:hover {
     @include text-blue;
     color: $moo-xoo-green;
     font-size: 28px;
-    width: 55%;
+    width: 30%;
+    font-weight: 600;
   }
 
-  li:before{
+  li:before {
     top: -98vh;
     height: 100vh;
   }
@@ -560,26 +635,28 @@ a:hover, button:hover {
   background: url(/assets/images/island-dpworx-svg.svg) 20% 0% no-repeat, rgba(255, 255, 255, 0.7);
   background-size: 50%, cover;
 
-  strong, a {
-    font-weight: bold;
+  strong,
+  a {
+    font-weight: 500;
     color: $dark-grey-blue;
   }
 
   .icon-box {
     width: 50%;
     margin-top: 20%;
+    margin-bottom: 6%
   }
 
   .text-container {
     font-family: $primary-font;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
     font-style: $primary-font;
     font-stretch: normal;
     line-height: 1.38;
     letter-spacing: 0.1px;
     text-align: left;
-    margin-top: 2.5vh;
+    margin-top: 8vh;
 
     h2 {
       color: $moo-xoo-green;
@@ -587,9 +664,15 @@ a:hover, button:hover {
     }
 
     h3 {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 500;
       line-height: 1.11;
+    }
+
+    p {
+      font-size: 26px;
+      width: 120%;
+      padding-top: 1%;
     }
   }
 
@@ -598,10 +681,10 @@ a:hover, button:hover {
     margin-top: 15%;
 
     h1 {
-      width: 100%;
+      width: 120%;
       font-family: $primary-font;
-      font-size: 30px;
-      font-weight: 50;
+      font-size: 32px;
+      font-weight: 300;
       line-height: 1.46;
       letter-spacing: 0.1px;
       text-align: left;
@@ -613,21 +696,24 @@ a:hover, button:hover {
     width: 100%;
     margin-top: 20%;
     background: url(/assets/images/island-macbook-svg.svg) 15% 0% no-repeat;
-    background-size: 60% 100%;
+    background-size: 70% 100%;
+    background-position-x: 30%;
     margin-left: 5vw;
     padding: 5vw;
 
     img {
       margin-left: 5%;
-      margin-top: -25%;
-      width: 50%;
+      margin-top: -15%;
+      width: 70%;
       height: auto;
     }
 
     .macbook-text {
-      margin-top: -5%;
-      width: 30vw;
-      padding-left: 4vw;
+      margin-top: -15%;
+      margin-left: 8vw;
+      padding: 5vw;
+      padding-left: 20px;
+      width: 80%;
 
       p {
         @include medium-text;
@@ -651,10 +737,10 @@ a:hover, button:hover {
   padding-top: 10%;
 
   p {
-    width: 10vw;
+    width: 15vw;
     font-family: $primary-font;
-    font-size: 18px;
-    line-height: 1.34;
+    font-size: 20px;
+    line-height: 1.54;
     letter-spacing: 0.1px;
     text-align: left;
     color: $dark-grey-blue;
@@ -664,25 +750,32 @@ a:hover, button:hover {
 .ninth-container {
   padding-top: 5%;
 
+
   .container {
     margin-bottom: 100px;
+    margin-top: 50px;
 
     h1 {
       @include text-blue;
       font-family: $primary-font;
-      font-weight: normal;
+      font-weight: 300;
       margin-bottom: 40px;
       width: 559px;
+    }
+
+    strong {
+      color: #363636;
+      font-weight: 500;
     }
   }
 
   .slide-navigation {
-    padding-top: 5%;
+    padding-top: .1%;
     padding-left: 12.5%;
 
     li {
       list-style-type: none;
-      float: left;
+      // float: left;
       width: 15%;
       position: relative;
       text-align: center;
@@ -728,7 +821,7 @@ a:hover, button:hover {
       }
     }
 
-    li.active{
+    li.active {
       a {
         color: $moo-xoo-green;
         font-weight: 500;
@@ -763,7 +856,8 @@ a:hover, button:hover {
 
     .slide-bar {
       padding: 0vw 2vw 10vw;
-      max-width:100%;
+      max-width: 100%;
+      line-height: 1.52;
 
       .icon {
         height: 42px;
@@ -782,10 +876,11 @@ a:hover, button:hover {
       .sub-description {
         @include text-blue;
         width: 397.5px;
-        font-weight: 200;
-        font-size: 15px;
+        font-weight: 400;
+        font-size: 18px;
         color: $grey;
         font-family: $primary-font;
+        line-height: 1.52;
       }
 
       .sub-title {
@@ -799,7 +894,8 @@ a:hover, button:hover {
       .slogan {
         width: 397.5px;
         @include text-blue;
-        font-size: 17px;
+        font-size: 22px;
+        font-weight: 600;
         margin-bottom: 10px;
       }
 
@@ -815,9 +911,9 @@ a:hover, button:hover {
         width: 70%;
         height: 75%;
         @include text-blue;
-        font-size: 16px;
+        font-size: 18px;
         font-family: $primary-font;
-        font-weight: 200;
+        font-weight: 300;
 
         ul {
           list-style-type: inherit;
@@ -826,7 +922,7 @@ a:hover, button:hover {
       }
 
       .actions {
-        padding-top: 15%;
+        padding-top: 20%;
       }
 
       #main-slide {
@@ -840,13 +936,14 @@ a:hover, button:hover {
           background-size: 100% 100%;
           background-repeat: no-repeat;
           margin-left: 15vw;
+          line-height: 1.52;
 
           .island-container {
             padding-top: 5vh;
 
             p {
-              font-size: 16px;
-              font-weight: 100;
+              font-size: 18px;
+              font-weight: 300;
               width: 70%;
               margin-left: 5vw;
               margin-bottom: 1vh;
@@ -915,7 +1012,7 @@ a:hover, button:hover {
 .tenth-container {
   h1 {
     font-family: $primary-font;
-    font-size: 25.3px;
+    font-size: 32px;
     font-weight: 300;
     line-height: 0.92;
     letter-spacing: 0.1px;
@@ -928,20 +1025,20 @@ a:hover, button:hover {
   }
 
   .card-icon {
-    width: 15vw;
+    width: 20vw;
 
     h3 {
       font-family: $primary-font;
-      font-size: 1.3vw;
-      font-weight: bold;
-      line-height: 0.62;
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 1.2;
       color: $dark-grey-blue;
     }
 
     p {
       font-family: $primary-font;
-      font-size: 1.1vw;
-      line-height: 1.47;
+      font-size: 20px;
+      line-height: 1.5;
       letter-spacing: 0.1px;
       text-align: left;
       color: $moo-xoo-green;
@@ -951,34 +1048,36 @@ a:hover, button:hover {
 
   h3 {
     font-size: 19.8px;
-    font-weight: bold;
-    line-height: 0.62;
+    // font-weight: bold;
+    line-height: 1.2;
     color: $dark-grey-blue;
-    margin-bottom: 1vw;
+    margin-bottom: 1.2vw;
   }
 
   img {
     margin-top: 45px;
-    margin-bottom: 20px;
+
   }
 
   .island {
-    margin-top: 10vh;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
     width: 70vw;
-    height: 25vw;
+    height: 28vw;
     background-image: url(/assets/images/island-macbook-svg.svg);
-    background-position: 40% 50%;
-    background-size: 70% 100%;
+    background-position: 80% 50%;
+    background-size: 100% 140%;
     background-repeat: no-repeat;
 
     h3 {
       width: 70%;
-      padding-top: 10vh;
-      font-family: $primary-font;
+      padding-top: 15vh;
+      font-family: "Work Sans",
+        sans-serif;
       font-weight: normal;
       font-size: 30px;
-      line-height: 1.41;
-      text-align: justify;
+      line-height: 1.5;
+      // text-align: justify;
       color: $hunter-green;
     }
   }
@@ -986,6 +1085,7 @@ a:hover, button:hover {
 
 .eleventh-container {
   z-index: 10;
+  // margin-top: 10vh;
 
   h1 {
     width: 25vw;
@@ -998,33 +1098,34 @@ a:hover, button:hover {
   }
 
   h2 {
-    width: 396px;
+    width: 150%;
     height: 67px;
     font-family: $bold-font;
-    font-size: 18.5px;
+    font-size: 22px;
     line-height: 1.34;
     letter-spacing: 0.1px;
     text-align: left;
     color: $dark-grey-blue;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
   }
 
   h3 {
-    width: 434.5px;
+    width: 150%;
     font-family: $primary-font;
-    font-size: 21.3px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.35;
     letter-spacing: 0.1px;
     text-align: left;
     color: $tree-green;
     margin-bottom: 3vh;
+
   }
 
   p {
     width: 357px;
     font-family: $primary-font;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.1px;
     text-align: left;
@@ -1036,7 +1137,7 @@ a:hover, button:hover {
     position: relative;
     margin-left: 7.5vw;
 
-    .disabled{
+    .disabled {
       opacity: 0.4;
     }
   }
@@ -1052,7 +1153,7 @@ a:hover, button:hover {
   z-index: 10;
 
   .text-rectangle {
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
@@ -1073,7 +1174,7 @@ a:hover, button:hover {
       margin-left: 20%;
       width: 60%;
       font-family: $primary-font;
-      font-size: 1vw;
+      font-size: 20px;
       line-height: 1.28;
       letter-spacing: 0.1px;
       text-align: center;
@@ -1136,7 +1237,7 @@ a:hover, button:hover {
   }
 
   .subscription-container {
-    margin-top: 5%;
+    margin-top: 2%;
 
     p {
       font-family: $light-font;
@@ -1144,7 +1245,7 @@ a:hover, button:hover {
       letter-spacing: 0.1px;
       text-align: center;
       color: $steel;
-      padding-bottom: 15px;
+      padding-bottom: 25px;
     }
 
     .subscription-input {
@@ -1175,6 +1276,7 @@ a:hover, button:hover {
 
 .footer {
   background-color: transparent !important;
+  padding-top: 18px;
 
   .column {
     height: 20vh;
@@ -1209,18 +1311,19 @@ a:hover, button:hover {
   }
 
   img {
-    width: 5vw;
+    width: 10vw;
   }
 
-  p, a {
+  p,
+  a {
     width: 100%;
     font-family: $primary-font;
     font-size: 16px;
-    line-height: 1.29;
+    line-height: 1.65;
     letter-spacing: 0.1px;
     text-align: left;
     color: $dark-grey;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   a {
@@ -1241,7 +1344,8 @@ a:hover, button:hover {
 
   h3 {
     font-family: $primary-font;
-    font-size: 12.3px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.22;
     letter-spacing: 1.2px;
     text-align: left;
@@ -1249,8 +1353,8 @@ a:hover, button:hover {
     text-transform: uppercase;
   }
 
-  h3, img {
+  h3,
+  img {
     margin-bottom: 20px;
   }
 }
-
