@@ -25,14 +25,14 @@ main-container:
 
 second-container:
   title: COMPANY
-  description: We are a result driven team specialized in the development of SaaS solutions for the process optimization and simplification of marketing and sales activation workflows.
-  sub-description: Our products are developed with the needs of marketing and sales organizations in mind, by marketing and sales people for marketing and sales people.
+  description: We are a result driven team specialized in the development of SaaS solutions for the process optimization of marketing and sales activation workflows.
+  sub-description: Our products are developed with the needs of marketing and sales managers in mind. Our team is driven by the idea of simplification and the passion to revolutionize the way you work.
 
 third-container:
   vision: 'Our vision:'
   vision-text: Enable every marketing and sales manager to work smarter, even together
   mission: 'Our mission:'
-  mission-text: To arm brands with tools and services to simplify and accelerate their marketing and sales activation process
+  mission-text: Arm brands with tools and services to simplify and accelerate their marketing and sales activation operations
   product: 'Our Product:'
   product-text: Sound industry knowledge combined with international marketing and sales executive expertise
 
@@ -40,15 +40,15 @@ fourth-container:
   main-text: With DP WORX you can see the big picture.
   sub-text: Take the actions that matter
   services: SERVICES
-  services-description: Our knowledge is your power. We are not another consulting agency focusing on the perfect board presentation.
-  services-sub-description: We focus on what matters most. We want you to work smarter – more productive, more efficient, better trained and happier with less stress.
+  services-description: Our knowledge is your power. We focus on what matters most.
+  services-sub-description: We want you to work smarter – more productive, more efficient, better trained and happier with less stress.
   services-text: Discover how easy the management of marketing and sales activation operations can be with our services.
 
 fifth-container:
-  consulting-description: 'Our consultants work with you from the first brief to the company-wide launch of DP WORX till the continuous improvement process of your business operations. Our consulting is based on three principles:'
-  consulting-step1: We analyze and understand
-  consulting-step2: Only then we optimize
-  consulting-step3: Finally we launch together
+  consulting-description: 'Our consultants work with you from the first brief to the company-wide launch of DP WORX till the continuous improvement process of your business operations.'
+  consulting-step1: We analyze your needs
+  consulting-step2: We optimize the workflow
+  consulting-step3: We change how you work
   training-description: Learn how to get the most out of DP WORX through our onboarding process, team training sessions, online webinars and special trainings customized to your needs.
   training-onboarding:
     title: Onboarding Training
@@ -66,20 +66,20 @@ fifth-container:
 sixth-container:
   description: Work smarter with DP WORX
   sub-description: Save time and money.
-  dpworx-description: simplifies how brands work in marketing and sales activation today.
+  dpworx-description: Your all-in-one solution to manage every marketing and sales acitvation project with no effort
 
 seventh-container:
   from: 'From:'
   to: 'To:'
   brand-activation:
     title: Brand activation projects
-    description: Such as roadshows, product samplings, sponsorships, promotions
+    description: Such as roadshows, product samplings, sponsorships, promotions, ...
   point-of-sale:
     title: Point of sale executions
     description: Merchandising presentation to visual merchandising
   retail-design:
     title: Retail design
-    description: From basic to shop in shop concepts
+    description: From basic shop design to "shop in shop concepts"
   more: and more.
   miss-deadline: Never miss a material, task, order or deadline.
   anymore: Anymore!
@@ -94,14 +94,14 @@ eighth-container:
     description: All internal & external requests are captured, presorted for an immediate response.
   planning:
     title: 2 - PLANNING
-    description: Plan, streamline, organize all resources (material, agencies, logistic, & 3rd parties, material, budget,..) and workflow steps with no effort.
+    description: Plan, streamline, organize all resources (material, agencies, logistic, & 3rd parties, budget,..) and workflow steps with no effort.
   execution:
     title: 3 - EXECUTION
     description: Execute with the highest quality level, cost minimizing and time saving. Company wide knowledge transfer for positive alignment.
   evaluation:
     title: 4 - EVALUATION
     description: Monitor and track real time results of every project. See how the projects contribute to your strategy.
-  description: <strong> Step-By-Step guidance, user role-based dashboards, team and task orientated workflows </strong> keep everyone aligned and focused on the loop.
+  description: <strong> Step-By-Step guidance, user role-based dashboards, team and task orientated workflows </strong> keep everyone aligned and in the loop.
   button-text: More info + Modules
 
 ninth-container:
@@ -109,32 +109,30 @@ ninth-container:
   next: Next >>
   home: Home
   main-slide:
-    title: For whom DPWORX is
+    title: For whom DP WORX is
     description: DP WORX is for all the marketing and sales project owners who are thinking that there must be a better way to execute projects day by day.
-    sub-description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of DP WORX.
+    sub-description: Companies of all shapes and sizes will profit from DP WORX, the straightforward marketing and sales automatization solution.
     description-island: "Discover how easy the management of marketing and sales activation can be."
     sub-description-island: "Enable your team to manage multiple projects smarter and more efficient."
     slogan-island: Stop wasting time.
   modules:
     title: Modules
-    description: DPWORX is developed as a modular system, offering you the highest grade of flexibility.
+    description: DP WORX is developed as a modular system, offering you the highest grade of flexibility.
     sub-description: You only pay for what you need.
     management_description: Convert requests into projects with a given workflow.
       Assign agencies, manage resources, create tasks, deadlines, communicate effortlessly and track progress in one place from anywhere.
-      With DP WORX your team will be more efficient and more effective.
-    analysing_description: Understand the health
-      of your marketing sales activities. See in one click how all your activities contribute
+    management_description2: With DP WORX your team will be more efficient and more effective.
+    analysing_description: Understand the health of your marketing and sales operations. See in one click how all your activities contribute
       to your business strategy and goals. Measure KPIs and spot outliners immediately.
-    communication_description: You can stop screening hundreds of complicated spreadsheets and emails, having back and forth emails, never ending meetings.
-      No further back and fourth calls are needed. All information you need for your work is accessible in just one click.
+    communication_description: Stop screening hundreds of complicated spreadsheets, writing back and forth emails, attending never-ending meetings and making numerous calls. All the information you need for your work is accessible in just one click.
     material_description: With the DP WORX material module you have all your marketing collateral under control.
       No matter with how many warehouses you work. Planning has never been easier.
   management:
     title: Management
     project:
       sub-title: Project management
-      slogan: From the material booking to the project communication with all stakeholders, to the  agency management, staff allocation, arranging delivery, managing costs, sharing next steps, to the project analysis, and much more. All can be done one place.
-      description: 'We offer you three project management modules, specially developed for needs of the management of projects in:'
+      slogan: From the material booking to the agency management to the project communication with all stakeholders, to arranging delivery conditions, staff planning, project controlling and much more. All can is done in one place.
+      description: 'We offer you project management solutions for:'
       brand-activation: Brand activation
       point-of-sales: Point of sales
       retail-design: Retail design
@@ -145,7 +143,7 @@ ninth-container:
     warehouse:
       sub-title: The Warehouse & third-party module
       slogan: Balance your resources, monitor performance and recalibrate when necessary.
-      description: With DP WORX you can manage and monitor all your warehouses and third partners. No matter if it is an advertising, promotion, design, POS agency.balance.
+      description: With DP WORX you can manage and monitor all your warehouses and third partners. No matter if it is an advertising, promotion, design, POS or assembly agency.
     human-resource:
       sub-title: Human resource planner
       slogan: With DP WORX you can hire, book and track the work of all your team members.
@@ -156,18 +154,18 @@ ninth-container:
       sub-title: Business Intelligence module
       slogan: See and understand what matters.
       description: With DP Worx you will understand how your projects and actions affect your business.
-      sub-description: Live reports and dashboards allow all user stay on the same page and get insights.
+      sub-description: Live reports and dashboards allow all user to stay on the same page and get insights.
     cost-budget:
       sub-title: Cost and Budget
       slogan: Stay on track with your budget and spendings.
       description: With the DP WORX project budget manager and the easy to use invoicing system, you have full cost control.
     forecast:
       sub-title: Forecast
-      slogan: Create marketing and sales activation forecasts efficiently..
+      slogan: Create marketing and sales activation forecasts efficiently.
       description: Planning for the next year, season or updates of the business year will become easy.
     customer-satisfaction:
       sub-title: Customer Satisfaction
-      slogan: Understand easily how the execution of the projects matched to the expectations of your customer and your company.
+      slogan: Understand easily how the execution of the projects is matching to the expectations of your customer and your company.
       description: Make sure everyone is up to date with the latest company media.
   communication:
     title: Communication
@@ -176,9 +174,9 @@ ninth-container:
       slogan: Keep all users in the loop.
       description: Manage and track every communication, activity and streams in one click.
     top-news:
-      sub-title: Top News
+      sub-title: Newscenter
       slogan: Share and engage with all the user about the latest news.
-      description: Manage and track every communication, activity and streams in one click.
+      description: It has never been easier to share company-wide news.
     media-library:
       sub-title: Media Library
       slogan: DP WORX is your team`s media database.
@@ -198,12 +196,12 @@ ninth-container:
     shop:
       sub-title: The Online Shop
       slogan: Delight your user.
-      description: Allow them in an easily and intuitively to order material for all their customers based on their user roles and booking rights.
+      description: Allow them to order material for all their customers  in an easily and intuitively way based on their user roles and booking.
       sub-description: Maximize sales by offering a self-service, with all the product information needed. 
       sub-description2: No further actions are needed from your side.
 tenth-container:
   dpworx-is: 'DP WORX is:'
-  description: Companies of all shapes and sizes will profit from the straightforward marketing and sales processes and automatization of
+  description: Companies of all shapes and sizes will profit from the DP WORX. Keep organized, be ahead, maintain transparency.
   software:
     title: Software as a Service
     description: Our team takes care of everything. From feature development to backups. Your data is private and secure. Start working today.
@@ -219,7 +217,7 @@ tenth-container:
 
 eleventh-container:
   title: HIRING
-  description: We are team of fun-loving, code enthusiasts who are keen to revolutionize how marketing and sales department work today.
+  description: We are team of fun-loving, code enthusiasts who are revolutionizing how marketing and sales departments work today.
   description-location: Our team is headquartered in Munich, Germany, with a branch in Lisbon, Portugal.
   sub-description: If you are someone who is up for a challenge and looking forward to working in a fast paced environment you are our team member.
   apply-now: Apply now
@@ -242,7 +240,7 @@ footer:
   learn-more:
     title: Learn More
     services: Services
-    dpworx: DPWorx
+    dpworx: DP Worx
     pricing: Pricing
     support: Support
   company:
@@ -252,10 +250,9 @@ footer:
     privacy: Privacy Policy
     impressum: Impressum
   contact-us:
-    contact: Contact Us
+    contact: Contact
     address: St.-Paul-Straße 9
     city: 80336 München
     country: Deutschland
-    email: office@moo-xoo.com
 
 
