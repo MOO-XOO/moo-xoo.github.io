@@ -112,3 +112,53 @@ $light-font: 'NexaLight', sans-serif;
   text-align: left;
   color: $white;
 }
+
+/* Breakpoints */
+
+@mixin responsive($class) {
+  @if $class == xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @else if $class == sm-only {
+    @media (min-width: 576px) and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $class == sm {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $class == md-only {
+    @media (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $class == md {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $class == lg-only {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $class == lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}

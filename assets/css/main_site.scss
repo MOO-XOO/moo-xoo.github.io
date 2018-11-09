@@ -6,66 +6,16 @@
 @import '/node_modules/bulma/css/bulma.css';
 @import "variables";
 @import "fonts";
-
-// breakpoints + mixins
-
-@mixin responsive($class) {
-  @if $class==xs {
-    @media (max-width: 576px) {
-      @content;
-    }
-  }
-
-  @else if $class==sm {
-    @media (max-width: 768px) {
-      @content;
-    }
-  }
-
-  @else if $class==sm-only {
-    @media (min-width: 576px) and (max-width: 768px) {
-      @content;
-    }
-  }
-
-  @else if $class==md {
-    @media (max-width: 992px) {
-      @content;
-    }
-  }
-
-  @else if $class==md-only {
-    @media (min-width: 768px) and (max-width: 992px) {
-      @content;
-    }
-  }
-
-  @else if $class==lg {
-    @media (max-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $class==lg-only {
-    @media (min-width: 992px) and (max-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $class==xs {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
-  }
-}
-
-// --——————-------------
+@import "xs";
+@import "sm";
+// @import "sm-only";
+@import "md";
+// @import "md-only";
+@import "lg";
+// @import "lg-only";
 
 
+// Default for screens over 1200px
 body {
   background-image: linear-gradient(to right, $pale-grey, $white);
   font-family: $primary-font;
@@ -340,16 +290,8 @@ button:hover {
   }
 }
 
-
- // ———————————————  @include responsive test //———————————————
-
 .first-container {
   margin-top: 10%;
-    @include responsive(xs) {
-      width: 100%;
-      margin-left: 5vh;
-      font-size: 23.5px;
-    }
 
   h1 {
     width: 20vw;
