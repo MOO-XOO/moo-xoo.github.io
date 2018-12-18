@@ -18,6 +18,13 @@ custom_css: main_site
             <img src="/assets/images/top-logo-svg.svg" alt="MOO-XOO">
           </a>
         </figure>
+        <span class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
         <div class="navbar-menu" id=navMenu>
           <div class="navbar-end">
             <a class="navbar-item" href="#company">
@@ -707,3 +714,15 @@ custom_css: main_site
     </div>
   </section>
 </div>
+
+<script type="text/javascript">
+  (function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+</script>

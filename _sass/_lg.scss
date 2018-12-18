@@ -1,0 +1,339 @@
+@include responsive(lg) {
+  .container {
+    width: 80%;
+  }
+
+  .main-title {
+    margin-top: 0px;
+  }
+
+  .icon-box {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .text-box {
+    padding: 5%;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    padding-left: 6%;
+
+    .image {
+      margin-right: 30%;
+    }
+
+    a {
+      padding-right: 1.5vw;
+    }
+
+    .navbar-menu {
+      width: 30%;
+
+      a {
+        &:last-child {
+          left: 0%;
+        }
+      }
+    }
+  }
+
+  .mooxoo-shapes {
+    .doughnut {
+      height: 600px;
+      width: 600px;
+      border: 100px solid;
+
+      .image {
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    .semi-circle {
+      margin-top: -20vw;
+      margin-bottom: -30vw;
+    }
+  }
+
+  .first-container {
+    h2 {
+      font-size: 25.5px;
+    }
+
+    .ipad-island {
+      .ipad {
+        max-width: 500px;
+        min-width: 200px;
+      }
+    }
+  }
+
+  .second-container {
+    font-size: 22px;
+  }
+
+  .third-container {
+    padding-top: 10px;
+
+    .card-icon {
+      font-size: 16px;
+    }
+  }
+
+  .fourth-container {
+    margin-top: 10%;
+
+    .mooxoo-shapes {
+      margin-top: 10%;
+    }
+
+    .eye-container {
+      h2 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .sub-text {
+      font-size: 20px;
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .fifth-container {
+    .sub-text {
+      margin-top: 20%;
+
+      h3 {
+        padding-top: 0%;
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .sixth-container {
+    padding-bottom: 0px;
+
+    .island-3 {
+      margin-top: -10vw;
+
+      .brain-icon {
+        width: 7vw;
+        margin-top: 10vw;
+        margin-left: 23vw;
+      }
+
+      .text-area {
+        margin-left: 10vw;
+        font-size: 20px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .seventh-container {
+    strong,
+    a {
+    }
+
+    .icon-box {
+    }
+
+    .text-container {
+      font-size: 30px;
+      margin-top: 8vh;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      h3 {
+        font-size: 23px;
+      }
+
+      p {
+        font-size: 21px;
+      }
+    }
+
+    .text-links {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .eighth-container {
+    padding-top: 5%;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .ninth-container {
+    .container {
+      margin-bottom: 50px;
+      margin-top: 25px;
+
+      h1 {
+        font-size: 18px;
+      }
+    }
+
+    .slide-navigation {
+      li {
+
+        &:before {
+          line-height: 10%;
+        }
+
+        p {
+          width: 80%;
+          font-size: 12.5px;
+        }
+      }
+    }
+
+    .slide-wrap {
+      width: 100%;
+
+      .slide-bar {
+        padding: 0vw 1vw 5vw;
+        max-width: 100%;
+
+        .icon {
+          height: 30px;
+          width: auto;
+        }
+
+        h1 {
+          margin-bottom: 5px;
+          font-size: 20px;
+        }
+
+        .sub-description {
+          font-size: 13px;
+        }
+
+        .sub-title {
+          font-size: 13px;
+        }
+
+        .slogan {
+          font-size: 17px;
+        }
+
+        .slide-item {
+          font-size: 13px;
+        }
+
+        .actions {
+          padding-top: 15%;
+        }
+
+        #main-slide {
+          .island {
+            .island-container {
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tenth-container {
+    h1 {
+      font-size: 28px;
+    }
+
+    .card-icon {
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    .island {
+      h3 {
+        font-size: 22.5px;
+        margin-left: 20%;
+      }
+    }
+  }
+
+  .eleventh-container {
+    h2 {
+      font-size: 17px;
+    }
+
+    h3 {
+      font-size: 19px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .twelveth-container {
+    .text-rectangle {
+      height: 50vh;
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .contact-container {
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .footer {
+    p,
+    a {
+      font-size: 12px;
+    }
+
+    .copyright {
+      font-size: 10px;
+    }
+
+    h3 {
+      font-size: 13px;
+    }
+  }
+}
