@@ -1,3 +1,4 @@
+// (min-width: 992px) and (max-width: 1200px)
 @include responsive(lg) {
   .container {
     width: 80%;
@@ -53,6 +54,7 @@
     }
 
     .semi-circle {
+      transform: rotate(-140deg);
       margin-top: -20vw;
       margin-bottom: -30vw;
     }
@@ -91,8 +93,10 @@
     }
 
     .eye-container {
+      height: 80%;
+
       h2 {
-        font-size: 25px;
+        font-size: 20px;
       }
 
       p {
@@ -111,8 +115,6 @@
 
   .fifth-container {
     .sub-text {
-      margin-top: 20%;
-
       h3 {
         padding-top: 0%;
         font-size: 18px;
@@ -300,8 +302,10 @@
   }
 
   .twelveth-container {
+    padding-top: 200px;
+
     .text-rectangle {
-      height: 50vh;
+      height: 300px;
 
       p {
         font-size: 15px;

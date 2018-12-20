@@ -286,12 +286,17 @@ button:hover {
   }
 
   h2 {
-    width: 30vw;
+    width: 25vw;
     @include copyright;
     font-size: 35.5px;
     text-shadow: 0.25px 0.25px 0.25px $moo-xoo-green;
-    margin-top: 10vh;
+    margin-top: 10%;
     text-align: left;
+    margin-bottom: 5%;
+  }
+
+  p {
+    width: 25vw;
   }
 
   .ipad-island {
@@ -349,10 +354,9 @@ button:hover {
 
 .third-container {
   padding-top: 80px;
-  min-height: 50vh;
+  min-height: 50%;
 
   .card-icon {
-    // width: 270px;
     width: 80%;
     height: 92px;
     @include card-style;
@@ -384,15 +388,16 @@ button:hover {
   }
 
   .mooxoo-shapes {
-    padding-top: 30%;
+    padding-top: 150%;
     position: relative;
     z-index: 10;
   }
 
   .eye-container {
     height: 120%;
+    margin-top: 40%;
     margin-right: -10vw;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
     position: relative;
     background-image: url(/assets/images/island-2.svg);
     background-repeat: no-repeat;
@@ -429,7 +434,6 @@ button:hover {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 100vh;
     width: 40vw;
     margin-left: 10vw;
     font-size: 26px;
@@ -437,6 +441,7 @@ button:hover {
     line-height: 1.41;
     letter-spacing: 0.1px;
     text-align: left;
+    margin-bottom: 50px;
 
     h1 {
       @include main-title;
@@ -450,7 +455,7 @@ button:hover {
     }
 
     h3 {
-      padding-bottom: 5vh;
+      padding-bottom: 5%;
       color: $hunter-green;
     }
 
@@ -464,7 +469,6 @@ button:hover {
 
 .fifth-container {
   .sub-text {
-    margin-top: -70%;
     width: 120%;
 
     h3 {
@@ -567,7 +571,7 @@ button:hover {
     line-height: 1.38;
     letter-spacing: 0.1px;
     text-align: left;
-    margin-top: 8vh;
+    margin-top: 8%;
 
     h2 {
       color: $moo-xoo-green;
@@ -968,8 +972,8 @@ button:hover {
   }
 
   .island {
-    margin-top: 30vh;
-    margin-bottom: 10vh;
+    margin-top: 30%;
+    margin-bottom: 10%;
     width: 70vw;
     height: 28vw;
     background-image: url(/assets/images/island-macbook-svg.svg);
@@ -979,13 +983,12 @@ button:hover {
 
     h3 {
       width: 70%;
-      padding-top: 15vh;
+      padding-top: 15%;
       font-family: "Work Sans",
         sans-serif;
       font-weight: normal;
       font-size: 30px;
       line-height: 1.5;
-      // text-align: justify;
       color: $hunter-green;
     }
   }
@@ -993,7 +996,7 @@ button:hover {
 
 .eleventh-container {
   z-index: 10;
-  // margin-top: 10vh;
+  width: 150%;
 
   h1 {
     width: 25vw;
@@ -1006,7 +1009,6 @@ button:hover {
   }
 
   h2 {
-    width: 150%;
     height: 67px;
     font-family: $bold-font;
     font-size: 22px;
@@ -1018,7 +1020,6 @@ button:hover {
   }
 
   h3 {
-    width: 150%;
     font-family: $primary-font;
     font-size: 24px;
     font-weight: 300;
@@ -1056,11 +1057,11 @@ button:hover {
 }
 
 .twelveth-container {
-  padding: 40vh 0px 0px 0px;
+  padding-top: 400px;
   z-index: 10;
 
   .text-rectangle {
-    height: 35vh;
+    height: 300px;
     width: 100vw;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
@@ -1108,7 +1109,7 @@ button:hover {
   }
 
   .contact-container {
-    width: 35vw;
+    width: 35%;
     background-color: $white;
     padding: 2.5vw 2.5vw 2.5vw 2.5vw;
     box-shadow: 5px 8.7px 60px 0 rgba(50, 117, 208, 0.1);
@@ -1122,7 +1123,7 @@ button:hover {
       letter-spacing: 0.1px;
       text-align: center;
       color: $dark-grey-blue;
-      margin-bottom: 4vh;
+      margin-bottom: 4%;
     }
 
     .contact-content {
@@ -1165,6 +1166,7 @@ button:hover {
 
       .input {
         width: 20vw;
+        height: 100%;
         opacity: 0.3;
         border-radius: 2.1px;
         background-color: #edf5f9;
