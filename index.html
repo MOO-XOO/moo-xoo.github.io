@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="/assets/images/M_FULL_COLOR_social_logo_hhyxqy.ico"/>
 <title> MOO-XOO GmbH </title>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     
   
@@ -161,12 +161,13 @@
           <div class="columns">
             <div class="column"></div>
             <div class="column">
+              <div id="services"></div>
               <div class="island-2"></div>
               <div class="eye-container">
                 <img src="/assets/images/-e-island-2-icon.svg" alt="MOO-XOO">
                 <h2>With DP WORX you can see the big picture.</h2>
                 <p>Take the actions that matter</p>
-                <div id="services"></div>
+
               </div>
             </div>
           </div>
@@ -730,8 +731,11 @@
   </section>
 </div>
 
-<script type="text/javascript">
-  (function() {
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
     var burger = document.querySelector('.burger');
     var nav = document.querySelector('#'+burger.dataset.target);
 
@@ -739,14 +743,7 @@
       burger.classList.toggle('is-active');
       nav.classList.toggle('is-active');
     });
-  })();
-</script>
 
-  </body>
-</html>
-
-<script>
-  $(document).ready(function () {
     $('.main-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
@@ -801,7 +798,7 @@
     // });
   });
 
-  function myFunction() {
+  function toggleMenu() {
     var x = document.getElementById("contact-form");
     if (x.style.display === "none") {
         x.style.display = "block";
