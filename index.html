@@ -27,23 +27,23 @@ custom_css: main_site
         </span>
         <div class="navbar-menu" id=navMenu>
           <div class="navbar-end">
-            <a class="navbar-item" href="#company">
+            <a class="navbar-item" href="#company" id='company-button'>
               {% t navbar.company %}
             </a>
 
-            <a class="navbar-item" href="#services">
+            <a class="navbar-item" href="#services" id='services-button'>
               {% t navbar.services %}
             </a>
 
-            <a class="navbar-item" href="#dpworx">
+            <a class="navbar-item" href="#dpworx" id='dpworx-button'>
               {% t global.dpworx %}
             </a>
 
-            <a class="navbar-item pale" href="#hiring">
+            <a class="navbar-item pale" href="#hiring" id='hiring-button'>
               {% t navbar.hiring %}
             </a>
 
-            <a class="navbar-item" href="#contact-us">
+            <a class="navbar-item" href="#contact-us" id='contactus-button'>
               {% t navbar.contact %}
             </a>
           </div>
@@ -54,7 +54,7 @@ custom_css: main_site
 </div>
 
 <ul class="bullets">
-  <section class="first-container">
+  <section class="first-container" id="top-page">
     <div class="container">
       <div class="columns">
         <div class="column is-two-fifths">
@@ -65,7 +65,6 @@ custom_css: main_site
             <img src="/assets/images/ipad@3x.png" alt="MOO-XOO" class="ipad">
             <img src="/assets/images/island-1.svg" class="island">
           </div>
-          <div id="company"></div>
         </div>
         <div class="column">
           <div class="mooxoo-shapes">
@@ -81,7 +80,7 @@ custom_css: main_site
   <section class="second-container">
     <div class="container">
       <li>
-        <h1 class="main-title"> {% t second-container.title %} </h1>
+        <h1 class="main-title" id='company'> {% t second-container.title %} </h1>
         <div class="columns">
           <div class="column">
             <div class="green-description">
@@ -146,7 +145,6 @@ custom_css: main_site
           <div class="columns">
             <div class="column"></div>
             <div class="column">
-              <div id="services"></div>
               <div class="island-2"></div>
               <div class="eye-container">
                 <img src="/assets/images/-e-island-2-icon.svg" alt="MOO-XOO">
@@ -156,7 +154,7 @@ custom_css: main_site
               </div>
             </div>
           </div>
-          <div class="sub-text">
+          <div class="sub-text" id='services'>
             <li><h1 class="main-title">{% t fourth-container.services %}</h1></li>
             <h2>{% t fourth-container.services-description %}</h2>
             <h3> {% t fourth-container.services-sub-description %}</h3>
@@ -601,11 +599,11 @@ custom_css: main_site
     </div>
   </section>
 
-  <section class="eleventh-container" id="hiring">
+  <section class="eleventh-container">
     <div class="columns">
       <div class="column is-one-third">
       </div>
-      <div class="column is-one-third">
+      <div class="column is-one-third" id="hiring">
         <div class="hiring">
           <h1 class="main-title">{% t eleventh-container.title %}</h1>
           <h2>{% t eleventh-container.description %}</h2>

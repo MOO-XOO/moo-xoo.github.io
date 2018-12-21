@@ -58,6 +58,41 @@
       return false;
     });
 
+    $('#company-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.1) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#services-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.05) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#dpworx-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.025) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#hiring-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#contactus-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      e.preventDefault();
+    });
+
     // var $scroller = $('.slide-wrap');
     // // assign click handler
     // $('slide-navigation a').click( function(e) {
@@ -83,4 +118,11 @@
         x.style.display = "none";
     }
   }
+
+  // function scrollLink(percentage) {
+  //   var jump = $(this).attr('href');
+  //   var new_position = $(jump).offset();
+  //   $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * percentage) }, 1000);
+  //   e.preventDefault();
+  // }
 </script>
