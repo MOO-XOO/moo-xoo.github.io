@@ -21,6 +21,11 @@
       nav.classList.toggle('is-active');
     });
 
+    nav.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+
     $('.main-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
@@ -90,6 +95,11 @@
       var jump = $(this).attr('href');
       var new_position = $(jump).offset();
       $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#top-button').click(function(e){
+      $('html, body').stop().animate({ scrollTop: 0 }, 2000);
       e.preventDefault();
     });
 

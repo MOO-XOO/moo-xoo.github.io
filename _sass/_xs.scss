@@ -107,6 +107,16 @@
     }
   }
 
+  #top-button {
+    position: fixed;
+    bottom: 0em;
+    right: 0.1em;
+    text-decoration: none;
+    font-size: 40px;
+    color: $pinkish-grey;
+    z-index: 1000;
+  }
+
   .first-container {
     margin-top: 20%;
     margin-bottom: 40%;
