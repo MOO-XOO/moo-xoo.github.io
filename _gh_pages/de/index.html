@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="/assets/images/M_FULL_COLOR_social_logo_hhyxqy.ico"/>
 <title> MOO-XOO GmbH </title>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     
   
@@ -730,8 +730,11 @@
   </section>
 </div>
 
-<script type="text/javascript">
-  (function() {
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
     var burger = document.querySelector('.burger');
     var nav = document.querySelector('#'+burger.dataset.target);
 
@@ -739,14 +742,7 @@
       burger.classList.toggle('is-active');
       nav.classList.toggle('is-active');
     });
-  })();
-</script>
 
-  </body>
-</html>
-
-<script>
-  $(document).ready(function () {
     $('.main-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
@@ -801,7 +797,7 @@
     // });
   });
 
-  function myFunction() {
+  function toggleMenu() {
     var x = document.getElementById("contact-form");
     if (x.style.display === "none") {
         x.style.display = "block";

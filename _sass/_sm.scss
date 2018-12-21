@@ -269,37 +269,19 @@
     }
   }
 
-  .ninth-container {
+.ninth-container {
     .container {
       margin-bottom: 50px;
       margin-top: 25px;
 
       h1 {
-        font-size: 30px;
+        font-size: 20px;
         width: 80%;
       }
     }
 
     .slide-navigation {
-      padding-left: 5%;
-
-      .container {
-        width: 90%;
-      }
-
-      li {
-      width: 15%;
-
-        &:before {
-          line-height: 15%;
-        }
-
-        p {
-          width: 80%;
-          font-size: 12.5px;
-          margin-left: 15%;
-        }
-      }
+      display: none;
     }
 
     .slide-wrap {
@@ -316,22 +298,30 @@
 
         h1 {
           margin-bottom: 5px;
-          font-size: 40px;
+          font-size: 35px;
         }
 
         .sub-description {
-          font-size: 13px;
+          font-size: 18px;
+          width: 80%;
         }
 
         .sub-title {
-          font-size: 13px;
+          font-size: 22px;
         }
 
         .slogan {
-          font-size: 17px;
+          width: 80%;
+          font-size: 20px;
+        }
+
+        .description {
+          font-size: 20px;
+          width: 80%;
         }
 
         .slide-item {
+          width: 100%;
           font-size: 13px;
         }
 
@@ -339,13 +329,73 @@
           padding-top: 15%;
         }
 
+        .actions {
+          padding-top: 5%;
+          padding-bottom: 10%;
+
+          .btn {
+            font-size: 18px;
+          }
+        }
+
         #main-slide {
+          width: 95%;
+
           .island {
+            margin-left: 5vw;
+            margin-top: 10%;
+
             .island-container {
               p {
                 font-size: 13px;
+                margin-left: 0vw;
+                width: 90%;
+
+                &:last-child {
+                  font-weight: bold;
+                }
               }
             }
+          }
+        }
+
+        #modules {
+          padding-top: 10vh;
+          width: 80%;
+          margin-left: 10%;
+        }
+
+        #management {
+          .island {
+            padding-left: 10%;
+          }
+
+          .green {
+            font-size: 13px;
+          }
+        }
+
+        #analysing {
+          .island {
+            padding-top: 20%;
+            padding-left: 10%;
+          }
+        }
+
+        #communication {
+          .island {
+            padding-top: 20%;
+            padding-left: 10%;
+          }
+        }
+
+        #material {
+          margin-right: 10vw;
+
+          .island {
+            padding-top: 20%;
+            padding-left: 10%;
+            padding-bottom: 20%;
           }
         }
       }

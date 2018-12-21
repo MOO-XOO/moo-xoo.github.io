@@ -236,6 +236,10 @@ button:hover {
 .navbar {
   height: 60px;
 
+  .navbar-menu {
+    width: 50%;
+  }
+
   .navbar-item {
     font-family: $bold-font;
     font-size: 18px;
