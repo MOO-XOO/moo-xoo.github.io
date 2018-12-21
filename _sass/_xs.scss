@@ -350,6 +350,7 @@
 
         .actions {
           padding-top: 15%;
+          padding-bottom: 10%;
         }
 
         p {
@@ -391,11 +392,6 @@
           .green {
             font-size: 13px;
           }
-
-          .actions {
-            padding-top: 0%;
-            padding-bottom: 10%;
-          }
         }
 
         #analysing {
@@ -403,22 +399,16 @@
             padding-top: 20%;
             padding-left: 10%;
           }
-
-          .actions {
-            padding-top: 0%;
-            padding-bottom: 10%;
-          }
         }
 
         #communication {
           .island {
             padding-top: 20%;
             padding-left: 10%;
-          }
 
-          .actions {
-            padding-top: 0%;
-            padding-bottom: 10%;
+            h1 {
+              font-size: 30px;
+            }
           }
         }
 
@@ -428,11 +418,6 @@
           .island {
             padding-top: 20%;
             padding-left: 10%;
-          }
-
-          .actions {
-            padding-top: 0%;
-            padding-bottom: 10%;
           }
         }
       }

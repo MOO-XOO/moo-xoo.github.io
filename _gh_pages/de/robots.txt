@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/de/sitemap.xml
+Sitemap: https://moo-xoo.github.io/de/sitemap.xml
