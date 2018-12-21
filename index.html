@@ -42,23 +42,23 @@
         </span>
         <div class="navbar-menu" id=navMenu>
           <div class="navbar-end">
-            <a class="navbar-item" href="#company">
+            <a class="navbar-item" href="#company" id='company-button'>
               Company
             </a>
 
-            <a class="navbar-item" href="#services">
+            <a class="navbar-item" href="#services" id='services-button'>
               Services
             </a>
 
-            <a class="navbar-item" href="#dpworx">
+            <a class="navbar-item" href="#dpworx" id='dpworx-button'>
               DP WORX
             </a>
 
-            <a class="navbar-item pale" href="#hiring">
+            <a class="navbar-item pale" href="#hiring" id='hiring-button'>
               Hiring
             </a>
 
-            <a class="navbar-item" href="#contact-us">
+            <a class="navbar-item" href="#contact-us" id='contactus-button'>
               Contact us
             </a>
           </div>
@@ -67,9 +67,10 @@
     </div>
   </nav>
 </div>
+<button id="top-button" title="Go to top"><i class="fas fa-angle-up"></i></button>
 
 <ul class="bullets">
-  <section class="first-container">
+  <section class="first-container" id="top-page">
     <div class="container">
       <div class="columns">
         <div class="column is-two-fifths">
@@ -80,7 +81,6 @@
             <img src="/assets/images/ipad@3x.png" alt="MOO-XOO" class="ipad">
             <img src="/assets/images/island-1.svg" class="island">
           </div>
-          <div id="company"></div>
         </div>
         <div class="column">
           <div class="mooxoo-shapes">
@@ -96,7 +96,7 @@
   <section class="second-container">
     <div class="container">
       <li>
-        <h1 class="main-title"> COMPANY </h1>
+        <h1 class="main-title" id='company'> COMPANY </h1>
         <div class="columns">
           <div class="column">
             <div class="green-description">
@@ -161,7 +161,6 @@
           <div class="columns">
             <div class="column"></div>
             <div class="column">
-              <div id="services"></div>
               <div class="island-2"></div>
               <div class="eye-container">
                 <img src="/assets/images/-e-island-2-icon.svg" alt="MOO-XOO">
@@ -171,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="sub-text">
+          <div class="sub-text" id='services'>
             <li><h1 class="main-title">SERVICES</h1></li>
             <h2>Our knowledge is your power. We are not another consulting agency focusing on the perfect board presentation.</h2>
             <h3> We focus on what matters most. We want you to work smarter – more productive, more efficient, better trained and happier with less stress.</h3>
@@ -616,11 +615,11 @@
     </div>
   </section>
 
-  <section class="eleventh-container" id="hiring">
+  <section class="eleventh-container">
     <div class="columns">
       <div class="column is-one-third">
       </div>
-      <div class="column is-one-third">
+      <div class="column is-one-third" id="hiring">
         <div class="hiring">
           <h1 class="main-title">HIRING</h1>
           <h2>We are team of fun-loving, code enthusiasts who are keen to revolutionize how marketing and sales department work today.</h2>
@@ -744,6 +743,11 @@
       nav.classList.toggle('is-active');
     });
 
+    nav.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+
     $('.main-link').click(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
@@ -781,6 +785,46 @@
       return false;
     });
 
+    $('#company-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.1) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#services-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.05) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#dpworx-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.025) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#hiring-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#contactus-button').click(function(e){
+      var jump = $(this).attr('href');
+      var new_position = $(jump).offset();
+      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      e.preventDefault();
+    });
+
+    $('#top-button').click(function(e){
+      $('html, body').stop().animate({ scrollTop: 0 }, 2000);
+      e.preventDefault();
+    });
+
     // var $scroller = $('.slide-wrap');
     // // assign click handler
     // $('slide-navigation a').click( function(e) {
@@ -806,4 +850,11 @@
         x.style.display = "none";
     }
   }
+
+  // function scrollLink(percentage) {
+  //   var jump = $(this).attr('href');
+  //   var new_position = $(jump).offset();
+  //   $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * percentage) }, 1000);
+  //   e.preventDefault();
+  // }
 </script>
