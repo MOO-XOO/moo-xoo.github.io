@@ -48,6 +48,7 @@
   }
 
   .icon-container {
+    margin-top: 20px;
     padding-bottom: 34px;
   }
 
@@ -155,6 +156,7 @@
     padding-top: 0px;
 
     .card-icon {
+      width: 100%;
       margin-top: 70px;
       font-size: 16px;
     }
@@ -240,6 +242,7 @@
       }
 
       h3 {
+        font-weight: 700;
         font-size: 20px;
       }
 
@@ -286,7 +289,7 @@
 
       h1 {
         font-size: 20px;
-        width: 80%;
+        width: 100%;
       }
     }
 
@@ -381,7 +384,7 @@
           }
 
           .green {
-            font-size: 13px;
+            font-size: 20px;
           }
         }
 
