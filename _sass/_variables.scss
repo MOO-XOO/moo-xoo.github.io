@@ -117,9 +117,11 @@ $mobile-enabled: false;
 
 /* Breakpoints */
 
+//  iOS width breakpoints = 320 (SE), 375 (8, Xs), 414 (8 Plus, Xr, Xs Max ),
+
 @mixin responsive($class) {
   @if $class == xs {
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       @content;
     }
   }
@@ -131,7 +133,7 @@ $mobile-enabled: false;
   }
 
   @else if $class == md {
-    @media (min-width: 769px) and (max-width: 992px) {
+    @media (min-width: 769px) and (max-width: 991px) {
       @content;
     }
   }
