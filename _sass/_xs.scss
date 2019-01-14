@@ -16,6 +16,7 @@
     }
 
     .navbar-menu {
+      padding-top: 13%;
       width: 100%;
       background-color: white;
       z-index: 1;
@@ -27,6 +28,37 @@
       }
     }
   }
+
+  .navbar-burger {
+    width: 23%;
+    background-color: white;
+
+  }
+
+
+
+  .navbar-burger:active {
+    width: 23%;
+    background-color: white;
+    color: $moo-xoo-green;
+    left: 0px;
+    z-index: 1000;
+  }
+
+  .navbar-burger:hover {
+    width: 23%;
+    background-color: white;
+    color: $moo-xoo-green;
+
+  }
+
+  //  .navbar-burger:after {
+  //    width: 23%;
+  //    background-color: white;
+  //    color: $moo-xoo-green;
+  //    left: 100px;
+  //    z-index: 1000;
+  //  }
 
   .main-title {
     margin-top: 2em;
