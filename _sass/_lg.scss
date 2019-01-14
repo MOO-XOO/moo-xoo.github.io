@@ -20,10 +20,12 @@
   }
 
   .navbar {
-    padding-left: 6%;
+    padding-left: 3em;
+
 
     .image {
       margin-right: 30%;
+      margin-left: -100px;
     }
 
     a {
@@ -186,6 +188,7 @@
 
     .text-links {
       width: 30vw;
+
       h1 {
         font-size: 25px;
       }
@@ -201,9 +204,10 @@
       font-size: 22px;
       width: 17vw;
     }
-        .text-box {
-          font-size: 1.2em;
-        }
+
+    .text-box {
+      font-size: 1.2em;
+    }
   }
 
   .ninth-container {
