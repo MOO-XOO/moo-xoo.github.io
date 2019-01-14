@@ -1,7 +1,7 @@
 // (min-width: 576px) and (max-width: 768px)
 @include responsive(sm) {
   .container {
-    width: 75%;
+    width: 72%;
   }
 
   .navbar {
@@ -27,7 +27,7 @@
   }
 
   .main-title {
-    margin-top: 0px;
+    margin-top: 2em;
   }
 
   .icon-box {
@@ -54,15 +54,15 @@
 
   .mooxoo-shapes {
     .doughnut {
-      height: 400px;
-      width: 400px;
-      border: 50px solid;
+      height: 350px;
+      width: 350px;
+      border: 75px solid;
       margin-top: -50vw;
       margin-left: 50vw;
 
       .image {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
       }
     }
 
@@ -119,13 +119,14 @@
     }
 
     h2 {
-      width: 50vw;
-      font-size: 22.5px;
+      width: 45vw;
+      font-size: 25px;
       margin-top: 5%;
     }
 
     p {
-      width: 50vw;
+      width: 45vw;
+      font-size: 22px;
     }
 
     .ipad-island {
@@ -141,10 +142,14 @@
   }
 
   .second-container {
+    padding-top: -5px;
     font-size: 20px;
+    width: 100%;
+
 
     .green-description {
       padding-bottom: 0px;
+       width: 110%;
     }
 
     .black-description {
@@ -158,7 +163,7 @@
     .card-icon {
       width: 100%;
       margin-top: 70px;
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
@@ -175,19 +180,19 @@
     }
 
     .sub-text {
-      width: 60vw;
-      font-size: 18px;
+      width: 65vw;
+      font-size: 22px;
 
       h1 {
         font-size: 40px;
       }
 
       h2 {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
       }
 
       p {
-        font-size: 15px;
+        font-size: 22px;
       }
     }
   }
@@ -198,17 +203,17 @@
       margin-bottom: 5%;
 
       h3 {
-        width: 50%;
+        width: 86%;
         padding-top: 0%;
-        font-size: 18px;
+        font-size: 22px;
       }
 
       h4 {
-        font-size: 15px;
+        font-size: 22px;
       }
 
       p {
-        font-size: 12px;
+        font-size: 22px;
       }
     }
   }
@@ -227,27 +232,31 @@
 
     h3 {
       width: 60%;
-      font-size: 18px;
+      font-size: 25px;
       margin-bottom: 10%;
     }
   }
 
   .seventh-container {
     .text-container {
-      font-size: 30px;
+      font-size: 25px;
       margin-top: 8%;
 
+       h1 {
+         font-size: 22px;
+       }
       h2 {
         font-size: 22px;
       }
 
       h3 {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 25px;
       }
 
       p {
-        font-size: 18px;
+        margin-top: 5%;
+        font-size: 22px;
         width: 100%
       }
     }
@@ -257,7 +266,7 @@
       width: 50vw;
 
       h1 {
-        font-size: 30px;
+        font-size: 25px;
       }
     }
 
@@ -275,14 +284,19 @@
   .eighth-container {
     padding-top: 5%;
 
+    .text-box{
+
+      width: 100%;
+    }
+
     p {
-      width: 50vw;
+      width: 100%;
       font-size: 25px;
       margin-bottom: 10%;
     }
   }
 
-.ninth-container {
+  .ninth-container {
     .container {
       margin-bottom: 50px;
       margin-top: 25px;
@@ -452,6 +466,7 @@
 
     h2 {
       font-size: 17px;
+      margin-bottom: 20%;
     }
 
     h3 {
@@ -512,6 +527,7 @@
   }
 
   .footer {
+
     p,
     a {
       font-size: 12px;

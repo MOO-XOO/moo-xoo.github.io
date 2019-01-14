@@ -14,7 +14,7 @@ a:hover {
 }
 
 .main-title {
-  margin-top: 10%;
+  margin-top: 2em;
 }
 
 .center {
@@ -109,10 +109,10 @@ button:hover {
     margin-left: -30vw;
 
     img {
-      height: 50%;
+      height: auto;
       width: auto;
-      -webkit-clip-path: polygon(0% 50%, 75% 100%, 75% 0);
-      clip-path: polygon(0% 50%, 75% 100%, 75% 0);
+      -webkit-clip-path: polygon(10% 50%, 75% 100%, 75% 0);
+      clip-path: polygon(10% 50%, 75% 100%, 75% 0);
       transform: rotate(10deg);
       margin-top: 30%;
       margin-left: 7.5vw;
@@ -175,8 +175,8 @@ button:hover {
       content: "\2022";
       font-size: 60px;
       position: absolute;
-      left: -60px;
-      top: -24px;
+      left: -2.2rem;
+      top: -1.9rem;
       color: $light-grey;
     }
 
@@ -184,7 +184,7 @@ button:hover {
       top: 16px;
       content: "";
       position: absolute;
-      left: -48px;
+      left: -1.45rem;
       border-left: 1px solid $light-grey;
       height: 300vh;
       width: 1px;
@@ -290,7 +290,7 @@ button:hover {
   }
 
   h2 {
-    width: 25vw;
+    width: 30vw;
     @include copyright;
     font-size: 35.5px;
     text-shadow: 0.25px 0.25px 0.25px $moo-xoo-green;
@@ -300,7 +300,8 @@ button:hover {
   }
 
   p {
-    width: 25vw;
+    width: 30vw;
+    font-size: 22px;
   }
 
   .ipad-island {
@@ -339,10 +340,13 @@ button:hover {
     h2 {
       line-height: 1.4;
       font-weight: 300;
+      font-size: 25px;
       letter-spacing: 0.1px;
       color: $moo-xoo-green;
       z-index: 120;
     }
+
+ 
   }
 
   .black-description {
@@ -351,6 +355,7 @@ button:hover {
     p {
       line-height: 1.47;
       text-align: left;
+      font-size: 22px;
       color: $hunter-green;
     }
   }
@@ -363,11 +368,14 @@ button:hover {
   .card-icon {
     width: 80%;
     height: 92px;
+    font-size: 22px;
     @include card-style;
+    
 
     h3 {
       font-family: $bold-font;
       color: $hunter-green;
+      font-size: 22px;
     }
   }
 }
@@ -398,10 +406,11 @@ button:hover {
   }
 
   .eye-container {
+
     height: 120%;
-    margin-top: 40%;
+    margin-top: 70%;
     margin-right: -10vw;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
     position: relative;
     background-image: url(/assets/images/island-2.svg);
     background-repeat: no-repeat;
@@ -418,7 +427,7 @@ button:hover {
     }
 
     h2 {
-      width: 70%;
+      width: 90%;
       font-family: $primary-font;
       font-size: 30px;
       line-height: 1.17;
@@ -427,7 +436,7 @@ button:hover {
 
     p {
       font-family: $primary-font;
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.76;
       color: $moo-xoo-green;
     }
@@ -479,7 +488,7 @@ button:hover {
       padding-top: 5%;
       @include text-blue;
       font-size: 23px;
-      line-height: 1.6;
+      line-height: 1.4;
     }
 
     h4 {
@@ -488,7 +497,7 @@ button:hover {
       padding-top: 20px;
       font-size: 20px;
       font-weight: normal;
-      line-height: 1.47;
+      line-height: 1.4;
       color: $moo-xoo-green;
     }
 
@@ -540,7 +549,7 @@ button:hover {
     @include text-blue;
     color: $moo-xoo-green;
     font-size: 28px;
-    width: 30%;
+    width: 40%;
     font-weight: 600;
   }
 
@@ -693,7 +702,7 @@ button:hover {
 
     li {
       list-style-type: none;
-      float: left;
+      // float: left;
       width: 15%;
       position: relative;
       text-align: center;

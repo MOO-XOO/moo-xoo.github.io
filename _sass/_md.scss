@@ -27,7 +27,7 @@
   }
 
   .main-title {
-    margin-top: 0px;
+    margin-top: 2em;
   }
 
   .icon-box {
@@ -87,7 +87,13 @@
     }
 
     h2 {
-      font-size: 22.5px;
+      width: 50vw;
+      font-size: 25px;
+    }
+
+    p {
+      width: 40vw;
+      font-size: 25px;
     }
 
     .ipad-island {
@@ -101,11 +107,13 @@
   }
 
   .second-container {
-    font-size: 20px;
+    font-size: 22px;
 
     h1 {
       font-size: 30px;
     }
+
+
   }
 
   .third-container {
@@ -134,10 +142,15 @@
     }
 
     .sub-text {
-      font-size: 18px;
+      font-size: 25px;
 
       h1 {
         font-size: 35px;
+      }
+
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
       }
 
       p {
@@ -226,8 +239,12 @@
   .eighth-container {
     padding-top: 5%;
 
+    .text-box {
+      font-size: 25;
+    }
+
     p {
-      font-size: 12px;
+      font-size: 20px;
     }
   }
 
@@ -249,16 +266,16 @@
       }
 
       li {
-      width: 15%;
+        width: 15%;
 
         &:before {
           line-height: 15%;
         }
 
         p {
-          width: 80%;
+          width: 100%;
           font-size: 12.5px;
-          margin-left: 15%;
+          margin-left: 0%;
         }
       }
     }
@@ -342,20 +359,22 @@
   }
 
   .eleventh-container {
+
     h1 {
       font-size: 35px;
     }
 
     h2 {
-      font-size: 17px;
+      font-size: 25px;
+      margin-bottom: 20%;
     }
 
     h3 {
-      font-size: 19px;
+      font-size: 22px;
     }
 
     p {
-      font-size: 13px;
+      font-size: 22px;
     }
   }
 
@@ -376,6 +395,7 @@
   }
 
   .footer {
+
     p,
     a {
       font-size: 12px;

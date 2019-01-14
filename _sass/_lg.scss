@@ -5,18 +5,18 @@
   }
 
   .main-title {
-    margin-top: 0px;
+    margin-top: 2em;
   }
 
   .icon-box {
-    padding: 20px;
     margin-bottom: 30px;
+    padding: 20px;
   }
 
   .text-box {
+    margin-bottom: 10px;
     padding: 5%;
     font-size: 0.7em;
-    margin-bottom: 10px;
   }
 
   .navbar {
@@ -43,50 +43,55 @@
 
   .mooxoo-shapes {
     .doughnut {
-      height: 600px;
       width: 600px;
-      border: 100px solid;
+      height: 600px;
+      border: 115px solid;
 
       .image {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
       }
     }
 
     .semi-circle {
-      transform: rotate(-140deg);
       margin-top: -20vw;
       margin-bottom: -30vw;
+      transform: rotate(-140deg);
     }
   }
 
   .first-container {
     h2 {
-      font-size: 25.5px;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 25px;
     }
 
     .ipad-island {
       .ipad {
-        max-width: 500px;
         min-width: 200px;
+        max-width: 500px;
       }
     }
   }
 
   .second-container {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .third-container {
     padding-top: 10px;
 
     .card-icon {
-      font-size: 16px;
+      font-size: 22px;
     }
   }
 
   .fourth-container {
     margin-top: 10%;
+    width: 81%;
 
     .mooxoo-shapes {
       margin-top: 10%;
@@ -96,36 +101,44 @@
       height: 80%;
 
       h2 {
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: bold;
       }
 
       p {
-        font-size: 15px;
+        font-size: 22px;
       }
     }
 
     .sub-text {
-      font-size: 20px;
+      font-size: 25px;
 
       p {
-        font-size: 15px;
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 25px;
+        font-weight: bold;
       }
     }
   }
 
   .fifth-container {
     .sub-text {
+      width: 140%;
+
       h3 {
         padding-top: 0%;
-        font-size: 18px;
+        font-size: 22px;
       }
 
       h4 {
-        font-size: 15px;
+        font-size: 22px;
       }
 
       p {
-        font-size: 12px;
+        font-size: 20px;
       }
     }
   }
@@ -137,26 +150,26 @@
       margin-top: -10vw;
 
       .brain-icon {
+        margin-top: 13vw;
+        margin-left: 26vw;
         width: 7vw;
-        margin-top: 10vw;
-        margin-left: 23vw;
       }
 
       .text-area {
         margin-left: 10vw;
-        font-size: 20px;
+        font-size: 22px;
       }
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
 
   .seventh-container {
     .text-container {
+      // margin-top: 10vh;
       font-size: 30px;
-      margin-top: 8vh;
 
       h2 {
         font-size: 25px;
@@ -167,36 +180,46 @@
       }
 
       p {
-        font-size: 21px;
+        font-size: 22px;
       }
     }
 
     .text-links {
+      width: 30vw;
       h1 {
         font-size: 25px;
       }
     }
+
+
   }
 
   .eighth-container {
-    padding-top: 5%;
+    padding-top: 0%;
 
     p {
-      font-size: 15px;
+      font-size: 22px;
+      width: 17vw;
     }
+        .text-box {
+          font-size: 1.2em;
+        }
   }
 
   .ninth-container {
     .container {
-      margin-bottom: 50px;
       margin-top: 25px;
+      margin-bottom: 50px;
 
       h1 {
-        font-size: 18px;
+        font-size: 25px;
       }
     }
 
     .slide-navigation {
+      width: 130%;
+      margin-left: -18%;
+
       li {
 
         &:before {
@@ -205,7 +228,7 @@
 
         p {
           width: 80%;
-          font-size: 12.5px;
+          font-size: 20px;
         }
       }
     }
@@ -218,8 +241,8 @@
         max-width: 100%;
 
         .icon {
-          height: 30px;
           width: auto;
+          height: 30px;
         }
 
         h1 {
@@ -228,19 +251,19 @@
         }
 
         .sub-description {
-          font-size: 13px;
+          font-size: 22px;
         }
 
         .sub-title {
-          font-size: 13px;
+          font-size: 22px;
         }
 
         .slogan {
-          font-size: 17px;
+          font-size: 23px;
         }
 
         .slide-item {
-          font-size: 13px;
+          font-size: 22px;
         }
 
         .actions {
@@ -249,9 +272,13 @@
 
         #main-slide {
           .island {
+            width: 90%;
+
             .island-container {
               p {
-                font-size: 13px;
+                font-size: 22px;
+                width: 100%;
+                margin-left: -5vw;
               }
             }
           }
@@ -266,39 +293,45 @@
     }
 
     .card-icon {
+      width: 21vw;
+
       h3 {
-        font-size: 18px;
+        font-size: 25px;
       }
 
       p {
-        font-size: 15px;
+        font-size: 22px;
       }
     }
 
     h3 {
-      font-size: 15px;
+      font-size: 22px;
     }
 
     .island {
       h3 {
-        font-size: 22.5px;
         margin-left: 20%;
+        font-size: 22.5px;
       }
     }
   }
 
   .eleventh-container {
+    width: 140%;
+
     h2 {
-      font-size: 17px;
+      font-size: 25px;
+      margin-bottom: 30%;
     }
 
     h3 {
-      font-size: 19px;
+      font-size: 25px;
     }
 
     p {
-      font-size: 13px;
+      font-size: 22px;
     }
+
   }
 
   .twelveth-container {
@@ -307,19 +340,28 @@
     .text-rectangle {
       height: 300px;
 
+      .container {
+        width: 100%;
+      }
+
+      h1 {
+        padding-top: 8%;
+      }
+
       p {
-        font-size: 15px;
+        font-size: 22px;
       }
     }
 
     .contact-container {
       h3 {
-        font-size: 20px;
+        font-size: 25px;
       }
     }
   }
 
   .footer {
+
     p,
     a {
       font-size: 12px;
