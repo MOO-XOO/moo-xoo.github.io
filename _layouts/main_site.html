@@ -1,105 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     {% include head.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     {% include scripts.html %}
   </head>
+
   <body>
     {{ content }}
   </body>
+
 </html>
 
 <script>
   $(document).ready(function () {
     var burger = document.querySelector('.burger');
-    var nav = document.querySelector('#'+burger.dataset.target);
+    var nav = document.querySelector('#' + burger.dataset.target);
 
-    burger.addEventListener('click', function(){
+    burger.addEventListener('click', function () {
       burger.classList.toggle('is-active');
       nav.classList.toggle('is-active');
     });
 
-    nav.addEventListener('click', function(){
+    nav.addEventListener('click', function () {
       burger.classList.toggle('is-active');
       nav.classList.toggle('is-active');
     });
 
-    $('.main-link').click(function() {
+    $('.main-link').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
       window.location = $(this).find("a").attr("href");
       return false;
     });
-    $('.modules-link').click(function() {
+    $('.modules-link').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
       window.location = $(this).find("a").attr("href");
       return false;
     });
-    $('.management-link').click(function() {
+    $('.management-link').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
       window.location = $(this).find("a").attr("href");
       return false;
     });
-    $('.analysing-link').click(function() {
+    $('.analysing-link').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
       window.location = $(this).find("a").attr("href");
       return false;
     });
-    $('.communication-link').click(function() {
+    $('.communication-link').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
       window.location = $(this).find("a").attr("href");
       return false;
     });
-    $('.material-link').click(function() {
+    $('.material-link').click(function () {
       $('.active').removeClass('active');
       $(this).addClass('active');
       window.location = $(this).find("a").attr("href");
       return false;
     });
 
-    $('#company-button').click(function(e){
+    $('#company-button').click(function (e) {
       var jump = $(this).attr('href');
       var new_position = $(jump).offset();
-      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.1) }, 1000);
+      $('html, body').stop().animate({
+        scrollTop: new_position.top - (new_position.top * 0.1)
+      }, 1000);
       e.preventDefault();
     });
 
-    $('#services-button').click(function(e){
+    $('#services-button').click(function (e) {
       var jump = $(this).attr('href');
       var new_position = $(jump).offset();
-      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.05) }, 1000);
+      $('html, body').stop().animate({
+        scrollTop: new_position.top - (new_position.top * 0.05)
+      }, 1000);
       e.preventDefault();
     });
 
-    $('#dpworx-button').click(function(e){
+    $('#dpworx-button').click(function (e) {
       var jump = $(this).attr('href');
       var new_position = $(jump).offset();
-      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.025) }, 1000);
+      $('html, body').stop().animate({
+        scrollTop: new_position.top - (new_position.top * 0.025)
+      }, 1000);
       e.preventDefault();
     });
 
-    $('#hiring-button').click(function(e){
+    $('#hiring-button').click(function (e) {
       var jump = $(this).attr('href');
       var new_position = $(jump).offset();
-      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      $('html, body').stop().animate({
+        scrollTop: new_position.top - (new_position.top * 0.01)
+      }, 1000);
       e.preventDefault();
     });
 
-    $('#contactus-button').click(function(e){
+    $('#contactus-button').click(function (e) {
       var jump = $(this).attr('href');
       var new_position = $(jump).offset();
-      $('html, body').stop().animate({ scrollTop: new_position.top - (new_position.top * 0.01) }, 1000);
+      $('html, body').stop().animate({
+        scrollTop: new_position.top - (new_position.top * 0.01)
+      }, 1000);
       e.preventDefault();
     });
 
-    $('#top-button').click(function(e){
-      $('html, body').stop().animate({ scrollTop: 0 }, 100);
+    $('#top-button').click(function (e) {
+      $('html, body').stop().animate({
+        scrollTop: 0
+      }, 100);
       e.preventDefault();
     });
 
@@ -123,9 +138,9 @@
   function toggleMenu() {
     var x = document.getElementById("contact-form");
     if (x.style.display === "none") {
-        x.style.display = "block";
+      x.style.display = "block";
     } else {
-        x.style.display = "none";
+      x.style.display = "none";
     }
   }
 
