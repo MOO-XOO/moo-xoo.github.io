@@ -32,16 +32,16 @@
   }
 
   .icon-box {
-    padding: 15px;
     margin-bottom: 30px;
+    padding: 15px;
     width: 100%;
   }
 
   .text-box {
-    padding: 10% 5%;
-    font-size: 0.6em;
     margin-bottom: 20px;
+    padding: 10% 5%;
     width: 100%;
+    font-size: 0.6em;
   }
 
   .btn {
@@ -50,8 +50,8 @@
 
   .mooxoo-shapes {
     .doughnut {
-      height: 600px;
       width: 600px;
+      height: 600px;
       border: 100px solid;
 
       .image {
@@ -61,27 +61,27 @@
     }
 
     .semi-circle {
+      margin-top: -20vw;
+      margin-bottom: -35vw;
+      margin-left: 5vw;
       width: 80vw;
       height: 40vw;
       border-top-left-radius: 40vw;
       border-top-right-radius: 40vw;
       transform: rotate(-150deg);
-      margin-left: 5vw;
-      margin-top: -20vw;
-      margin-bottom: -35vw;
     }
   }
 
   #top-button {
     position: fixed;
-    bottom: 0em;
     right: 0.25em;
-    text-decoration: none;
-    font-size: 40px;
-    color: $pinkish-grey;
+    bottom: 0em;
     z-index: 1000;
     border: none;
     background-color: transparent;
+    color: $pinkish-grey;
+    text-decoration: none;
+    font-size: 40px;
   }
 
   .first-container {
@@ -101,10 +101,10 @@
 
     .ipad-island {
       .ipad {
-        margin-left: -10%;
-        max-width: 450px;
-        min-width: 200px;
         margin-top: 15vh;
+        margin-left: -10%;
+        min-width: 200px;
+        max-width: 450px;
       }
     }
   }
@@ -152,8 +152,8 @@
       }
 
       h3 {
-        font-size: 25px;
         font-weight: bold;
+        font-size: 25px;
       }
 
       p {
@@ -188,9 +188,9 @@
       margin-top: -10vw;
 
       .brain-icon {
-        width: 7vw;
         margin-top: 10vw;
         margin-left: 23vw;
+        width: 7vw;
       }
 
       .text-area {
@@ -210,8 +210,8 @@
 
   .seventh-container {
     .text-container {
-      font-size: 30px;
       margin-top: 8vh;
+      font-size: 30px;
 
       h2 {
         font-size: 22px;
@@ -253,8 +253,8 @@
 
   .ninth-container {
     .container {
-      margin-bottom: 50px;
       margin-top: 25px;
+      margin-bottom: 50px;
 
       h1 {
         font-size: 18px;
@@ -276,9 +276,9 @@
         }
 
         p {
+          margin-left: 0%;
           width: 100%;
           font-size: 12.5px;
-          margin-left: 0%;
         }
       }
     }
@@ -291,8 +291,8 @@
         max-width: 100%;
 
         .icon {
-          height: 30px;
           width: auto;
+          height: 30px;
         }
 
         h1 {
@@ -354,9 +354,9 @@
 
     .island {
       h3 {
-        font-size: 18px;
         margin-left: 20%;
         padding-top: 5vh;
+        font-size: 18px;
       }
     }
   }
@@ -368,8 +368,8 @@
     }
 
     h2 {
-      font-size: 25px;
       margin-bottom: 20%;
+      font-size: 25px;
     }
 
     h3 {

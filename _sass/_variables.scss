@@ -56,63 +56,63 @@ $mobile-enabled: false;
 /* Text styles */
 
 @mixin sub-headline {
-  font-family: $primary-font;
-  font-size: 30.7px;
-  font-weight: 300;
-  line-height: 1.24;
-  text-align: center;
   color: $green-dark;
+  text-align: center;
+  font-weight: 300;
+  font-size: 30.7px;
+  font-family: $primary-font;
+  line-height: 1.24;
 }
 
 @mixin copyright {
-  font-family: $primary-font;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.25;
-  text-align: left;
   color: $moo-xoo-green;
+  text-align: left;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: $primary-font;
+  line-height: 1.25;
 }
 
 @mixin card-style {
-  font-family: $primary-font;
-  font-size: 20px;
-  line-height: 1.47;
-  letter-spacing: 0.1px;
-  text-align: left;
   color: $grey;
+  text-align: left;
+  letter-spacing: 0.1px;
+  font-size: 20px;
+  font-family: $primary-font;
+  line-height: 1.47;
 }
 
 @mixin text-blue {
-  font-family: $primary-font;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 1.42;
-  letter-spacing: 0.1px;
-  text-align: left;
   color: $dark-grey-blue;
+  text-align: left;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: $primary-font;
+  line-height: 1.42;
 }
 
 @mixin medium-text {
-  font-family: $primary-font;
-  font-size: 25px;
-  line-height: 1.23;
   color: $hunter-green;
+  font-size: 25px;
+  font-family: $primary-font;
+  line-height: 1.23;
 }
 
 @mixin main-title {
-  font-family: $bold-font;
-  letter-spacing: 0.2px;
-  text-align: left;
   color: $hunter-green;
+  text-align: left;
+  letter-spacing: 0.2px;
   font-size: 40px;
+  font-family: $bold-font;
 }
 
 @mixin button-style {
-  font-family: $primary-font;
-  font-size: 16.3px;
-  font-weight: 300;
-  text-align: left;
   color: $white;
+  text-align: left;
+  font-weight: 300;
+  font-size: 16.3px;
+  font-family: $primary-font;
 }
 
 /* Breakpoints */

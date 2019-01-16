@@ -13,29 +13,28 @@ body {
 
 .bg-pattern {
   opacity: 0.3;
+
   mix-blend-mode: soft-light;
 }
 
 .overflow-block {
-  width:  100vw;
-  height: 100vh;
-
   position: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
 .navbar-mooxoo {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-  background: $white;
-
-  height: 70px;
-  width: 100vw;
-
   position: fixed;
   top: 0px;
   left: 0px;
   padding: 0px 30px;
+  width: 100vw;
+  height: 70px;
+  background: $white;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 
   a {
     img {
@@ -50,24 +49,23 @@ body {
 .information {
   margin-top: 12vmin;
   margin-bottom: 10vh;
-  padding-left: 10vw;
   padding-right: 10vw;
-
+  padding-left: 10vw;
   font-family: $light-font;
 
   h1 {
-    font-size: 4vmin;
     color: $white;
+    font-size: 4vmin;
   }
 
   p {
-    font-size: 1.5vmin;
     color: $green-deep;
+    font-size: 1.5vmin;
   }
 
   h4 {
-    font-weight: bold;
     color: $white-main;
+    font-weight: bold;
     font-size: 2vmin;
   }
 
@@ -76,9 +74,10 @@ body {
     font-size: 1.5vmin;
   }
 
-  a, a:hover {
-    text-decoration: none;
+  a,
+  a:hover {
     color: $green-deep;
+    text-decoration: none;
     font-size: 2vmin;
   }
 
@@ -89,68 +88,62 @@ body {
 }
 
 .logo {
-  width: 31.6vw;
-
   position: absolute;
-  left: 34.1vw;
   top: 9.6vh;
+  left: 34.1vw;
+  width: 31.6vw;
 }
 
 .speaker-shadow {
-  width: 12.55vw;
-  height: 30.7vh;
-
   position: absolute;
   bottom: 70%;
   left: 8%;
+  width: 12.55vw;
+  height: 30.7vh;
 }
 
 .i-phone-6-gold {
-  width: 11.1vw;
-
   position: absolute;
-  right: 95.7vw;
   top: 49.7vh;
+  right: 95.7vw;
+  width: 11.1vw;
 }
 
 .main {
-  width:1094.5px;
-  margin-left: 20%;
   position: absolute;
   top: 50.5vh;
   z-index: 1;
+  margin-left: 20%;
+  width: 1094.5px;
 }
 
 .glass-shadow {
-  width: 21.4vw;
-  height: 46.3vh;
-  object-fit: contain;
-
   position: absolute;
   top: 10vw;
   right: 0vh;
+  width: 21.4vw;
+  height: 46.3vh;
+
+  object-fit: contain;
 }
 
 .headline {
-  width: 54.3vw;
-
-  font-family: $light-font;
-  font-size: 3.2vw;
-  font-weight: bold;
-
-  text-align: center;
-  color: $white-main;
-
   margin-top: 20.4vh;
+  margin-right: auto;
   margin-bottom: 2vh;
   margin-left: auto;
-  margin-right: auto;
+  width: 54.3vw;
+  color: $white-main;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.2vw;
+  font-family: $light-font;
 }
 
 img {
+  z-index: -1;
   max-width: 100%;
   height: auto;
-  z-index: -1;
 }
 
 #macbook {
@@ -158,46 +151,41 @@ img {
 }
 
 .description-color {
-  width: 39.2vw;
-
-  font-family: $light-font;
-  font-size: 2.1vw;
-  font-weight: 300;
-
-  line-height: 1.24;
-  text-align: center;
-  color: $green-deep;
-
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 1.6%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 39.2vw;
+  color: $green-deep;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.1vw;
+  font-family: $light-font;
+  line-height: 1.24;
 }
 
 footer {
-  width: 100%;
-  height: 9.05vh;
-
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 9.05vh;
+  background-color: $white;
+  color: $moo-xoo-green;
+  font-weight: 300;
+  font-size: 1.1vw;
+  font-family: $light-font;
+  line-height: 1.25;
 
   -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-  background-color: $white;
-  color: $moo-xoo-green;
-
-  font-family: $light-font;
-  font-size: 1.1vw;
-  font-weight: 300;
-  line-height: 1.25;
 
   a {
     color: $moo-xoo-green;
   }
 
   a:hover {
-    text-decoration: none;
     color: $moo-xoo-green;
+    text-decoration: none;
   }
 
   li {
@@ -209,8 +197,8 @@ footer {
   .copyright {
     position: absolute;
     bottom: 15px;
-    font-size: 0.7vmin;
     left: 2%;
+    font-size: 0.7vmin;
   }
 
   .footer-right {
@@ -219,10 +207,10 @@ footer {
   }
 
   .linkedin {
-    font-size: 3vmin;
-    font-weight: 300;
-    line-height: 1.12;
     right: 2%;
+    font-weight: 300;
+    font-size: 3vmin;
+    line-height: 1.12;
   }
 
   .pipe {
@@ -230,21 +218,29 @@ footer {
   }
 }
 
-#iphone {display:none}
-#macbook-ipad { display:none }
+#iphone {
+  display: none
+}
+
+#macbook-ipad {
+  display: none
+}
 
 @media only screen and (max-width: 1024px) {
-  #macbook { display:none }
-  #macbook-ipad { display:block }
+  #macbook {
+    display: none
+  }
+
+  #macbook-ipad {
+    display: block
+  }
 
   .main {
-    width: 670px;
-
-    margin-top: 10.5vh;
-    margin-left: 3vw;
-
     position: absolute;
     bottom: -16vmin;
+    margin-top: 10.5vh;
+    margin-left: 3vw;
+    width: 670px;
   }
 
   .headline {
@@ -267,37 +263,48 @@ footer {
   }
 }
 
-@media only screen and (max-width: 736px){
-    /* For mobile phones: */
-  #iphone { display:block; }
-  #macbook { display:none }
-  #iphone-rotate { display:none }
-  #macbook-ipad { display:none }
+@media only screen and (max-width: 736px) {
+
+  /* For mobile phones: */
+  #iphone {
+    display: block;
+  }
+
+  #macbook {
+    display: none
+  }
+
+  #iphone-rotate {
+    display: none
+  }
+
+  #macbook-ipad {
+    display: none
+  }
 
   .speaker-shadow {
-    width: 28.2vmin;
-
     bottom: 81.1vh;
     left: 0vw;
+    width: 28.2vmin;
   }
+
   .glass-shadow {
+    top: 0vw;
+    right: 0vh;
     width: 41.7vmin;
 
     object-fit: contain;
-    top: 0vw;
-    right: 0vh;
   }
 
   .logo {
-    width: 68.5vmin;
-
-    left: 15.7vw;
     top: 21.6vh;
+    left: 15.7vw;
+    width: 68.5vmin;
   }
 
   .headline {
-    font-size: 5vmin;
     margin-top: 30.7vh;
+    font-size: 5vmin;
   }
 
   .description-color {
@@ -306,18 +313,17 @@ footer {
   }
 
   .main {
+    bottom: -25.5vmin;
+    left: 23.9vmin;
     width: 157px;
-
-    bottom:-25.5vmin;
-    left:23.9vmin;
   }
 
   footer {
     height: 41px;
 
     .copyright {
-      font-size: 1vmin;
       bottom: 1vmin;
+      font-size: 1vmin;
     }
 
     .linkedin {
@@ -330,7 +336,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 736px) and (orientation: landscape){
+@media only screen and (max-width: 736px) and (orientation: landscape) {
   .logo {
     top: 6.6vh;
     left: 30vw;
@@ -341,10 +347,9 @@ footer {
   }
 
   .main {
-    width: 150px;
-
     bottom: -36vh;
     left: 26.5vw;
+    width: 150px;
   }
 
 }
