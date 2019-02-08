@@ -818,12 +818,12 @@ button:hover {
       .sub-description {
         width: 397.5px;
         color: $grey;
-        font-weight: 400;
         font-size: 18px;
         font-family: $primary-font;
         line-height: 1.52;
-
+        
         @include text-blue;
+        font-weight: 400;
       }
 
       .sub-title {
@@ -838,10 +838,12 @@ button:hover {
       .slogan {
         margin-bottom: 10px;
         width: 397.5px;
-        font-weight: 600;
+        
         font-size: 22px;
 
         @include text-blue;
+
+        font-weight: 400;
       }
 
       .slide-module {
@@ -860,6 +862,7 @@ button:hover {
         font-family: $primary-font;
 
         @include text-blue;
+        font-weight: 300;
 
         ul {
           padding-left: 20px;
