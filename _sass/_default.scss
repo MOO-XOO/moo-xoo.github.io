@@ -179,7 +179,7 @@ button:hover {
 
     &:after {
       position: absolute;
-      top: -1.9rem;
+      top: -1.5rem;
       left: -2.2rem;
       color: $light-grey;
       content: "\2022";
@@ -312,6 +312,10 @@ button:hover {
     font-size: 22px;
   }
 
+  li:after {
+    top: -2rem;
+  }
+
   .ipad-island {
     .island {
       position: absolute;
@@ -353,8 +357,6 @@ button:hover {
       font-size: 25px;
       line-height: 1.4;
     }
-
- 
   }
 
   .black-description {
@@ -366,6 +368,10 @@ button:hover {
       font-size: 22px;
       line-height: 1.47;
     }
+  }
+
+  li:after {
+    top: -1.6rem;
   }
 }
 
@@ -379,7 +385,7 @@ button:hover {
     font-size: 22px;
 
     @include card-style;
-    
+
 
     h3 {
       color: $hunter-green;
@@ -399,7 +405,7 @@ button:hover {
 
     &:before {
       position: absolute;
-      top: 20px;
+      top: 18px;
       left: -79%;
       width: 70%;
       height: 1px;

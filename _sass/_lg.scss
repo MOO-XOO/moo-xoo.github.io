@@ -95,6 +95,21 @@
     margin-top: 10%;
     width: 81%;
 
+    li {
+      position: relative;
+      display: block;
+      text-align: left;
+
+      &:before {
+        position: absolute;
+        left: -79%;
+        width: 70%;
+        height: 1px;
+        border-top: 1px solid $light-grey;
+        content: "";
+      }
+    }
+
     .mooxoo-shapes {
       margin-top: 10%;
     }

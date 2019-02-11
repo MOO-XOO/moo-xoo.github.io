@@ -215,10 +215,9 @@
     li {
       &:before {
         position: absolute;
-        top: 16px;
-        left: -48px;
+        left: -23.5px;
         width: 1px;
-        height: 300vh;
+        height: 280vh;
         border-left: 1px solid $light-grey;
         content: "";
       }
