@@ -6,5 +6,5 @@ group :development, :test do
   gem 'jekyll-sitemap', '~> 1.2'
   gem 'jekyll-toc', '~> 0.6'
   gem 'scss_lint', '~> 0.57'
-  gem 'jekyll-multiple-languages-plugin', '~> 1.5'
+  gem 'jekyll-multiple-languages-plugin', '~> 1.6'
 end
